@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#030303;color:#F5F2F1;font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+::selection{background:#D9342B;color:#fff}
+a{color:#E5483A;text-decoration:none}
+a:hover{color:#FFFFFF}
+@keyframes pfShim{0%{background-position:150% 0}100%{background-position:-50% 0}}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&amp;display=swap" rel="stylesheet">
+</helmet>
+<div style="background:#030303"><div data-pitio-root="1" style="position:relative;width:1280px;background:#030303;overflow:hidden;color:#F5F2F1">
+<a data-site-back="1" href="Portfolio v5.dc.html#work" aria-label="Back to all work" style="position:fixed;left:32px;top:22px;z-index:60;box-sizing:border-box;height:60px;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;justify-content:center;width:60px;padding:0;border-radius:999px;border:1px solid rgba(229,72,58,.22);background:rgba(20,12,12,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif;font-size:16px;font-weight:500;color:#F5F2F1;transition:background .25s,transform .4s cubic-bezier(.22,1,.36,1)" style-hover="background:rgba(229,72,58,.12);transform:translateX(-3px);color:#FFFFFF"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5F2F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg></a>
+<header data-site-nav="1" style="position:fixed;left:50%;top:22px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:32px;padding:8px;border-radius:999px;border:1px solid rgba(229,72,58,.22);background:rgba(20,12,12,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif">
+  <div style="display:flex;align-items:center;gap:12px">
+    <a href="Portfolio v5.dc.html" style="display:flex;align-items:center;gap:12px;padding-right:8px;color:#F5F2F1">
+      <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid #4A2A28;flex:0 0 40px"><img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
+      <span style="font-size:17px;font-weight:600;letter-spacing:-.01em">Melis K.</span>
+    </a>
+  </div>
+  <nav style="display:flex;align-items:center;gap:4px;font-size:16px;font-weight:500">
+    <a href="Portfolio v5.dc.html#work" style="padding:10px 14px;border-radius:999px;color:#F5F2F1;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">Work</a>
+    <a href="Portfolio v5.dc.html#about" style="padding:10px 14px;border-radius:999px;color:#A8A2A0;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">About</a>
+    <a href="Portfolio v5.dc.html#faq" style="padding:10px 14px;border-radius:999px;color:#A8A2A0;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">FAQ</a>
+    <a href="Portfolio v5.dc.html#contact" style="margin-left:8px;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,#E5483A,#B8302A);color:#FFFFFF;font-weight:600;box-shadow:0 6px 18px rgba(229,72,58,.4),inset 0 1px 0 rgba(255,255,255,.25);transition:filter .3s" style-hover="filter:brightness(1.12);color:#FFFFFF">Contact</a>
+  </nav>
+</header>
+
+
+<section data-screen-label="Hero" data-orbs="hero" style="position:relative;min-height:100vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;padding:48px 140px">
+  <div data-reveal="1" style="position:relative;z-index:1;display:flex;flex-direction:column;gap:32px">
+    <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">SHAPING A PRODUCT FROM ZERO TO MVP</div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h1 style="margin:0;font-size:128px;line-height:.85;font-weight:700;letter-spacing:-.06em;color:#F5F2F1">pitio<span style="display:inline-block;width:.16em;height:.16em;margin-left:.04em;border-radius:.03em;background:#E5483A"></span></h1>
+      <div style="font-family:'Geist Mono',monospace;font-size:16px;letter-spacing:.22em;color:#A8A2A0">AI PERSONAL TRAINER <span style="color:#6E6664">•</span> iOS MVP</div>
+    </div>
+    <p style="margin:0;font-size:20px;line-height:1.5;color:#CFC8C6;max-width:520px;text-wrap:pretty;width:440px">Building an AI personal trainer from 0→1, focused on real-time guidance, adaptation, and habit formation.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <span data-lift="1" style="padding:10px 18px;border-radius:999px;border:1px solid #2A2828;background:#0A0A0A;font-size:16px;color:#CFC8C6">Product Management</span>
+      <span data-lift="1" style="padding:10px 18px;border-radius:999px;border:1px solid #2A2828;background:#0A0A0A;font-size:16px;color:#CFC8C6">Product Design</span>
+      <span data-lift="1" style="padding:10px 18px;border-radius:999px;border:1px solid #2A2828;background:#0A0A0A;font-size:16px;color:#CFC8C6">AI / CV / iOS</span>
+    </div>
+  </div>
+  <div data-reveal="1" style="position:relative;z-index:1;height:600px">
+    <img data-lift="img" src="assets/pitio/choose-trainer-bare.webp" alt="Choose your trainer" style="position:absolute;left:30px;top:90px;width:220px;border-radius:40px;border:1px solid #3A2524;transform:rotate(-7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+    <img data-lift="img" src="assets/pitio/home-bare.webp" alt="Home" style="position:absolute;right:20px;top:90px;width:220px;border-radius:40px;border:1px solid #3A2524;transform:rotate(7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+    <img data-lift="img" src="assets/pitio/live-session-bare.webp" alt="Live session" style="position:absolute;left:50%;top:20px;margin-left:-125px;width:250px;border-radius:44px;border:1px solid #4A2A28;box-shadow:0 40px 120px rgba(229,72,58,.3),0 30px 60px rgba(0,0,0,.6)">
+  </div>
+</section>
+
+<section data-screen-label="Challenge" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">01 · Shaping the product</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Challenge, scope, constraints</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+      <div data-reveal="1" data-stagger="0" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">The challenge</div>
+        <p style="margin:0;font-size:20px;line-height:1.5;color:#E8E2E0;text-wrap:pretty">Build an AI personal trainer that delivers real-time, human-like coaching through video, while adapting to user behavior over time.</p>
+      </div>
+      <div data-reveal="1" data-stagger="1" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">My role</div>
+        <p style="margin:0;font-size:20px;line-height:1.5;color:#E8E2E0;text-wrap:pretty">Owned end-to-end product from research and problem definition to UX design, system thinking, and MVP scope decisions.</p>
+      </div>
+      <div data-reveal="1" data-stagger="2" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">Core constraints</div>
+        <p style="margin:0;font-size:20px;line-height:1.5;color:#E8E2E0;text-wrap:pretty">Camera-based. No wearable. Must feel like a real trainer, not a robot reading a script.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Process" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">02 · Process</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">How the product took shape. Step by step.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ process }}" as="p" hint-placeholder-count="4">
+        <div data-reveal="1" data-stagger="{{ p.k }}" data-lift="1" style="padding:36px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:16px">
+          <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase"><span style="color:#E5483A">{{ p.phase }}</span><span style="color:#6E6664">{{ p.n }}</span></div>
+          <div style="font-size:24px;font-weight:600;letter-spacing:-.02em">{{ p.title }}</div>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:#A8A2A0">{{ p.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Research" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">03 · Research</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Fitness advice is everywhere. <br>Real results aren’t.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px">
+      <div data-reveal="1" data-stagger="0" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">Method · User interviews</div>
+        <div style="font-size:56px;line-height:.9;font-weight:600;letter-spacing:-.05em"><span data-count="4">4</span> <span style="font-size:24px;color:#A8A2A0;letter-spacing:-.01em">participants</span></div>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:#CFC8C6">25–35 years old, mixed fitness levels, quit at least one fitness routine in the last 12 months.</p>
+      </div>
+      <div data-reveal="1" data-stagger="1" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">Method · Competitive audit</div>
+        <div style="font-size:56px;line-height:.9;font-weight:600;letter-spacing:-.05em"><span data-count="16">16</span> <span style="font-size:24px;color:#A8A2A0;letter-spacing:-.01em">fitness apps</span></div>
+        <p style="margin:0;font-size:17px;line-height:1.55;color:#CFC8C6">Evaluated across live coaching, form feedback, personalisation, and retention mechanics.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F">Key quotes</div>
+      <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+        <sc-for list="{{ quotes }}" as="q" hint-placeholder-count="4">
+          <div data-reveal="1" data-stagger="{{ q.k }}" data-lift="1" style="padding:32px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:20px">
+            <p style="margin:0;font-size:20px;line-height:1.4;font-weight:500;text-wrap:pretty">“{{ q.text }}”</p>
+            <div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #1C1B1B; font-size: 15px; line-height: 1.5; color: #E5483A">{{ q.insight }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F">Jobs to be done</div>
+      <div style="display:flex;flex-direction:column;border-top:1px solid #1C1B1B">
+        <sc-for list="{{ jtbd }}" as="j" hint-placeholder-count="4">
+          <div data-reveal="1" data-stagger="{{ j.k }}" style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:24px;padding:24px 0;border-bottom:1px solid #1C1B1B;align-items:baseline"><span style="font-family:'Geist Mono',monospace;font-size:15px;color:#E5483A">{{ j.n }}</span><span style="font-size:22px;line-height:1.45;color:#E8E2E0">{{ j.text }}</span></div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Competitive audit" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">04 · Competitive audit</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Solving parts, not the whole</h2>
+    </div>
+    <div data-reveal="1" style="border:1px solid #1C1B1B;border-radius:28px;background:#070707;overflow:hidden">
+      <div style="display:grid;grid-template-columns:200px repeat(6,minmax(0,1fr)) 130px;gap:12px;padding:20px 28px;border-bottom:1px solid #1C1B1B;font-family:'Geist Mono',monospace;font-size:12px;line-height:1.35;letter-spacing:.06em;text-transform:uppercase;color:#8A817F">
+        <div>Competitor</div><div>Real-time video coaching</div><div>Form correction (AI)</div><div>Live interaction</div><div>Adaptive workouts</div><div>Coach memory</div><div>Real-time feedback</div><div>Personalization</div>
+      </div>
+      <sc-for list="{{ comp }}" as="c" hint-placeholder-count="12">
+        <div style="display:grid;grid-template-columns:200px repeat(6,minmax(0,1fr)) 130px;gap:12px;align-items:center;padding:14px 28px;border-bottom:1px solid #141414;background:{{ c.bg }}">
+          <div style="font-size:16px;font-weight:{{ c.fw }};line-height:1.3">{{ c.name }}</div>
+          <sc-for list="{{ c.cells }}" as="x" hint-placeholder-count="6">
+            <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:#CFC8C6"><span style="width:22px;height:22px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;background:{{ x.bg }};color:{{ x.fg }}">{{ x.sym }}</span><span>{{ x.note }}</span></div>
+          </sc-for>
+          <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:#CFC8C6"><span style="width:10px;height:10px;border-radius:50%;background:{{ c.pc }}"></span>{{ c.p }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Why this matters" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">05 · Why we built</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Why this matters.</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:24px;line-height:1.5;color:#CFC8C6;text-wrap:pretty">Here’s why people keep failing, and what Pitio fixes.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ why }}" as="w" hint-placeholder-count="4">
+        <div data-reveal="1" data-stagger="{{ w.k }}" data-lift="1" style="padding:36px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:16px">
+          <div style="font-size:64px;line-height:.9;font-weight:600;letter-spacing:-.05em;color:#E5483A">{{ w.pre }}<span data-count="{{ w.n }}">{{ w.n }}</span>{{ w.suf }}</div>
+          <div style="font-size:15px;line-height:1.4;color:#A8A2A0;min-height:2.8em">{{ w.stat }}</div>
+          <div style="padding-top:16px;border-top:1px solid #1C1B1B;font-size:20px;font-weight:600;letter-spacing:-.01em">{{ w.title }}</div>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:#A8A2A0">{{ w.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Personas" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">06 · Personas</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Three personas. One common need.</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ personas }}" as="p" hint-placeholder-count="3">
+        <div data-reveal="1" data-stagger="{{ p.k }}" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:24px">
+          <div style="display:flex;align-items:center;gap:16px">
+            <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#E5483A,#8E1F18);display:flex;align-items:center;justify-content:center;font-family:'Geist Mono',monospace;font-size:18px;font-weight:500;color:#FFFFFF">{{ p.ini }}</div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:24px;font-weight:600;letter-spacing:-.02em">{{ p.name }}</div><div style="font-size:15px;color:#A8A2A0">{{ p.role }}</div></div>
+          </div>
+          <p style="margin:0;font-size:19px;line-height:1.45;font-weight:500;text-wrap:pretty">“{{ p.quote }}”</p>
+          <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px">
+            <div style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">Pain points</div><sc-for list="{{ p.pain }}" as="i" hint-placeholder-count="3"><div style="font-size:15px;line-height:1.4;color:#CFC8C6">{{ i }}</div></sc-for></div>
+            <div style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">Motivations</div><sc-for list="{{ p.mot }}" as="i" hint-placeholder-count="3"><div style="font-size:15px;line-height:1.4;color:#CFC8C6">{{ i }}</div></sc-for></div>
+          </div>
+          <div style="margin-top:auto;padding:16px 20px;border-radius:16px;background:#121010;border:1px solid #272323;font-size:16px;line-height:1.45;color:#F5F2F1"><span style="color:#E5483A">Goal: </span>{{ p.goal }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Problem definition" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:80px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">07 · Problem definition</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">What are we actually solving?</h2>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F">Problem statement</div>
+        <p style="margin:0;font-size:32px;line-height:1.3;font-weight:500;letter-spacing:-.02em;text-wrap:pretty">People who want to get fit lack a consistent, intelligent presence that watches them move, remembers their journey, and adapts to who they are.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F">Product principles</div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+        <sc-for list="{{ principles }}" as="p" hint-placeholder-count="3">
+          <div data-reveal="1" data-stagger="{{ p.k }}" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:16px">
+            <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#E5483A">{{ p.n }}</div>
+            <div style="font-size:26px;font-weight:600;letter-spacing:-.02em">{{ p.title }}</div>
+            <p style="margin:0;font-size:16px;line-height:1.55;color:#A8A2A0">{{ p.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F">How might we?</div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+        <sc-for list="{{ hmw }}" as="h" hint-placeholder-count="3">
+          <div data-reveal="1" data-stagger="{{ h.k }}" data-lift="1" style="padding:36px;border-radius:28px;background:linear-gradient(160deg,#1A1111,#0A0A0A 70%);border:1px solid #272323;font-size:22px;line-height:1.4;font-weight:500;text-wrap:pretty">{{ h.text }}</div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Prioritization" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">08 · Prioritization</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">What we built first.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;border-top:1px solid #1C1B1B">
+      <div style="display:grid;grid-template-columns:minmax(0,1.8fr) 150px 100px 100px 100px;gap:24px;padding:18px 0;border-bottom:1px solid #1C1B1B;font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F"><div>Feature</div><div>Priority</div><div>Impact</div><div>Effort</div><div>Phase</div></div>
+      <sc-for list="{{ features }}" as="f" hint-placeholder-count="8">
+        <div data-reveal="1" data-stagger="{{ f.k }}" style="display:grid;grid-template-columns:minmax(0,1.8fr) 150px 100px 100px 100px;gap:24px;align-items:center;padding:20px 0;border-bottom:1px solid #141414">
+          <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:19px;font-weight:600">{{ f.name }}</div><div style="font-size:15px;color:#A8A2A0">{{ f.desc }}</div></div>
+          <div><span style="padding:6px 12px;border-radius:999px;font-size:13px;font-family:'Geist Mono',monospace;background:{{ f.pbg }};color:{{ f.pfg }}">{{ f.pri }}</span></div>
+          <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#CFC8C6">{{ f.imp }}</div>
+          <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#CFC8C6">{{ f.eff }}</div>
+          <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#E5483A">{{ f.phase }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Roadmap" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">09 · Roadmap</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">6 months. Ship it.</h2>
+    </div>
+    <div data-reveal="1" data-lift="1" style="border:1px solid #1C1B1B;border-radius:28px;background:#060606;overflow:hidden;padding:24px"><img src="assets/pitio/roadmap.webp" alt="Six-month roadmap" style="display:block;width:100%"></div>
+  </div>
+</section>
+
+<section data-screen-label="How it works" data-orbs="how" style="border-top:1px solid #141414;position:relative;">
+  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:72px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">10 · How it works</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">The core experience</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px">
+      <sc-for list="{{ steps }}" as="s" hint-placeholder-count="3">
+        <div data-reveal="1" data-stagger="{{ s.k }}" style="display:flex;flex-direction:column;gap:28px;align-items:center">
+          <img data-lift="img" src="{{ s.img }}" alt="{{ s.title }}" style="border-radius:40px;border:1px solid #3A2524;box-shadow:0 30px 70px rgba(0,0,0,.5);width:260px;display:block">
+          <div style="display:flex;flex-direction:column;gap:12px;align-self:stretch">
+            <div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'Geist Mono',monospace;font-size:16px;color:#E5483A">{{ s.n }}</span><span style="font-size:24px;font-weight:600;letter-spacing:-.02em">{{ s.title }}</span></div>
+            <p style="margin:0;font-size:16px;line-height:1.55;color:#A8A2A0;text-wrap:pretty">{{ s.text }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Testing" style="position:relative;z-index:1;border-top:1px solid #141414">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">11 · Testing</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">We tested. We learned.</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:22px;line-height:1.5;color:#CFC8C6;text-wrap:pretty">Key interactions from the first prototype testing.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;border-top:1px solid #1C1B1B">
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(0,1.4fr) minmax(0,1.1fr);gap:32px;padding:18px 0;border-bottom:1px solid #1C1B1B;font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F"><div>Task</div><div>Measured</div><div>Key findings</div><div>Design implications</div></div>
+      <sc-for list="{{ tests }}" as="t" hint-placeholder-count="4">
+        <div data-reveal="1" data-stagger="{{ t.k }}" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(0,1.4fr) minmax(0,1.1fr);gap:32px;padding:28px 0;border-bottom:1px solid #1C1B1B">
+          <div style="font-size: 16px; font-weight: 600; line-height: 1.35">{{ t.task }}</div>
+          <div style="font-size: 16px; line-height: 1.55; color: #A8A2A0">{{ t.measured }}</div>
+          <div style="font-size:16px;line-height:1.55;color:#CFC8C6">{{ t.finding }}</div>
+          <div style="font-size:16px;line-height:1.55;color:#CFC8C6">{{ t.impl }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Closing" data-orbs="close" style="border-top:1px solid #141414;position:relative;">
+  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:160px 140px 120px;display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center">
+    <h2 data-reveal="1" style="margin:0;font-size:80px;line-height:1;font-weight:600;letter-spacing:-.035em">Thank you.</h2>
+    
+  </div>
+</section>
+
+<footer style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
+    <div style="max-width:1600px;margin:0 auto;padding:32px 140px;display:flex;justify-content:space-between;gap:24px;font-size:15px;color:#6E6A85">
+      <span>© Melis Kılıç</span>
+      <div style="display:flex;gap:28px"><a href="Portfolio v5.dc.html#work" style="color:#6E6A85" style-hover="color:#FFFFFF">Work</a><a href="Portfolio v5.dc.html#about" style="color:#6E6A85" style-hover="color:#FFFFFF">About</a><a href="Portfolio v5.dc.html#faq" style="color:#6E6A85" style-hover="color:#FFFFFF">FAQ</a><a href="Portfolio v5.dc.html#contact" style="color:#6E6A85" style-hover="color:#FFFFFF">Contact</a></div>
+    </div>
+  </footer>
+
+</div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  fit = () => {
+    const el = document.querySelector('[data-pitio-root]'); if (!el) return;
+    const w = document.documentElement.clientWidth, S = 1.34;
+    const z = (w / S) < 1280 ? w / 1280 : S;
+    el.style.width = (w / z) + 'px';
+    el.style.zoom = String(z);
+    const h = el.querySelector('[data-screen-label="Hero"]');
+    if (h) h.style.minHeight = (window.innerHeight / z) + 'px';
+  };
+  trail = () => {
+    if ((this.props.cursorTrail || 'meteor') === 'off') return;
+    if (this._trail || (window.matchMedia && matchMedia('(pointer: coarse), (prefers-reduced-motion: reduce)').matches)) return;
+    const cv = document.createElement('canvas'); cv.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:70;mix-blend-mode:screen';
+    document.body.appendChild(cv); const x = cv.getContext('2d'); let W = 0, H = 0, dpr = 1;
+    const size = () => { dpr = Math.min(2, window.devicePixelRatio || 1); W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; x.setTransform(dpr, 0, 0, dpr, 0, 0); };
+    size(); window.addEventListener('resize', size);
+    const C = ['229,72,58', '255,138,122', '255,255,255', '255,190,170'];
+    const P = [], pts = []; let mx = -100, my = -100, lx = -100, ly = -100, raf = 0, last = 0;
+    const mode = () => this.props.cursorTrail || 'meteor';
+    const onMove = (e) => { mx = e.clientX; my = e.clientY; const now = performance.now(); const dx = mx - lx, dy = my - ly, sp = Math.min(40, Math.hypot(dx, dy)); const m = mode(); if (m === 'off') return;
+      if (m === 'meteor') pts.push({ x: mx, y: my, t: now });
+      const n = m === 'stardust' ? Math.ceil(sp / 6) + 1 : m === 'meteor' ? (sp > 4 ? 1 : 0) : (now - last > 16 ? 1 : 0);
+      for (let i = 0; i < n; i++) { const a = Math.random() * Math.PI * 2, v = m === 'stardust' ? .4 + Math.random() * 1.6 : .2 + Math.random() * .5;
+        P.push({ x: mx - dx * Math.random() * .6, y: my - dy * Math.random() * .6, vx: Math.cos(a) * v - dx * .02, vy: Math.sin(a) * v - dy * .02 + (m === 'stardust' ? .25 : 0), life: 1, d: m === 'stardust' ? .012 + Math.random() * .02 : .025, r: m === 'stardust' ? .8 + Math.random() * 2.2 : 1.5 + Math.random() * 2, c: C[Math.random() * C.length | 0], star: m === 'stardust' && Math.random() < .35 }); }
+      last = now; lx = mx; ly = my; if (!raf) raf = requestAnimationFrame(tick); };
+    const star = (px, py, r) => { x.beginPath(); for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2; x.moveTo(px, py); x.lineTo(px + Math.cos(a) * r * 2.6, py + Math.sin(a) * r * 2.6); } x.stroke(); };
+    const tick = () => { x.clearRect(0, 0, W, H); const now = performance.now();
+      while (pts.length && now - pts[0].t > 260) pts.shift();
+      if (pts.length > 1) { for (let i = 1; i < pts.length; i++) { const k = 1 - (now - pts[i].t) / 260; x.strokeStyle = 'rgba(255,138,122,' + (k * .85) + ')'; x.lineWidth = k * 5; x.lineCap = 'round'; x.shadowColor = 'rgba(229,72,58,.9)'; x.shadowBlur = 14 * k; x.beginPath(); x.moveTo(pts[i - 1].x, pts[i - 1].y); x.lineTo(pts[i].x, pts[i].y); x.stroke(); } x.shadowBlur = 0; }
+      for (let i = P.length - 1; i >= 0; i--) { const p = P[i]; p.x += p.vx; p.y += p.vy; p.vx *= .96; p.vy *= .96; p.life -= p.d; if (p.life <= 0) { P.splice(i, 1); continue; }
+        const al = p.life * p.life; x.fillStyle = 'rgba(' + p.c + ',' + al + ')'; x.shadowColor = 'rgba(' + p.c + ',' + al + ')'; x.shadowBlur = 8;
+        if (p.star) { x.strokeStyle = x.fillStyle; x.lineWidth = .8; star(p.x, p.y, p.r * p.life); } x.beginPath(); x.arc(p.x, p.y, p.r * (.4 + p.life * .6), 0, Math.PI * 2); x.fill(); }
+      x.shadowBlur = 0;
+      raf = (P.length || pts.length) ? requestAnimationFrame(tick) : 0; };
+    window.addEventListener('mousemove', onMove, { passive: true });
+    this._trail = () => { window.removeEventListener('mousemove', onMove); window.removeEventListener('resize', size); cancelAnimationFrame(raf); cv.remove(); };
+  };
+  componentDidMount() { if (!window.__imgHide) { window.__imgHide = 1; document.addEventListener('error', (e) => { const t = e.target; if (t && t.tagName === 'IMG') { t.style.visibility = 'hidden'; } }, true); } this.trail(); this.fit(); window.addEventListener('resize', this.fit); setTimeout(this.fx, 80); }
+  componentWillUnmount() { if (this._trail) this._trail(); window.removeEventListener('resize', this.fit); if (this.io) this.io.disconnect(); }
+  fx = () => {
+    const root = document.querySelector('[data-pitio-root]'); if (!root || !root.animate || this.fxDone) return; this.fxDone = true;
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const E = 'cubic-bezier(.22,1,.36,1)';
+    const drift = (a, b, s) => [{ transform: 'translate(0,0) scale(1)' }, { transform: 'translate(' + a + 'px,' + b + 'px) scale(' + s + ')' }, { transform: 'translate(' + (-b) + 'px,' + a / 2 + 'px) scale(.92)' }];
+    const orb = (parent, c, size, x, y, dur, path) => {
+      const o = document.createElement('div');
+      o.style.cssText = 'position:absolute;left:' + x + ';top:' + y + ';width:' + size + 'px;height:' + size + 'px;margin:-' + size / 2 + 'px 0 0 -' + size / 2 + 'px;border-radius:50%;background:radial-gradient(circle,' + c + ',rgba(0,0,0,0) 65%);filter:blur(40px);mix-blend-mode:screen;pointer-events:none;z-index:0';
+      parent.prepend(o);
+      o.animate(path, { duration: dur, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
+      o.animate([{ scale: '.82', opacity: .75 }, { scale: '1.22', opacity: 1 }], { duration: Math.round(dur * .5), iterations: Infinity, direction: 'alternate', easing: 'ease-in-out', delay: -Math.round(Math.random() * dur) });
+    };
+    const sec = (k) => root.querySelector('[data-orbs="' + k + '"]');
+    if (sec('hero')) {
+      orb(sec('hero'), 'rgba(229,72,58,0.11)', 860, '72%', '45%', 15000, drift(-110, 70, 1.12));
+      orb(sec('hero'), 'rgba(160,30,24,0.12)', 640, '90%', '85%', 17000, drift(-120, -80, 1.15));
+      orb(sec('hero'), 'rgba(229,72,58,0.05)', 560, '10%', '15%', 16000, drift(90, 110, 1.1));
+    }
+    if (sec('how')) {
+      orb(sec('how'), 'rgba(229,72,58,.12)', 820, '20%', '60%', 16000, drift(120, -60, 1.12));
+      orb(sec('how'), 'rgba(160,30,24,.16)', 760, '82%', '40%', 18000, drift(-100, 80, 1.15));
+    }
+    if (sec('close')) {
+      orb(sec('close'), 'rgba(229,72,58,.18)', 460, '40%', '45%', 15000, drift(160, 40, 1.15));
+      orb(sec('close'), 'rgba(160,30,24,.2)', 400, '62%', '45%', 17000, drift(-140, -50, 1.2));
+    }
+    const count = (el) => {
+      const n = parseFloat(el.dataset.count); if (!n) return;
+      const t0 = performance.now(), dur = 1300;
+      const step = (t) => { const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3); el.textContent = String(Math.round(n * e)); if (p < 1) requestAnimationFrame(step); };
+      el.textContent = '0'; requestAnimationFrame(step);
+    };
+    const play = (el) => {
+      const d = (+(el.dataset.stagger || 0)) * 90;
+      el.style.opacity = '';
+      el.animate([{ opacity: 0, transform: 'translateY(40px)', filter: 'blur(6px)' }, { opacity: 1, transform: 'translateY(0)', filter: 'blur(0)' }], { duration: 900, delay: d, easing: E, fill: 'backwards' });
+      el.querySelectorAll('[data-count]').forEach(c => setTimeout(() => count(c), d + 200));
+    };
+    const vh = window.innerHeight;
+    this.io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { this.io.unobserve(e.target); play(e.target); } }), { threshold: 0, rootMargin: '0px 0px -10% 0px' });
+    root.querySelectorAll('[data-reveal]').forEach(el => {
+      if (el.getBoundingClientRect().top < vh * 0.9) { play(el); return; }
+      el.style.opacity = '0';
+      this.io.observe(el);
+    });
+    root.querySelectorAll('[data-lift]').forEach(el => {
+      const img = el.dataset.lift === 'img';
+      el.style.transition = 'transform .45s ' + E + ',box-shadow .45s ' + E + ',filter .45s ' + E + ',border-color .3s';
+      const base = el.style.boxShadow, bc = el.style.borderColor, bf = el.style.filter, bt = el.style.transform;
+      el.addEventListener('mouseenter', () => {
+        el.style.transform = 'translateY(-4px)' + (bt ? ' ' + bt : '');
+        if (img) el.style.filter = 'drop-shadow(0 24px 40px rgba(229,72,58,.18))';
+        else { el.style.boxShadow = (base ? base + ',' : '') + '0 24px 60px rgba(229,72,58,.10)'; if (bc) el.style.borderColor = '#4A2C2A'; }
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = bt; el.style.boxShadow = base; el.style.borderColor = bc; el.style.filter = bf; });
+    });
+  };
+  renderVals() {
+    const k = (arr) => arr.map((x, i) => ({ ...x, k: i }));
+    const M = { y: { sym: '✓', bg: 'rgba(91,211,138,.16)', fg: '#5BD38A' }, p: { sym: '!', bg: 'rgba(242,184,75,.16)', fg: '#F2B84B' }, n: { sym: '✕', bg: 'rgba(229,72,58,.08)', fg: '#E5483A' } };
+    const PC = { High: '#5BD38A', Medium: '#F2B84B', Low: '#E5483A' };
+    const cell = (s) => { const [c, note] = s.split(':'); return { ...M[c], note: note || '' }; };
+    const comp = [
+      ['Pitio', 'y y y y y y', 'High'], ['Future Pro', 'n n p:Async p:Human p n', 'High'], ['Tempo / Mirror', 'p:Device y n p n p', 'Medium'], ['Kemtai', 'p y n n n p', 'Medium'], ['SHRED', 'n p n p n p', 'Medium'], ['Ray AI', 'n n n n n p', 'Low'], ['Forge', 'n n y:Chat p n n', 'Medium'], ['FlexIt', 'n n p n n n', 'Low'], ['Caliber (Premium)', 'n n p p p n', 'Medium'], ['Fitbod / Freeletics / Evolve / Bodbot', 'n n n y p n', 'Medium'], ['Nike Training Club / Peloton', 'n n n n n n', 'Low'], ['Strava', 'n n n n n n', 'Low']
+    ].map(([name, cells, p], i) => ({ name, p, pc: PC[p], cells: cells.split(' ').map(cell), bg: i === 0 ? 'rgba(229,72,58,.05)' : 'transparent', fw: i === 0 ? 700 : 500 }));
+    const PRI = { 'Must have': ['rgba(229,72,58,.18)', '#E5483A'], 'Should have': ['rgba(242,184,75,.14)', '#F2B84B'], 'Could have': ['rgba(255,255,255,.06)', '#A8A2A0'] };
+    return {
+      process: k([
+        { phase: 'Discovery', n: '01', title: 'Research & problem', text: 'User interviews, competitive audit, insight synthesis, Jobs-to-be-done mapping.' },
+        { phase: 'Define', n: '02', title: 'Strategy & scope', text: 'Personas, problem statements, product principles, PRD, roadmap prioritisation.' },
+        { phase: 'Design', n: '03', title: 'UX & UI design', text: 'IA, user flows, wireframes, high-fidelity UI, design system, prototype.' },
+        { phase: 'Deliver', n: '04', title: 'Test & validation', text: 'TestFlight launch, usability testing, metric analysis.' }
+      ]),
+      quotes: k([
+        { text: 'I know what to do. I just don’t do it.', insight: 'Core insight: accountability gap.' },
+        { text: 'It tracks everything, but I don’t know what to do with it.', insight: 'Core insight: apps never learn who they are.' },
+        { text: 'If I skip a few days, I fall out of the routine.', insight: 'Core insight: motivation drops fast after a break.' },
+        { text: 'I know a personal trainer would help, but I just can’t afford it.', insight: 'Core insight: price is a barrier, not preference.' }
+      ]),
+      jtbd: k(['When I train alone, I want someone to notice and correct me so I don’t waste effort or get injured.', 'When motivation drops, I want something that reminds me of my progress so I feel it matters to keep going.', 'When I miss a week, I want to return without shame.', 'When I hit a goal, I want something physical to prove it.'].map((text, i) => ({ text, n: String(i + 1).padStart(2, '0') }))),
+      comp,
+      why: k([
+        { pre: '', n: 78, suf: '%', stat: 'of gym-goers quit within 3 months', title: 'Motivation fades quickly', text: 'Gym-goers often lose consistency over time and eventually give up without continuous support.' },
+        { pre: '', n: 58, suf: '%', stat: 'injuries from poor form\n\n\n\n', title: 'No real-time guidance', text: 'Incorrect form leads to poor results and increases the risk of injury over time.' },
+        { pre: '$', n: 200, suf: '', stat: 'average cost per session', title: 'Coaching is expensive', text: 'Personal trainers are unaffordable for most people.' },
+        { pre: '', n: 80, suf: '%', stat: 'quit fitness apps in weeks', title: 'Fitness apps don’t adapt', text: 'No memory, no personalization, no evolution.' }
+      ]),
+      personas: k([
+        { ini: 'AK', name: 'Alex, 27', role: 'Software Engineer', quote: 'I train 4 times a week but I have no idea if I’m doing it right. My form is probably terrible.', pain: ['No feedback on form', 'No corrections', 'Can’t afford PT'], mot: ['Wants to stay injury-free', 'See actual progress', 'No wasted sessions'], goal: 'Train correctly, without a PT’s price tag.' },
+        { ini: 'SM', name: 'Sara, 34', role: 'Marketing Manager', quote: 'I start strong every January. By March I’ve quit again. I just need someone who won’t let me give up.', pain: ['Repeated quit cycle', 'No one follows up', 'Feels like she’s starting from zero'], mot: ['Wants consistency', 'Warm encouragement', 'Not pressure'], goal: 'Build a habit that finally sticks.' },
+        { ini: 'MJ', name: 'Marcus, 42', role: 'Director', quote: 'I used to have a PT. Best shape of my life. But $300 a week isn’t sustainable.', pain: ['Dropped PT due to cost', 'Existing apps feel like a downgrade', 'Needs something location independent'], mot: ['Wants premium quality', 'Needs flexibility', 'Trains anywhere, any time'], goal: 'The PT experience, no cost barrier.' }
+      ]),
+      principles: k([
+        { n: '01', title: 'Presence over content', text: 'Pitio should feel like someone is in the room with you, not a library you browse. Every interaction is live, reactive, and personal.' },
+        { n: '02', title: 'Memory is the moat', text: 'Every session must leave the user feeling known. The system accumulates context, habits, patterns, progress, and acts on it.' },
+        { n: '03', title: 'Warmth, not efficiency', text: 'The AI should sound like a coach who cares, not a robot completing a task. Tone, timing, and empathy are features.' }
+      ]),
+      hmw: k(['…make expert coaching feel personal and present without requiring a human PT?', '…build a system that remembers who the user is across every session?', '…make digital progress feel real, something tangible, not just a notification?'].map(text => ({ text }))),
+      features: k([
+        ['Live AI video call session', 'Real-time video coaching with visible AI trainer', 'Must have', 'High', 'High', 'MVP'],
+        ['Voice coaching cues', 'Mid-rep corrections and encouragement', 'Must have', 'High', 'High', 'MVP'],
+        ['Habit memory layer', 'The AI learns patterns, tendencies, progress', 'Must have', 'High', 'High', 'MVP'],
+        ['Post-session feedback', 'Summary of form trends and next session focus', 'Should have', 'High', 'Med', 'Beta'],
+        ['Shareable reels', 'Auto-generated highlight clip of session', 'Should have', 'High', 'Low', 'Beta'],
+        ['AI Trainer customization', 'Name, appearance, and voice personalisation', 'Should have', 'Med', 'Low', 'V1.1'],
+        ['Coach personality presets', 'Drill sergeant, supportive, or silent—across all workouts', 'Could have', 'Med', 'Med', 'V1.1'],
+        ['Milestone cards', 'Shareable achievement cards', 'Could have', 'Med', 'Med', 'V2.1']
+      ].map(([name, desc, pri, imp, eff, phase]) => ({ name, desc, pri, imp, eff, phase, pbg: PRI[pri][0], pfg: PRI[pri][1] }))),
+      steps: k([
+        { n: '01', img: 'assets/pitio/choose-trainer-bare.webp', title: 'Pick your coach', text: 'Pick from AI coaches with different personalities, styles, and specialities across all workouts. Your coach matches the way you think and move.' },
+        { n: '02', img: 'assets/pitio/live-session-bare.webp', title: 'Train in real-time', text: 'The AI coach leads every session live. It watches you, speaks to you, and corrects you in real time like someone actually training with you.' },
+        { n: '03', img: 'assets/pitio/home-bare.webp', title: 'Build real progress', text: 'After every session, your coach surfaces a personalised insight. Your upcoming plan adapts based on what the coach observed.' }
+      ]),
+      tests: k([
+        { task: 'Choose a trainer based\non personality', measured: 'Decision time, hesitation', finding: 'Trainer selection drove emotional engagement, particularly through voice, but this feature was sometimes overlooked.', impl: 'Increase speaker visibility.' },
+        { task: 'Start a live workout session from Home', measured: 'Time to start session, CTA interaction rate', finding: 'Home screen was clear and action-driven. “Start Live Session” CTA was immediately understood.', impl: 'No major changes needed.' },
+        { task: 'Follow the squat exercise during live session', measured: 'Voice cue response, perceived clarity', finding: 'Live session was intuitive and engaging, but frequent voice cues caused overload. Stats panel occluded video, reducing visibility.', impl: 'Add cue budget — max urgency weighted. Switch to glassmorphism to preserve visibility.' },
+        { task: 'End session and interpret results', measured: 'Session completion rate, user satisfaction', finding: 'End session CTA was clear, but lacked emotional closure. Users expected a stronger summary after finishing.', impl: 'Prioritize a richer post-session summary.' }
+      ])
+    };
+  }
+}
+</script>
+</body>
+</html>

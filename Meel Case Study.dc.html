@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#070A12;color:#EEF3FF;font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+::selection{background:#2F7BFF;color:#fff}
+a{color:#7FB4FF;text-decoration:none}
+a:hover{color:#FFFFFF}
+@keyframes pfShim{0%{background-position:150% 0}100%{background-position:-50% 0}}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&amp;display=swap" rel="stylesheet">
+</helmet>
+<div style="background:#070A12"><div data-meel-root="1" style="position:relative;width:1280px;background:#070A12;overflow:hidden;color:#EEF3FF">
+<a data-site-back="1" href="Portfolio v5.dc.html#work" aria-label="Back to all work" style="position:fixed;left:32px;top:22px;z-index:60;box-sizing:border-box;height:60px;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;justify-content:center;width:60px;padding:0;border-radius:999px;border:1px solid rgba(127,180,255,.18);background:rgba(8,12,22,.7);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif;font-size:16px;font-weight:500;color:#EEF3FF;transition:background .25s,transform .4s cubic-bezier(.22,1,.36,1)" style-hover="background:rgba(127,180,255,.1);transform:translateX(-3px);color:#FFFFFF"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EEF3FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg></a>
+<header data-site-nav="1" style="position:fixed;left:50%;top:22px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:32px;padding:8px;border-radius:999px;border:1px solid rgba(127,180,255,.18);background:rgba(8,12,22,.7);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif">
+  <div style="display:flex;align-items:center;gap:12px">
+    <a href="Portfolio v5.dc.html" style="display:flex;align-items:center;gap:12px;padding-right:8px;color:#EEF3FF">
+      <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid #23365E;flex:0 0 40px"><img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
+      <span style="font-size:17px;font-weight:600;letter-spacing:-.01em">Melis K.</span>
+    </a>
+  </div>
+  <nav style="display:flex;align-items:center;gap:4px;font-size:16px;font-weight:500">
+    <a href="Portfolio v5.dc.html#work" style="padding:10px 14px;border-radius:999px;color:#EEF3FF;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">Work</a>
+    <a href="Portfolio v5.dc.html#about" style="padding:10px 14px;border-radius:999px;color:#9AA6BF;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">About</a>
+    <a href="Portfolio v5.dc.html#faq" style="padding:10px 14px;border-radius:999px;color:#9AA6BF;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">FAQ</a>
+    <a href="Portfolio v5.dc.html#contact" style="margin-left:8px;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,#2F7BFF,#1FB6E8);color:#FFFFFF;font-weight:600;box-shadow:0 6px 18px rgba(47,123,255,.4),inset 0 1px 0 rgba(255,255,255,.25);transition:filter .3s" style-hover="filter:brightness(1.12);color:#FFFFFF">Contact</a>
+  </nav>
+</header>
+
+
+<section data-screen-label="Hero" data-orbs="hero" style="position:relative;min-height:100vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px;align-items:center;padding:80px 140px">
+  <div data-reveal="1" style="position:relative;z-index:1;display:flex;flex-direction:column;gap:28px">
+    <img src="assets/meel/logo-blue2.webp" alt="Meel" style="width:300px;margin:-60px 0 -70px -50px;display:block">
+    <h1 style="margin:0;font-size:72px;line-height:1;font-weight:600;letter-spacing:-.045em">Smart Wellness Platform</h1>
+    <div style="display:flex;gap:48px;padding-top:24px;border-top:1px solid #1C2638">
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#8794AE">Role</div><div style="font-size:20px">PM &amp; PD</div></div>
+      <div style="display:flex;flex-direction:column;gap:8px"><div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#8794AE">Platforms</div><div style="font-size:20px">iOS, Android, Web</div></div>
+    </div>
+  </div>
+  <div data-reveal="1" style="position:relative;z-index:1;height:560px">
+    <img data-lift="img" src="assets/meel/agenda-bare.webp" alt="Daily agenda" style="position:absolute;left:30px;top:70px;width:220px;border-radius:40px;border:1px solid #22304A;transform:rotate(-7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+    <img data-lift="img" src="assets/meel/social-bare.webp" alt="Social feed" style="position:absolute;right:20px;top:70px;width:220px;border-radius:40px;border:1px solid #22304A;transform:rotate(7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+    <img data-lift="img" src="assets/meel/chat-ainy-bare.webp" alt="Chat with Ainy" style="position:absolute;left:50%;top:0;margin-left:-125px;width:250px;border-radius:44px;border:1px solid #23365E;box-shadow:0 40px 120px rgba(47,123,255,.35),0 30px 60px rgba(0,0,0,.6)">
+  </div>
+</section>
+
+<section data-screen-label="Overview" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px">
+    <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">01 · Overview</div>
+    <p data-reveal="1" style="margin:0;font-size:36px;line-height:1.3;font-weight:500;letter-spacing:-.02em;text-wrap:pretty">Meel is a next-gen wellness platform that brings planning, AI guidance, personalization, and social support into one adaptive experience, helping people build healthier habits that last.</p>
+  </div>
+</section>
+
+<section data-screen-label="Problem" style="position:relative;z-index:1;border-top:1px solid #161E2C;overflow:hidden">
+  <canvas data-globe="1" width="840" height="840" style="position:absolute;left:-181px;top:163px;width:420px;height:420px;opacity:.6;pointer-events:none"></canvas>
+  <div style="position:relative;max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:72px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">02 · The problem</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">What’s the problem?</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:24px;line-height:1.5;color:#C2CCE0;max-width:820px;text-wrap:pretty">Wellness apps, tips, and tools are everywhere, yet people still struggle to stay consistent. What’s missing?</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
+        <div data-reveal="1" data-stagger="{{ s.k }}" data-lift="1" style="padding:40px;border:1px solid #1C2638;border-radius:28px;background:rgba(14,19,31,.85);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:20px">
+          <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">{{ s.tag }}</div>
+          <div style="font-size:64px;line-height:.9;font-weight:600;letter-spacing:-.05em;white-space:nowrap">{{ s.pre }}<span data-count="{{ s.n }}" data-dec="{{ s.dec }}">{{ s.n }}</span>{{ s.suf }}</div>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:#9AA6BF">{{ s.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Approach" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">03 · Approach</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">How I build products</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:24px;line-height:1.5;color:#C2CCE0;max-width:820px;text-wrap:pretty">Three complementary frameworks, each covering a different part of the journey.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+      <div data-reveal="1" data-stagger="0" data-lift="1" style="padding:36px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:16px">
+          <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#7FB4FF">01</div>
+          <div style="font-size:28px;font-weight:600;letter-spacing:-.02em">Design Thinking</div>
+          <p style="margin:0;font-size:17px;line-height:1.55;color:#9AA6BF;text-wrap:pretty">Finding the right problem by starting from people’s real needs, behaviors, and pain points.</p>
+        </div>
+      <div data-reveal="1" data-stagger="1" data-lift="1" style="padding:36px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:16px">
+          <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#7FB4FF">02</div>
+          <div style="font-size:28px;font-weight:600;letter-spacing:-.02em">Agile</div>
+          <p style="margin:0;font-size:17px;line-height:1.55;color:#9AA6BF;text-wrap:pretty">Moving fast in short iterations, shipping, testing, and improving continuously.</p>
+        </div>
+      <div data-reveal="1" data-stagger="2" data-lift="1" style="padding:36px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:16px">
+          <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#7FB4FF">03</div>
+          <div style="font-size:28px;font-weight:600;letter-spacing:-.02em">Lean</div>
+          <p style="margin:0;font-size:17px;line-height:1.55;color:#9AA6BF;text-wrap:pretty">Reducing waste by validating ideas early and growing through what we learn.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Interviews" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:end">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">04 · User interviews</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">What we heard from users</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:22px;line-height:1.5;color:#C2CCE0;text-wrap:pretty">To understand real-world struggles, I interviewed 8 individuals from our target audience. Clear patterns emerged across their experiences.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ interviews }}" as="q" hint-placeholder-count="3">
+        <div data-reveal="1" data-stagger="{{ q.k }}" data-lift="1" style="border:1px solid #1C2638;border-radius:28px;background:linear-gradient(180deg,#111827,#0E131F);overflow:hidden;display:flex;flex-direction:column">
+          <img data-src="{{ q.img }}" alt="Interview participant" style="display:block;width:100%;height:240px;object-fit:cover">
+          <div style="flex:1;display:flex;flex-direction:column;gap:28px;padding:32px 32px 36px">
+            <p style="margin:0;font-size:22px;line-height:1.45;font-weight:500;letter-spacing:-.01em;text-wrap:pretty">“{{ q.text }}”</p>
+            <div style="margin-top:auto;display:flex;gap:16px;align-items:flex-start">
+              <span style="flex:0 0 44px;width:44px;height:44px;border-radius:50%;background:#16223A;border:1px solid #23365E;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7FB4FF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="{{ q.icon }}"></path></svg></span>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">{{ q.theme }}</div>
+                <div style="font-size:15px;line-height:1.5;color:#9AA6BF">{{ q.insight }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Survey" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">05 · Survey</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Survey results</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:24px;line-height:1.5;color:#C2CCE0;max-width:820px;text-wrap:pretty">I surveyed 56 people to validate the patterns and quantify the insights.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ surveyStats }}" as="s" hint-placeholder-count="4">
+        <div data-reveal="1" data-stagger="{{ s.k }}" data-lift="1" style="padding:36px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:16px">
+          <div style="font-size:56px;line-height:.9;font-weight:600;letter-spacing:-.05em;white-space:nowrap"><span data-count="{{ s.n }}">{{ s.n }}</span>{{ s.suf }}</div>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:#9AA6BF">{{ s.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ surveyLists }}" as="l" hint-placeholder-count="2">
+        <div data-reveal="1" data-stagger="{{ l.k }}" data-lift="1" style="padding:40px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:24px">
+          <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">{{ l.title }}</div>
+          <sc-for list="{{ l.items }}" as="it" hint-placeholder-count="5">
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <div style="display:flex;justify-content:space-between;gap:16px;font-size:17px"><span style="color:#E0E7F5">{{ it.label }}</span><span style="font-family:'Geist Mono',monospace;color:#7FB4FF"><span data-count="{{ it.v }}">{{ it.v }}</span>%</span></div>
+              <div style="height:8px;border-radius:999px;background:#161E2C;overflow:hidden"><div data-bar="1" style="height:100%;width:{{ it.w }};border-radius:999px;background:linear-gradient(90deg,#2F7BFF,#1FB6E8)"></div></div>
+            </div>
+          </sc-for>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Expert interview" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:64px;align-items:center">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:28px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">06 · Expert interview</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em;text-wrap:balance">“Starting is easy. Staying consistent is the real challenge.”</h2>
+      <p style="margin:0;font-size:20px;line-height:1.55;color:#9AA6BF;text-wrap:pretty">I consulted with a licensed dietitian to gain a professional perspective on behavior change, long-term challenges, and gaps in existing nutrition tools.</p>
+    </div>
+    <div data-reveal="1" data-lift="1" style="position:relative;aspect-ratio:780/546;border:1px solid #1C2638;border-radius:28px;overflow:hidden;background:radial-gradient(70% 80% at 60% 35%,rgba(47,123,255,.22),rgba(47,123,255,0) 70%),linear-gradient(180deg,#111827,#0B101A)">
+      <img src="assets/meel/dietitian-room3.webp" alt="Interview with a licensed dietitian" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Competitors" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:start">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">07 · Competitive analysis</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Cutting through <br>the noise</h2>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:14px">
+        <p style="margin:0;font-size:20px;line-height:1.5;color:#C2CCE0;text-wrap:pretty">The wellness space is crowded, with hundreds of apps solving similar problems. To focus the opportunity, I mapped key competitors and reviewed what works, what doesn’t, and where gaps remain.</p>
+        
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:24px;align-items:stretch">
+      <div data-reveal="1" style="position:relative;border:1px solid #1C2638;border-radius:28px;background:linear-gradient(180deg,#111827,#0B101A);padding:32px;display:flex;flex-direction:column;gap:6px">
+        <div style="font-size:20px;font-weight:600">Perceptual map</div>
+        <div style="font-size:15px;color:#8794AE">How the top competitors compare</div>
+        <div style="position:relative;flex:1;min-height:440px;margin-top:20px">
+          <div style="position:absolute;left:50%;top:44px;bottom:44px;border-left:1px dashed #2A3A58"></div>
+          <div style="position:absolute;top:50%;left:76px;right:76px;border-top:1px dashed #2A3A58"></div>
+          <div style="position:absolute;left:50%;top:0;transform:translateX(-50%);font-size:14px;line-height:1.35;color:#9AA6BF;text-align:center"><span style="color:#7FB4FF;font-weight:500">Adaptive</span><br>AI-driven</div>
+          <div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);font-size:14px;line-height:1.35;color:#9AA6BF;text-align:center"><span style="color:#7FB4FF;font-weight:500">Manual</span><br>User-driven</div>
+          <div style="position:absolute;left:0;top:50%;transform:translateY(-50%);font-size:14px;line-height:1.35;color:#9AA6BF;text-align:center"><span style="color:#7FB4FF;font-weight:500">Generic</span><br>One-size</div>
+          <div style="position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:14px;line-height:1.35;color:#9AA6BF;text-align:center"><span style="color:#7FB4FF;font-weight:500">Personal</span><br>Tailored</div>
+          <div style="position:absolute;left:20%;top:22%;display:flex;align-items:center;gap:10px"><span style="width:14px;height:14px;border-radius:50%;background:#6EE7A8;box-shadow:0 0 18px #6EE7A8"></span><span style="padding:5px 12px;border-radius:999px;border:1px solid #23365E;background:#0E131F;font-size:14px;font-weight:500;color:#EEF3FF">Simple</span></div><div style="position:absolute;left:60%;top:30%;display:flex;align-items:center;gap:10px"><span style="width:14px;height:14px;border-radius:50%;background:#E58CFF;box-shadow:0 0 18px #E58CFF"></span><span style="padding:5px 12px;border-radius:999px;border:1px solid #23365E;background:#0E131F;font-size:14px;font-weight:500;color:#EEF3FF">Lifesum</span></div><div style="position:absolute;left:14%;top:68%;display:flex;align-items:center;gap:10px"><span style="width:14px;height:14px;border-radius:50%;background:#7FB4FF;box-shadow:0 0 18px #7FB4FF"></span><span style="padding:5px 12px;border-radius:999px;border:1px solid #23365E;background:#0E131F;font-size:14px;font-weight:500;color:#EEF3FF">MyFitnessPal</span></div><div style="position:absolute;left:62%;top:66%;display:flex;align-items:center;gap:10px"><span style="width:14px;height:14px;border-radius:50%;background:#FFB070;box-shadow:0 0 18px #FFB070"></span><span style="padding:5px 12px;border-radius:999px;border:1px solid #23365E;background:#0E131F;font-size:14px;font-weight:500;color:#EEF3FF">Yazio</span></div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px">
+        <sc-for list="{{ competitors }}" as="c" hint-placeholder-count="4">
+          <div data-reveal="1" data-stagger="{{ c.k }}" data-lift="1" style="padding:28px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:20px">
+            <div style="display:flex;align-items:center;gap:14px;padding-bottom:18px;border-bottom:1px solid #1C2638">
+              <span style="flex:0 0 48px;width:48px;height:48px;border-radius:14px;background:{{ c.bg }};display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:#FFFFFF">{{ c.ini }}</span>
+              <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:20px;font-weight:600;letter-spacing:-.01em">{{ c.name }}</div><div style="font-size:14px;color:#8794AE">{{ c.role }}</div></div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div style="font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">What works</div>
+              <sc-for list="{{ c.good }}" as="g" hint-placeholder-count="3"><div style="display:flex;gap:10px;font-size:15px;line-height:1.4;color:#E0E7F5"><span style="color:#7FB4FF">✓</span>{{ g }}</div></sc-for>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px">
+              <div style="font-family:'Geist Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#FF8FA6">What’s missing</div>
+              <sc-for list="{{ c.bad }}" as="b" hint-placeholder-count="3"><div style="display:flex;gap:10px;font-size:15px;line-height:1.4;color:#9AA6BF"><span style="color:#FF8FA6">–</span>{{ b }}</div></sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Problem definition" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px;max-width:900px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">08 · Problem definition</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em;text-wrap:balance">The problem arises from a lack of key elements</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="3">
+        <div data-reveal="1" data-stagger="{{ p.k }}" data-lift="1" style="position: relative; overflow: hidden; padding: 36px 40px 40px; border: 1px solid #1C2638; border-radius: 28px; background: linear-gradient(180deg,#0F1524,#0B0F18); display: flex; flex-direction: column; gap: 20px">
+          <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#7FB4FF">{{ p.n }}</div>
+          <div style="position:relative;height:150px;margin:-12px 0 4px">
+            <div style="position:absolute;left:50%;top:50%;width:220px;height:220px;margin:-110px 0 0 -110px;border-radius:50%;background:radial-gradient(circle,rgba(47,123,255,.2),rgba(47,123,255,0) 65%);pointer-events:none"></div>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><sc-if value="{{ p.icon }}" hint-placeholder-val="{{ false }}"><img data-pd-float="{{ p.k }}" data-src="{{ p.icon }}" alt="" style="display:block;height:130px;width:auto;filter:drop-shadow(0 0 14px rgba(47,123,255,.3))"></sc-if></div>
+          </div>
+          <div style="font-size: 28px; line-height: 1.2; font-weight: 600; letter-spacing: -.02em; white-space: pre-line">{{ p.title }}</div>
+          <div style="display:flex;flex-direction:column;gap:16px;padding-top:26px;border-top:1px solid #1C2638">
+            <sc-for list="{{ p.items }}" as="i" hint-placeholder-count="3"><div style="display:flex;align-items:baseline;gap:18px;font-size:17px;line-height:1.4;color:#C2CCE0"><span style="color:#5E6B85">—</span>{{ i }}</div></sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Personas" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">09 · Personas</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Three people, three goals</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:24px;line-height:1.5;color:#C2CCE0;max-width:820px;text-wrap:pretty">I created three personas, each representing distinct goals, behaviors, and pain points to guide user-centered design decisions.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ personas }}" as="p" hint-placeholder-count="3">
+        <div data-reveal="1" data-stagger="{{ p.k }}" data-lift="1" style="padding:40px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:20px">
+          <img data-src="{{ p.img }}" alt="{{ p.name }}" style="width:96px;height:96px;border-radius:50%;display:block">
+          <div style="font-size:26px;font-weight:600;letter-spacing:-.02em">{{ p.name }}</div>
+          <p style="margin: 0; font-size: 20px; line-height: 1.4; font-weight: 500; color: #EEF3FF; text-wrap: balance; min-height: 5.6em; white-space: pre-line">“{{ p.quote }}”</p>
+          <p style="margin: 0; font-size: 15px; line-height: 1.55; color: #9AA6BF">{{ p.text }}</p>
+        </div>
+      </sc-for>
+    </div>
+    <div data-reveal="1" style="padding:56px;border:1px solid #1C2638;border-radius:32px;background:#0B101A;display:grid;grid-template-columns:320px minmax(0,1fr);gap:64px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <img src="assets/meel/persona-ayse-b2.webp" alt="Ayşe" style="width:144px;height:144px;border-radius:50%;display:block">
+        <div style="font-size:36px;font-weight:600;letter-spacing:-.02em">Ayşe, 34</div>
+        <div style="font-size:16px;line-height:1.6;color:#9AA6BF">Marketing Director · İstanbul</div>
+        <p style="margin:0;font-size:16px;line-height:1.6;color:#C2CCE0">She has a demanding desk job with long hours and a sedentary routine. Despite losing some weight with a dietitian’s help, she still feels far from her goal and finds the process emotionally challenging.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ ayseChar }}" as="c" hint-placeholder-count="4"><span style="padding:8px 14px;border-radius:999px;border:1px solid #23365E;font-size:14px;color:#C2CCE0">{{ c }}</span></sc-for>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px">
+        <sc-for list="{{ ayseLists }}" as="l" hint-placeholder-count="3">
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">{{ l.title }}</div>
+            <sc-for list="{{ l.items }}" as="i" hint-placeholder-count="5"><div style="padding:12px 0;border-top:1px solid #1C2638;font-size:16px;line-height:1.45;color:#C2CCE0">{{ i }}</div></sc-for>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Ideation" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:48px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px;margin-bottom:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">10 · Ideation</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">From questions to concepts</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px;padding-top:48px;border-top:1px solid #161E2C">
+      <div data-reveal="1" style="display:flex;align-items:baseline;gap:20px;flex-wrap:wrap">
+        <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">01 · How might we</div>
+        <div style="font-size:24px;line-height:1;font-weight:600;letter-spacing:-.02em">5 questions</div>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#8794AE">Reframing the core problems as opportunities.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px">
+        <sc-for list="{{ hmw }}" as="h" hint-placeholder-count="5">
+          <div data-reveal="1" data-stagger="{{ h.k }}" data-lift="1" style="padding:24px;border:1px solid #1C2638;border-radius:22px;background:#0E131F;display:flex;flex-direction:column;gap:14px">
+            <div style="font-family:'Geist Mono',monospace;font-size:13px;color:#7FB4FF">{{ h.n }}</div>
+            <div style="font-size:17px;line-height:1.4;font-weight:500;color:#EEF3FF"><span style="color:#8794AE">How might we </span>{{ h.lc }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px;padding-top:48px;border-top:1px solid #161E2C">
+      <div data-reveal="1" style="display:flex;align-items:baseline;gap:20px;flex-wrap:wrap">
+        <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">02 · We might</div>
+        <div style="font-size:24px;line-height:1;font-weight:600;letter-spacing:-.02em">9 ideas</div>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#8794AE">Divergent ideas generated for each opportunity.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:40px">
+        <sc-for list="{{ ideas }}" as="i" hint-placeholder-count="9">
+          <div data-reveal="1" data-stagger="{{ i.st }}" style="display:flex;gap:14px;align-items:baseline;padding:18px 0;border-bottom:1px solid #161E2C">
+            <span style="flex:0 0 auto;font-family:'Geist Mono',monospace;font-size:13px;color:#5E6B85">{{ i.n }}</span>
+            <span style="font-size:17px;line-height:1.45;color:#C2CCE0;text-wrap:pretty">{{ i.text }}</span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:28px;padding-top:48px;border-top:1px solid #161E2C">
+      <div data-reveal="1" style="display:flex;align-items:baseline;gap:20px;flex-wrap:wrap">
+        <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">03 · Top ideas</div>
+        <div style="font-size:24px;line-height:1;font-weight:600;letter-spacing:-.02em">3 concepts</div>
+        <p style="margin:0;font-size:16px;line-height:1.5;color:#8794AE">Converged into the concepts that shaped Meel.</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+        <sc-for list="{{ topIdeas }}" as="t" hint-placeholder-count="3">
+          <div data-reveal="1" data-stagger="{{ t.k }}" data-lift="1" style="padding:32px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:14px">
+            <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#7FB4FF">{{ t.n }}</div>
+            <div style="font-size:24px;font-weight:600;letter-spacing:-.02em">{{ t.title }}</div>
+            <p style="margin:0;font-size:16px;line-height:1.5;color:#9AA6BF;text-wrap:pretty">{{ t.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Prioritization" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div style="display: grid; grid-template-columns: 420px minmax(0,1fr); gap: 80px; align-items: flex-start">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">11 · Prioritization</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">RICE scoring</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:22px;line-height:1.5;color:#C2CCE0;max-width:820px;text-wrap:pretty">I led a team RICE session to evaluate possible features. Individual scoring helped me compare ideas objectively and prioritize high-value, low-effort solutions.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;border-top:1px solid #1C2638">
+      <div style="display:grid;grid-template-columns:minmax(0,1.4fr) 100px 100px 130px 100px minmax(0,1.6fr);gap:24px;padding:18px 0;border-bottom:1px solid #1C2638;font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8794AE"><div>Feature</div><div>Reach</div><div>Impact</div><div>Confidence</div><div>Effort</div><div>RICE score</div></div>
+      <sc-for list="{{ rice }}" as="r" hint-placeholder-count="17">
+        <div data-reveal="1" data-stagger="{{ r.st }}" style="display:grid;grid-template-columns:minmax(0,1.4fr) 100px 100px 130px 100px minmax(0,1.6fr);gap:24px;align-items:center;padding:14px 0;border-bottom:1px solid #161E2C;font-size:17px">
+          <div style="font-weight:500">{{ r.f }}</div>
+          <div style="font-family:'Geist Mono',monospace;color:#9AA6BF">{{ r.r }}</div>
+          <div style="font-family:'Geist Mono',monospace;color:#9AA6BF">{{ r.i }}</div>
+          <div style="font-family:'Geist Mono',monospace;color:#9AA6BF">{{ r.c }}</div>
+          <div style="font-family:'Geist Mono',monospace;color:#9AA6BF">{{ r.e }}</div>
+          <div style="display:flex;align-items:center;gap:16px"><span style="width:48px;font-family:'Geist Mono',monospace;color:#EEF3FF">{{ r.s }}</span><div style="flex:1;height:8px;border-radius:999px;background:#161E2C;overflow:hidden"><div data-bar="1" style="height:100%;width:{{ r.w }};border-radius:999px;background:linear-gradient(90deg,#2F7BFF,#1FB6E8)"></div></div></div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="display: grid; grid-template-columns: 420px minmax(0,1fr); gap: 80px; align-items: center; margin-top: 40px">
+      <h3 data-reveal="1" style="margin:0;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em">MoSCoW format</h3>
+      <p data-reveal="1" style="margin:0;font-size:20px;line-height:1.55;color:#9AA6BF;text-wrap:pretty">I used the MoSCoW method with the team to ensure clarity and alignment on what to focus on first.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <sc-for list="{{ moscow }}" as="m" hint-placeholder-count="4">
+        <div data-reveal="1" data-stagger="{{ m.k }}" data-lift="1" style="padding:32px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:20px">
+          <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:{{ m.color }}">{{ m.title }}</div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <sc-for list="{{ m.items }}" as="i" hint-placeholder-count="4"><div style="padding:12px 16px;border-radius:12px;background:#131B29;font-size:16px;color:#E0E7F5">{{ i }}</div></sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Card sorting" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:start">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">12 · Card sorting</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Conduct a card sorting</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:20px;line-height:1.5;color:#C2CCE0;text-wrap:pretty">I listed every feature as a card, then grouped them with users to shape an information architecture that matches how people think.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 40px minmax(0,1.3fr);gap:16px;align-items:stretch">
+      <div data-reveal="1" style="padding:28px;border:1px solid #1C2638;border-radius:28px;background:#0B101A;display:flex;flex-direction:column;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:6px"><div style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">Step 1</div><div style="font-size:22px;font-weight:600;letter-spacing:-.02em">Create cards</div><div style="font-size:15px;color:#8794AE">19 features, unsorted</div></div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start">
+          <sc-for list="{{ sortRaw }}" as="c" hint-placeholder-count="21"><span data-lift="1" style="padding:9px 12px;border-radius:10px;border:1px solid #22304A;background:#121A2A;font-size:14px;color:#C2CCE0;white-space:nowrap;transform:rotate({{ c.r }})">{{ c.t }}</span></sc-for>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center"><span data-reveal="1" style="width:40px;height:40px;border-radius:50%;border:1px solid #23365E;background:#0E131F;display:flex;align-items:center;justify-content:center;font-size:18px;color:#7FB4FF">→</span></div>
+      <div data-reveal="1" style="padding:28px;border:1px solid #1C2638;border-radius:28px;background:#0B101A;display:flex;flex-direction:column;gap:28px">
+        <div style="display:flex;flex-direction:column;gap:6px"><div style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">Step 2</div><div style="font-size:22px;font-weight:600;letter-spacing:-.02em">Organize into groups</div><div style="font-size:15px;color:#8794AE">3 groups that became the main navigation</div></div>
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:start">
+          <sc-for list="{{ sortGroups }}" as="g" hint-placeholder-count="3">
+            <div data-reveal="1" data-stagger="{{ g.k }}" style="display:flex;flex-direction:column;gap:8px">
+              <div style="padding:10px 12px;border-radius:10px;background:linear-gradient(90deg,#2F7BFF,#1FB6E8);font-size:14px;font-weight:600;color:#FFFFFF;white-space:nowrap">{{ g.title }}</div>
+              <sc-for list="{{ g.items }}" as="i" hint-placeholder-count="5"><div style="padding:9px 12px;border-radius:10px;border:1px solid #22304A;background:#121A2A;font-size:14px;line-height:1.35;color:#C2CCE0">{{ i }}</div></sc-for>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Roadmap" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:40px">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">13 · Concept → Prototype → Growth</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">From initial flows to continuous improvement</h2>
+    </div>
+    <div data-rm="1" style="position:relative;width:100%;aspect-ratio:2300/1000;margin-top:20px">
+      <svg viewBox="0 0 2300 1000" style="position:absolute;inset:0;width:100%;height:100%;overflow:visible">
+        <defs><linearGradient id="rmG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2F7BFF"></stop><stop offset="1" stop-color="#1FB6E8"></stop></linearGradient></defs>
+        <polyline data-rm-line="1" points="37,880 297,445 636,665 748,445 1031,567 1242,384 1511,476 1706,325 1865,400 2030,270" fill="none" stroke="url(#rmG)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" style="filter:drop-shadow(0 0 12px rgba(47,123,255,.35))"></polyline>
+        <polygon data-rm-arrow="1" points="2058,250 2000,264 2036,308" fill="#1FB6E8" style="opacity:0"></polygon>
+        <g data-rm-node="0" style="opacity:0;transform-origin:37px 880px;transform-box:view-box"><circle cx="37" cy="880" r="26" fill="#0A0E16" stroke="#2F7BFF" stroke-width="5"></circle><circle cx="37" cy="880" r="12" fill="#5AA0FF"></circle></g><g data-rm-node="1" style="opacity:0;transform-origin:297px 445px;transform-box:view-box"><circle cx="297" cy="445" r="26" fill="#0A0E16" stroke="#2F7BFF" stroke-width="5"></circle><circle cx="297" cy="445" r="12" fill="#5AA0FF"></circle></g><g data-rm-node="2" style="opacity:0;transform-origin:636px 665px;transform-box:view-box"><circle cx="636" cy="665" r="26" fill="#0A0E16" stroke="#2F7BFF" stroke-width="5"></circle><circle cx="636" cy="665" r="12" fill="#5AA0FF"></circle></g><g data-rm-node="3" style="opacity:0;transform-origin:748px 445px;transform-box:view-box"><circle cx="748" cy="445" r="26" fill="#0A0E16" stroke="#2F7BFF" stroke-width="5"></circle><circle cx="748" cy="445" r="12" fill="#5AA0FF"></circle></g><g data-rm-node="4" style="opacity:0;transform-origin:1031px 567px;transform-box:view-box"><circle cx="1031" cy="567" r="26" fill="#0A0E16" stroke="#2F7BFF" stroke-width="5"></circle><circle cx="1031" cy="567" r="12" fill="#5AA0FF"></circle></g><g data-rm-node="5" style="opacity:0;transform-origin:1242px 384px;transform-box:view-box"><circle cx="1242" cy="384" r="26" fill="#0A0E16" stroke="#2F7BFF" stroke-width="5"></circle><circle cx="1242" cy="384" r="12" fill="#5AA0FF"></circle></g><g data-rm-node="6" style="opacity:0;transform-origin:1511px 476px;transform-box:view-box"><circle cx="1511" cy="476" r="26" fill="#0A0E16" stroke="#2F7BFF" stroke-width="5"></circle><circle cx="1511" cy="476" r="12" fill="#5AA0FF"></circle></g><g data-rm-node="7" style="opacity:0;transform-origin:1706px 325px;transform-box:view-box"><circle cx="1706" cy="325" r="26" fill="#0A0E16" stroke="#2F7BFF" stroke-width="5"></circle><circle cx="1706" cy="325" r="12" fill="#5AA0FF"></circle></g><g data-rm-node="8" style="opacity:0;transform-origin:1865px 400px;transform-box:view-box"><circle cx="1865" cy="400" r="26" fill="#0A0E16" stroke="#2F7BFF" stroke-width="5"></circle><circle cx="1865" cy="400" r="12" fill="#5AA0FF"></circle></g>
+      </svg>
+      <div data-rm-label="0" style="position:absolute;left:calc(1.61% + 40px);top:calc(88.00% - 10px);width:170px;display:flex;flex-direction:column;gap:4px;opacity:0"><div style="font-size:16px;font-weight:600;color:#EEF3FF;line-height:1.25">Information Architecture</div><div style="font-size:14px;line-height:1.4;color:#9AA6BF">Structured user flows</div></div>
+          <div data-rm-label="1" style="position:absolute;left:calc(12.91% - 14px);bottom:calc(55.50% + 44px);width:170px;display:flex;flex-direction:column;gap:4px;opacity:0"><div style="font-size:16px;font-weight:600;color:#EEF3FF;line-height:1.25">Sketches</div><div style="font-size:14px;line-height:1.4;color:#9AA6BF">Early concept explorations</div></div>
+          <div data-rm-label="2" style="position:absolute;left:calc(27.65% - 14px);top:calc(66.50% + 44px);width:170px;display:flex;flex-direction:column;gap:4px;opacity:0"><div style="font-size:16px;font-weight:600;color:#EEF3FF;line-height:1.25">Inspiration</div><div style="font-size:14px;line-height:1.4;color:#9AA6BF">Visual &amp; mood references</div></div>
+          <div data-rm-label="3" style="position:absolute;left:calc(32.52% - 14px);bottom:calc(55.50% + 44px);width:170px;display:flex;flex-direction:column;gap:4px;opacity:0"><div style="font-size:16px;font-weight:600;color:#EEF3FF;line-height:1.25">Brand Identity</div><div style="font-size:14px;line-height:1.4;color:#9AA6BF">Core visual language</div></div>
+          <div data-rm-label="4" style="position:absolute;left:calc(44.83% - 14px);top:calc(56.70% + 44px);width:170px;display:flex;flex-direction:column;gap:4px;opacity:0"><div style="font-size:16px;font-weight:600;color:#EEF3FF;line-height:1.25">Design System</div><div style="font-size:14px;line-height:1.4;color:#9AA6BF">Reusable components for consistency</div></div>
+          <div data-rm-label="5" style="position:absolute;left:calc(54.00% - 14px);bottom:calc(61.60% + 44px);width:170px;display:flex;flex-direction:column;gap:4px;opacity:0"><div style="font-size:16px;font-weight:600;color:#EEF3FF;line-height:1.25">Wireframes</div><div style="font-size:14px;line-height:1.4;color:#9AA6BF">Early usability testing</div></div>
+          <div data-rm-label="6" style="position:absolute;left:calc(65.70% - 14px);top:calc(47.60% + 44px);width:170px;display:flex;flex-direction:column;gap:4px;opacity:0"><div style="font-size:16px;font-weight:600;color:#EEF3FF;line-height:1.25">Prototype</div><div style="font-size:14px;line-height:1.4;color:#9AA6BF">Interactive version for testing</div></div>
+          <div data-rm-label="7" style="position:absolute;left:calc(74.17% - 14px);bottom:calc(67.50% + 44px);width:170px;display:flex;flex-direction:column;gap:4px;opacity:0"><div style="font-size:16px;font-weight:600;color:#EEF3FF;line-height:1.25">MVP</div><div style="font-size:14px;line-height:1.4;color:#9AA6BF">First product release</div></div>
+          <div data-rm-label="8" style="position:absolute;left:calc(81.09% - 14px);top:calc(40.00% + 44px);width:170px;display:flex;flex-direction:column;gap:4px;opacity:0"><div style="font-size:16px;font-weight:600;color:#EEF3FF;line-height:1.25">Updates</div><div style="font-size:14px;line-height:1.4;color:#9AA6BF">Continuous improvement</div></div>
+      <div data-rm-rocket="1" style="position:absolute;left:88.70%;top:4.00%;width:12%;opacity:0"><img src="assets/meel/rocket2.png" alt="" style="display:block;width:100%;filter:drop-shadow(0 10px 30px rgba(47,123,255,.35))"></div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Design showcase" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px 72px;display:flex;flex-direction:column;gap:56px">
+    <div style="display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 80px; align-items: flex-start">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">Design</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Bringing Meel to life</h2>
+      </div>
+      <p data-reveal="1" style="margin:0;font-size:20px;line-height:1.5;color:#C2CCE0;text-wrap:pretty">A dark, calm interface where agenda, AI chat, tracking, and social features share one visual language.</p>
+    </div>
+  </div>
+  <div data-ds="1" style="position:relative;overflow:hidden;aspect-ratio:16/9;background:#3B7CF2;transform-origin:50% 0;will-change:transform,border-radius">
+    <div data-ds-track="1" style="position:absolute;top:-8%;left:-8%;height:116%;display:flex;will-change:transform">
+      <img src="assets/meel/screens.webp" alt="Meel app screens" style="display:block;height:100%;width:auto">
+      <img data-ds-dup="1" src="assets/meel/screens.webp" alt="" style="display:none;height:100%;width:auto">
+    </div>
+    <div style="position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(10,14,22,.0) 55%,rgba(10,14,22,.55)),radial-gradient(120% 90% at 50% 40%,rgba(10,14,22,0) 55%,rgba(10,14,22,.45))"></div>
+  </div>
+
+</section>
+
+<section data-screen-label="AI Assistant" data-orbs="ai" style="border-top:1px solid #161E2C;position:relative;">
+  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:140px">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:80px;align-items:center">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">14 · AI assistant</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Introducing the AI assistant</h2>
+        <p style="margin:0;font-size:22px;line-height:1.5;color:#C2CCE0;max-width:620px;text-wrap:pretty">A conversational assistant that tracks meals, sleep, and activity while giving smart feedback, motivation, and trend insights, reducing manual effort and keeping users engaged.</p>
+      </div>
+      <img data-reveal="1" data-lift="img" src="assets/meel/ai-chat-v1-bare2.webp" alt="AI assistant lunch check-in" style="width:300px;display:block;border-radius:40px;border:1px solid #23365E;box-shadow:0 30px 80px rgba(47,123,255,.2),0 20px 50px rgba(0,0,0,.55)">
+    </div>
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:start">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.06em;color:#7FB4FF">14.1 · TESTING</div>
+        <h3 style="margin:0;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em">Testing the AI assistant in action</h3>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px">
+        <div data-reveal="1" data-stagger="0" data-lift="1" style="padding:40px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:16px">
+          <div style="font-size:64px;line-height:.9;font-weight:600;letter-spacing:-.05em"><span data-count="92">92</span>%</div>
+          <p style="margin:0;font-size:17px;line-height:1.55;color:#C2CCE0">found the AI chat easier to use than traditional logging methods.</p>
+        </div>
+        <div data-reveal="1" data-stagger="1" data-lift="1" style="padding:40px;border:1px solid #1C2638;border-radius:28px;background:#0E131F;display:flex;flex-direction:column;gap:16px;justify-content:flex-end">
+          <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#FF8FA6">Feedback</div>
+          <p style="margin:0;font-size:17px;line-height:1.55;color:#C2CCE0">Some users felt the interaction was too robotic and lacked warmth. They were seeking something that felt more like chatting.</p>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:300px minmax(0,1fr);gap:80px;align-items:center">
+      <div data-reveal="1" data-lift="img" style="width:300px;overflow:hidden;border-radius:40px;border:1px solid #23365E;box-shadow:0 30px 80px rgba(47,123,255,.2),0 20px 50px rgba(0,0,0,.55)"><img src="assets/meel/chat-ainy-bare.webp" alt="Redesigned chat with Ainy" style="display:block;width:100%"></div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
+        <div style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.06em;color:#7FB4FF">14.2 · REFINING</div>
+        <h3 style="margin:0;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em">Refining based on user feedback</h3>
+        <p style="margin:0;font-size:20px;line-height:1.55;color:#9AA6BF;max-width:620px;text-wrap:pretty">I redesigned the chat interface with visual and behavioral cues. Voice replies, talking mode, photo sharing, and personalization turned the assistant into a more human-like companion.</p>
+        <div style="display:flex;gap:24px">
+          <div data-lift="1" style="padding:28px 36px;border:1px solid #1C2638;border-radius:24px;background:#0E131F;display:flex;flex-direction:column;gap:8px"><div style="font-size:52px;line-height:.9;font-weight:600;letter-spacing:-.04em">+<span data-count="68">68</span>%</div><div style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8794AE">Session duration</div></div>
+          <div data-lift="1" style="padding:28px 36px;border:1px solid #1C2638;border-radius:24px;background:#0E131F;display:flex;flex-direction:column;gap:8px"><div style="font-size:52px;line-height:.9;font-weight:600;letter-spacing:-.04em">+<span data-count="31">31</span>%</div><div style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8794AE">D7 retention</div></div>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:80px;align-items:center">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
+        <div style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.06em;color:#7FB4FF">14.3 · FREEMIUM</div>
+        <h3 style="margin:0;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em">A taste of premium before commitment</h3>
+        <p style="margin:0;font-size:20px;line-height:1.55;color:#9AA6BF;max-width:620px;text-wrap:pretty">New users get a limited number of free AI messages before hitting the premium gate, enough to experience the value before committing.</p>
+        <div style="display:flex">
+          <div data-lift="1" style="padding:28px 36px;border:1px solid #1C2638;border-radius:24px;background:#0E131F;display:flex;flex-direction:column;gap:8px"><div style="font-size:52px;line-height:.9;font-weight:600;letter-spacing:-.04em">+<span data-count="34">34</span>%</div><div style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8794AE">Conversion rate</div></div>
+        </div>
+      </div>
+      <div data-reveal="1" style="position:relative;width:300px">
+        <img src="assets/meel/ai-freemium-clean-bare.webp" alt="Ainy chat" style="width:300px;display:block;border-radius:40px;border:1px solid #23365E;box-shadow:0 30px 80px rgba(47,123,255,.2),0 20px 50px rgba(0,0,0,.55)"><div style="position:absolute;inset:0;border-radius:40px;background:rgba(5,8,14,.55);pointer-events:none"></div>
+        <div data-fm-float="1" style="position:absolute;left:-40px;right:-40px;top:72%;padding:14px 40px 14px 16px;border-radius:12px;border:1px solid rgba(127,180,255,.18);background:rgba(40,46,58,.94);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 24px 60px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.03),0 10px 40px rgba(47,123,255,.18);font-size:15px;line-height:1.45;color:#EEF3FF">
+          <span style="white-space:nowrap">Almost out of messages — just 2 left!</span><br><span style="color:#5AA0FF;font-weight:500">Upgrade to Premium</span> for unlimited conversations.
+          <span style="position:absolute;right:14px;top:11px;font-size:14px;color:#9AA6BF">✕</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Agenda" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:80px;align-items:center">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">15 · Agenda</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em;text-wrap:balance">An agenda to boost wellness organization</h2>
+      <p style="margin:0;font-size:20px;line-height:1.55;color:#9AA6BF;text-wrap:pretty">A dynamic agenda that adapts to your health data, integrating meals, activity, water, and sleep into one personalized daily timeline.</p>
+      <div style="display: flex; width: 468px"><div data-lift="1" style="padding: 40px; border: 1px solid #1C2638; border-radius: 28px; background: #0E131F; display: flex; flex-direction: column; gap: 16px; max-width: 300px; width: 454px"><div style="font-size:64px;line-height:.9;font-weight:600;letter-spacing:-.05em"><span data-count="78">78</span>%</div><p style="margin:0;font-size:17px;line-height:1.55;color:#C2CCE0">said the timeline made daily tracking easier to manage.</p></div></div>
+      
+    </div>
+    <div style="position:relative;width:500px;height:690px">
+      <img data-reveal="1" data-stagger="1" data-lift="img" src="assets/meel/agenda-add-dark3.webp" alt="Quick add menu" style="position:absolute;left:210px;top:56px;width:280px;display:block;border-radius:40px;border:1px solid #23365E;box-shadow:0 30px 80px rgba(47,123,255,.2),0 20px 50px rgba(0,0,0,.55);z-index:1">
+      <img data-reveal="1" data-stagger="0" data-lift="img" src="assets/meel/agenda-dark3.webp" alt="Daily agenda timeline" style="position:absolute;left:0;top:0;width:300px;display:block;border-radius:40px;border:1px solid #23365E;box-shadow:0 30px 80px rgba(47,123,255,.2),0 20px 50px rgba(0,0,0,.55);z-index:2">
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Digital twin" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:120px 140px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:36px">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">16 · Digital twin</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em;text-wrap:balance">Gamification through a playful digital twin</h2>
+        <p style="margin:0;font-size:20px;line-height:1.5;color:#C2CCE0;text-wrap:pretty">Users create a dynamic AI Twin that reacts in real time to needs like hunger, thirst or low energy.</p>
+        <p style="margin:0;font-size:20px;line-height:1.5;color:#9AA6BF;text-wrap:pretty">This avatar makes progress instantly visible and emotionally rewarding, turning health into a personal, playful and motivating experience.</p>
+      </div>
+    </div>
+    <div data-reveal="1" style="position:relative"><img src="assets/meel/twin-cluster8.webp" alt="Digital twin reacting: happy, thirsty, sleepy, hunger" style="display:block;width:100%"></div>
+  </div>
+      <div data-reveal="1" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
+        <div data-lift="1" style="padding:24px;border:1px solid #1C2638;border-radius:22px;background:#0E131F;display:flex;flex-direction:column;gap:14px"><span style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#5B6BFF,#3D4FE0);display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M13 2 4 14h7l-1 8 9-12h-7z"></path></svg></span><div style="font-size:18px;font-weight:600;line-height:1.25">Reacts in real time</div><p style="margin:0;font-size:15px;line-height:1.5;color:#8794AE">Responds to your activity, meals, water and sleep.</p></div>
+        <div data-lift="1" style="padding:24px;border:1px solid #1C2638;border-radius:22px;background:#0E131F;display:flex;flex-direction:column;gap:14px"><span style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#2F7BFF,#1FB6E8);display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><rect x="4" y="12" width="4" height="8" rx="1"></rect><rect x="10" y="8" width="4" height="12" rx="1"></rect><rect x="16" y="4" width="4" height="16" rx="1"></rect></svg></span><div style="font-size:18px;font-weight:600;line-height:1.25">Turns needs into nudges</div><p style="margin:0;font-size:15px;line-height:1.5;color:#8794AE">Friendly reminders when you’re thirsty, hungry or low energy.</p></div>
+        <div data-lift="1" style="padding:24px;border:1px solid #1C2638;border-radius:22px;background:#0E131F;display:flex;flex-direction:column;gap:14px"><span style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#C04BE0,#E066B8);display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFFFF"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"></path></svg></span><div style="font-size:18px;font-weight:600;line-height:1.25">Makes progress feel alive</div><p style="margin:0;font-size:15px;line-height:1.5;color:#8794AE">XP, streaks and visual feedback keep you motivated.</p></div>
+      </div>
+  </div>
+</section>
+
+<section data-screen-label="Smart tracking" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:80px;align-items:center">
+    <div style="display:flex;gap:20px">
+      <img data-reveal="1" data-stagger="0" data-lift="img" src="assets/meel/camera-dark2.webp" alt="Food scan camera" style="width:280px;display:block;border-radius:40px;border:1px solid #23365E;box-shadow:0 30px 80px rgba(47,123,255,.2),0 20px 50px rgba(0,0,0,.55)">
+      <img data-reveal="1" data-stagger="1" data-lift="img" src="assets/meel/ai-detect-dark2.webp" alt="AI detected foods" style="width:280px;display:block;border-radius:40px;border:1px solid #23365E;box-shadow:0 30px 80px rgba(47,123,255,.2),0 20px 50px rgba(0,0,0,.55)">
+    </div>
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">17 · Smart tracking</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em;text-wrap:balance">Capture first. Refine before saving.</h2>
+      <p style="margin:0;font-size:20px;line-height:1.55;color:#9AA6BF;text-wrap:pretty">Unlike competitors, the experience combines camera and voice input with editable AI suggestions, keeping tracking fast while giving users control over accuracy.</p>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Feedback" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:minmax(0,1fr) 540px;gap:48px;align-items:center">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">18 · Meaningful feedback</div>
+      <h2 style="margin:0;font-size:48px;line-height:1.08;font-weight:600;letter-spacing:-.03em;text-wrap:balance">From logging to meaningful feedback</h2>
+      <div style="align-self:flex-start;display:flex;align-items:center;gap:12px;padding:10px 20px 10px 10px;border-radius:999px;border:1px solid #1C2638;background:#0E131F"><span style="flex:0 0 32px;width:32px;height:32px;border-radius:50%;background:#161E2C;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#8794AE"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6z"></path></svg></span><span style="font-size:16px;font-weight:500;white-space:nowrap">“I log, but don’t see if it helps.”</span></div>
+      <p style="margin:0;font-size:18px;line-height:1.6;color:#9AA6BF;text-wrap:pretty">Users could log meals, but struggled to understand whether they were making progress. I replaced confusing charts with clear, verbal insights tied to goals, and added daily summaries from the AI assistant to reinforce progress over time.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:250px minmax(0,1fr);gap:24px;align-items:center">
+      <img data-reveal="1" data-lift="img" src="assets/meel/meal-score4.webp" alt="Saved meal score" style="width:250px;display:block;border-radius:36px;border:1px solid #23365E;box-shadow:0 30px 80px rgba(47,123,255,.2),0 20px 50px rgba(0,0,0,.55)">
+      <div style="display:flex;flex-direction:column;gap:18px">
+        <div data-reveal="1" data-stagger="0" style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500;color:#C2CCE0"><svg width="16" height="16" viewBox="0 0 24 24" fill="#7FB4FF"><path d="M12 2c.6 4.6 2.4 6.9 7 8-4.6 1.1-6.4 3.4-7 8-.6-4.6-2.4-6.9-7-8 4.6-1.1 6.4-3.4 7-8z"></path></svg>Personalized insight</div>
+          <div data-lift="1" style="padding:18px 20px;border:1px solid #1C2638;border-radius:22px;background:#0E131F;display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;align-items:center;gap:14px"><span style="width:44px;height:44px;border-radius:12px;background:rgba(47,191,113,.14);display:flex;align-items:center;justify-content:center"><svg width="22" height="22" viewBox="0 0 24 24" fill="#2FBF71"><rect x="2" y="9" width="3" height="6" rx="1"></rect><rect x="5.5" y="7" width="3" height="10" rx="1"></rect><rect x="8.5" y="11" width="7" height="2"></rect><rect x="15.5" y="7" width="3" height="10" rx="1"></rect><rect x="19" y="9" width="3" height="6" rx="1"></rect></svg></span><div style="display:flex;flex-direction:column;gap:2px"><div style="font-size:30px;line-height:1;font-weight:600;letter-spacing:-.03em">80%</div><div style="font-size:14px;color:#9AA6BF">of your protein target</div></div></div>
+            <div style="height:8px;border-radius:999px;background:#161E2C;overflow:hidden"><div style="height:100%;width:80%;border-radius:999px;background:linear-gradient(90deg,#2FBF71,#1FB6E8)"></div></div>
+          </div>
+        </div>
+        <div data-reveal="1" data-stagger="1" style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500;color:#C2CCE0"><svg width="16" height="16" viewBox="0 0 24 24" fill="#2FBF71"><path d="M20 4C10 4 4 9 4 17c0 1 .1 2 .3 3C6 13 10 10 16 9c-5 2-8 5-9.5 10.5C15 19 20 14 20 4z"></path></svg>What to improve</div>
+          <div data-lift="1" style="padding:18px 20px;border:1px solid #1C2638;border-radius:22px;background:#0E131F;display:flex;gap:14px;align-items:flex-start"><span style="width:28px;height:28px;flex:0 0 28px;border-radius:50%;background:#F2B84B;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#3A2A00">!</span><div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:18px;font-weight:600">Low in fiber</div><div style="font-size:14px;line-height:1.5;color:#9AA6BF">Add some vegetables or fruit to reach your fiber goal.</div></div></div>
+        </div>
+        <div data-reveal="1" data-stagger="2" style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500;color:#C2CCE0"><svg width="16" height="16" viewBox="0 0 24 24" fill="#7FB4FF"><rect x="4" y="13" width="3.5" height="7" rx="1"></rect><rect x="10.25" y="9" width="3.5" height="11" rx="1"></rect><rect x="16.5" y="5" width="3.5" height="15" rx="1"></rect></svg>Balanced meal</div>
+          <div data-lift="1" style="padding:18px 20px;border:1px solid #1C2638;border-radius:22px;background:#0E131F;padding-top:8px;padding-bottom:8px"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #161E2C;font-size:15px;color:#C2CCE0"><span>Balanced protein</span><span style="width:22px;height:22px;border-radius:50%;background:#2FBF71;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #161E2C;font-size:15px;color:#C2CCE0"><span>Great calcium intake</span><span style="width:22px;height:22px;border-radius:50%;background:#2FBF71;display:flex;align-items:center;justify-content:center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5 9-10"></path></svg></span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #161E2C;font-size:15px;color:#C2CCE0"><span>High in sodium</span><span style="width:22px;height:22px;border-radius:50%;background:#F2B84B;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#3A2A00">!</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #161E2C;font-size:15px;color:#C2CCE0"><span>Low fiber intake</span><span style="width:22px;height:22px;border-radius:50%;background:#F2B84B;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#3A2A00">!</span></div><div style="display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;font-size:15px;color:#C2CCE0"><span>Slightly high in added sugar</span><span style="width:22px;height:22px;border-radius:50%;background:#F2B84B;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#3A2A00">!</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Social" style="position:relative;z-index:1;border-top:1px solid #161E2C">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:600px minmax(0,1fr);gap:56px;align-items:center">
+    <div style="position:relative;width:600px;height:700px">
+      <img data-reveal="1" data-lift="img" src="assets/meel/social-bare2.webp" alt="Social feed" style="position:absolute;left:150px;top:20px;width:310px;display:block;border-radius:42px;border:1px solid #23365E;box-shadow:0 30px 80px rgba(47,123,255,.2),0 20px 50px rgba(0,0,0,.55);z-index:1">
+      <div data-reveal="1" data-stagger="1" data-lift="1" style="position:absolute;left:0;top:70px;width:170px;z-index:2;padding:18px;border:1px solid #1C2638;border-radius:20px;background:rgba(14,19,31,.92);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:8px;box-shadow:0 16px 40px rgba(0,0,0,.4)"><span style="width:36px;height:36px;border-radius:50%;border:1px solid #23365E;background:#0A0E16;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#7FB4FF"><path d="M7 3h10v2h3v3a4 4 0 0 1-4 4h-.3A5 5 0 0 1 13 14.9V18h3v2H8v-2h3v-3.1A5 5 0 0 1 8.3 12H8a4 4 0 0 1-4-4V5h3z"></path></svg></span><div style="font-size:16px;font-weight:600;line-height:1.25">Join challenges</div><div style="font-size:13px;line-height:1.45;color:#9AA6BF">Compete around shared goals.</div></div>
+      <div data-reveal="1" data-stagger="2" style="position:absolute;left:0;top:330px;z-index:2;display:flex;flex-direction:column;align-items:flex-start;gap:10px"><div style="display:flex"><span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid #0A0E16;background:#161E2C;margin-left:0px"><img src="./pasted-1791244730768-0-muvwv3zx-8im7.webp" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></span><span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid #0A0E16;background:#161E2C;margin-left:-12px"><img src="./pasted-1791244604986-0-muvwseyb-c9xx.webp" alt="" style="display: block; width: 39px; height: 32px; object-fit: cover"></span><span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid #0A0E16;background:#161E2C;margin-left:-12px"><img src="./pasted-1791244575673-0-muvwrsdh-p6qq.webp" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></span><span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid #0A0E16;background:#161E2C;margin-left:-12px"><img src="./pasted-1791244650888-0-muvwtega-l7hq.webp" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></span></div><span style="display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid #23365E;background:#0E131F;box-shadow:0 12px 30px rgba(0,0,0,.4);font-size:15px;color:#EEF3FF;white-space:nowrap"><b style="font-weight:600">124</b> joined</span></div>
+      <div data-reveal="1" data-stagger="3" data-lift="1" style="position:absolute;left:430px;top:190px;width:170px;z-index:2;padding:18px;border:1px solid #1C2638;border-radius:20px;background:rgba(14,19,31,.92);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:8px;box-shadow:0 16px 40px rgba(0,0,0,.4)"><span style="width:36px;height:36px;border-radius:50%;border:1px solid #23365E;background:#0A0E16;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#7FB4FF"><path d="M12 21s-7.5-4.6-9.5-9.3C1.1 8.3 3.3 4.5 7 4.5c2 0 3.4 1 5 2.8 1.6-1.8 3-2.8 5-2.8 3.7 0 5.9 3.8 4.5 7.2C19.5 16.4 12 21 12 21z"></path></svg></span><div style="font-size:16px;font-weight:600;line-height:1.25">Celebrate progress</div><div style="font-size:13px;line-height:1.45;color:#9AA6BF">Turn milestones into shareable moments.</div></div>
+      <div data-reveal="1" data-stagger="4" data-lift="1" style="position:absolute;left:440px;top:420px;width:170px;z-index:2;padding:18px;border:1px solid #1C2638;border-radius:20px;background:rgba(14,19,31,.92);backdrop-filter:blur(8px);display:flex;flex-direction:column;gap:8px;box-shadow:0 16px 40px rgba(0,0,0,.4)"><span style="width:36px;height:36px;border-radius:50%;border:1px solid #23365E;background:#0A0E16;display:flex;align-items:center;justify-content:center"><svg width="16" height="16" viewBox="0 0 24 24" fill="#7FB4FF"><circle cx="9" cy="8" r="3.5"></circle><circle cx="17" cy="9" r="2.8"></circle><path d="M2 20c0-3.6 3.1-6 7-6s7 2.4 7 6z"></path></svg></span><div style="font-size:16px;font-weight:600;line-height:1.25">Stay accountable</div><div style="font-size:13px;line-height:1.45;color:#9AA6BF">See how others are progressing.</div></div>
+      <div data-reveal="1" data-stagger="5" style="position:absolute;left:440px;top:600px;z-index:2;display:flex;flex-direction:column;align-items:flex-start;gap:10px"><div style="display:flex"><span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid #0A0E16;background:#161E2C;margin-left:0px"><img src="./pasted-1791244933955-0-muvwzgt0-nyo7.webp" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></span><span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid #0A0E16;background:#161E2C;margin-left:-12px"><img src="./pasted-1791244907257-0-muvwyw63-puv3.webp" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></span><span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid #0A0E16;background:#161E2C;margin-left:-12px"><img src="./pasted-1791244864292-0-muvwxz5h-6pcq.webp" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></span><span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:2px solid #0A0E16;background:#161E2C;margin-left:-12px"><img src="./pasted-1791244886787-0-muvwygg3-1aed.webp" alt="" style="display:block;width:100%;height:100%;object-fit:cover"></span></div><span style="display:flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;border:1px solid #23365E;background:#0E131F;box-shadow:0 12px 30px rgba(0,0,0,.4);font-size:15px;color:#EEF3FF;white-space:nowrap"><span style="width:8px;height:8px;border-radius:50%;background:#2FBF71"></span>6 friends active</span></div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:44px">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#7FB4FF">19 · Social</div>
+        <h2 style="margin:0;font-size:44px;line-height:1.1;font-weight:600;letter-spacing:-.03em;text-wrap:balance">From solo tracking to shared momentum</h2>
+        <p style="margin:0;font-size:20px;line-height:1.55;color:#9AA6BF;text-wrap:pretty">Users can join challenges, celebrate milestones, and share progress with others, turning individual wellness into a more motivating social experience.</p>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Closing" data-orbs="close" style="border-top:1px solid #161E2C;position:relative;">
+  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:160px 140px;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
+    <h2 data-reveal="1" style="margin:0;font-size:80px;line-height:1;font-weight:600;letter-spacing:-.035em">Thank you!</h2>
+  </div>
+</section>
+
+<footer style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
+    <div style="max-width:1600px;margin:0 auto;padding:32px 140px;display:flex;justify-content:space-between;gap:24px;font-size:15px;color:#6E6A85">
+      <span>© Melis Kılıç</span>
+      <div style="display:flex;gap:28px"><a href="Portfolio v5.dc.html#work" style="color:#6E6A85" style-hover="color:#FFFFFF">Work</a><a href="Portfolio v5.dc.html#about" style="color:#6E6A85" style-hover="color:#FFFFFF">About</a><a href="Portfolio v5.dc.html#faq" style="color:#6E6A85" style-hover="color:#FFFFFF">FAQ</a><a href="Portfolio v5.dc.html#contact" style="color:#6E6A85" style-hover="color:#FFFFFF">Contact</a></div>
+    </div>
+  </footer>
+
+</div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;cursorTrail&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;meteor&quot;,&quot;stardust&quot;,&quot;comet&quot;,&quot;off&quot;],&quot;default&quot;:&quot;meteor&quot;,&quot;tsType&quot;:&quot;'stardust'|'meteor'|'comet'|'off'&quot;},&quot;designShowcase&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;parallax&quot;,&quot;marquee&quot;,&quot;static&quot;],&quot;default&quot;:&quot;parallax&quot;,&quot;tsType&quot;:&quot;'parallax'|'marquee'|'static'&quot;}}">
+class Component extends DCLogic {
+  fit = () => {
+    const el = document.querySelector('[data-meel-root]'); if (!el) return;
+    const w = document.documentElement.clientWidth, S = 1.34;
+    const z = (w / S) < 1280 ? w / 1280 : S;
+    el.style.width = (w / z) + 'px';
+    el.style.zoom = String(z);
+    const h = el.querySelector('[data-screen-label="Hero"]');
+    if (h) h.style.minHeight = (window.innerHeight / z) + 'px';
+  };
+  trail = () => {
+    if ((this.props.cursorTrail || 'meteor') === 'off') return;
+    if (this._trail || (window.matchMedia && matchMedia('(pointer: coarse), (prefers-reduced-motion: reduce)').matches)) return;
+    const cv = document.createElement('canvas'); cv.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:70;mix-blend-mode:screen';
+    document.body.appendChild(cv); const x = cv.getContext('2d'); let W = 0, H = 0, dpr = 1;
+    const size = () => { dpr = Math.min(2, window.devicePixelRatio || 1); W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; x.setTransform(dpr, 0, 0, dpr, 0, 0); };
+    size(); window.addEventListener('resize', size);
+    const C = ['47,123,255', '31,182,232', '255,255,255', '127,180,255'];
+    const P = [], pts = []; let mx = -100, my = -100, lx = -100, ly = -100, raf = 0, last = 0;
+    const mode = () => this.props.cursorTrail || 'meteor';
+    const onMove = (e) => { mx = e.clientX; my = e.clientY; const now = performance.now(); const dx = mx - lx, dy = my - ly, sp = Math.min(40, Math.hypot(dx, dy)); const m = mode(); if (m === 'off') return;
+      if (m === 'meteor') pts.push({ x: mx, y: my, t: now });
+      const n = m === 'stardust' ? Math.ceil(sp / 6) + 1 : m === 'meteor' ? (sp > 4 ? 1 : 0) : (now - last > 16 ? 1 : 0);
+      for (let i = 0; i < n; i++) { const a = Math.random() * Math.PI * 2, v = m === 'stardust' ? .4 + Math.random() * 1.6 : .2 + Math.random() * .5;
+        P.push({ x: mx - dx * Math.random() * .6, y: my - dy * Math.random() * .6, vx: Math.cos(a) * v - dx * .02, vy: Math.sin(a) * v - dy * .02 + (m === 'stardust' ? .25 : 0), life: 1, d: m === 'stardust' ? .012 + Math.random() * .02 : .025, r: m === 'stardust' ? .8 + Math.random() * 2.2 : 1.5 + Math.random() * 2, c: C[Math.random() * C.length | 0], star: m === 'stardust' && Math.random() < .35 }); }
+      last = now; lx = mx; ly = my; if (!raf) raf = requestAnimationFrame(tick); };
+    const star = (px, py, r) => { x.beginPath(); for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2; x.moveTo(px, py); x.lineTo(px + Math.cos(a) * r * 2.6, py + Math.sin(a) * r * 2.6); } x.stroke(); };
+    const tick = () => { x.clearRect(0, 0, W, H); const now = performance.now();
+      while (pts.length && now - pts[0].t > 260) pts.shift();
+      if (pts.length > 1) { for (let i = 1; i < pts.length; i++) { const k = 1 - (now - pts[i].t) / 260; x.strokeStyle = 'rgba(127,180,255,' + (k * .85) + ')'; x.lineWidth = k * 5; x.lineCap = 'round'; x.shadowColor = 'rgba(139,108,255,.9)'; x.shadowBlur = 14 * k; x.beginPath(); x.moveTo(pts[i - 1].x, pts[i - 1].y); x.lineTo(pts[i].x, pts[i].y); x.stroke(); } x.shadowBlur = 0; }
+      for (let i = P.length - 1; i >= 0; i--) { const p = P[i]; p.x += p.vx; p.y += p.vy; p.vx *= .96; p.vy *= .96; p.life -= p.d; if (p.life <= 0) { P.splice(i, 1); continue; }
+        const al = p.life * p.life; x.fillStyle = 'rgba(' + p.c + ',' + al + ')'; x.shadowColor = 'rgba(' + p.c + ',' + al + ')'; x.shadowBlur = 8;
+        if (p.star) { x.strokeStyle = x.fillStyle; x.lineWidth = .8; star(p.x, p.y, p.r * p.life); } x.beginPath(); x.arc(p.x, p.y, p.r * (.4 + p.life * .6), 0, Math.PI * 2); x.fill(); }
+      x.shadowBlur = 0;
+      raf = (P.length || pts.length) ? requestAnimationFrame(tick) : 0; };
+    window.addEventListener('mousemove', onMove, { passive: true });
+    this._trail = () => { window.removeEventListener('mousemove', onMove); window.removeEventListener('resize', size); cancelAnimationFrame(raf); cv.remove(); };
+  };
+  loadImgs = () => { document.querySelectorAll('img[data-src]').forEach(el => { const v = el.getAttribute('data-src'); if (v && v.indexOf('{{') < 0 && el.getAttribute('src') !== v) el.setAttribute('src', v); }); };
+  componentDidUpdate() { this.loadImgs(); }
+globe = () => {
+    const cv = document.querySelector('[data-globe]'); if (!cv || this._globe) return;
+    const gl = cv.getContext('webgl', { premultipliedAlpha: true, alpha: true }); if (!gl) return;
+    const vs = 'attribute vec2 p;varying vec2 v;void main(){v=p;gl_Position=vec4(p,0.,1.);}';
+    const fs = 'precision highp float;varying vec2 v;uniform sampler2D d;uniform sampler2D n;uniform float t;' +
+      'void main(){vec2 q=v*1.12;float r=length(q);' +
+      'if(r>1.){float g=smoothstep(1.12,1.,r)*.55;vec3 L=normalize(vec3(.85,.25,.45));float s=clamp(dot(normalize(vec3(q,0.)),L)*.5+.5,0.,1.);gl_FragColor=vec4(vec3(.25,.55,1.)*g*s,g*s);return;}' +
+      'float z=sqrt(1.-r*r);vec3 N=vec3(q.x,q.y,z);float lon=atan(N.x,N.z)+t;float lat=asin(N.y);' +
+      'vec2 uv=vec2(fract(lon/6.2831853+.5),.5-lat/3.1415926);vec3 day=texture2D(d,uv).rgb;vec3 ni=texture2D(n,uv).rgb;' +
+      'vec3 L=normalize(vec3(.85,.25,.45));float df=dot(N,L);float k=smoothstep(-.15,.25,df);' +
+      'vec3 c=mix(ni*vec3(1.,.8,.5)*1.6,day*(.25+.95*max(df,0.)),k);float rim=pow(1.-z,2.5);c+=vec3(.3,.6,1.)*rim*.9*clamp(df+.4,0.,1.);' +
+      'float a=smoothstep(1.,.985,r);gl_FragColor=vec4(c*a,a);}';
+    const sh = (ty, src) => { const s = gl.createShader(ty); gl.shaderSource(s, src); gl.compileShader(s); return s; };
+    const pr = gl.createProgram(); gl.attachShader(pr, sh(gl.VERTEX_SHADER, vs)); gl.attachShader(pr, sh(gl.FRAGMENT_SHADER, fs)); gl.linkProgram(pr); gl.useProgram(pr);
+    const b = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, b); gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1,1,-1,-1,1,1,1]), gl.STATIC_DRAW);
+    const loc = gl.getAttribLocation(pr, 'p'); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+    const tex = (unit, url, name) => new Promise(res => { const im = new Image(); im.crossOrigin = 'anonymous'; im.onload = () => { const tx = gl.createTexture(); gl.activeTexture(gl.TEXTURE0 + unit); gl.bindTexture(gl.TEXTURE_2D, tx); gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, im); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE); gl.uniform1i(gl.getUniformLocation(pr, name), unit); res(); }; im.onerror = res; im.src = url; });
+    const base = 'https://cdn.jsdelivr.net/gh/mrdoob/three.js@r160/examples/textures/planets/';
+    const ut = gl.getUniformLocation(pr, 't'); let raf = 0; const t0 = performance.now();
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    Promise.all([tex(0, base + 'earth_atmos_2048.jpg', 'd'), tex(1, base + 'earth_lights_2048.png', 'n')]).then(() => {
+      gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+      const draw = (now) => { gl.viewport(0, 0, cv.width, cv.height); gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT); gl.uniform1f(ut, -0.35 + (now - t0) / 1000 * 0.06); gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4); if (!reduce) raf = requestAnimationFrame(draw); };
+      raf = requestAnimationFrame(draw);
+    });
+    this._globe = () => cancelAnimationFrame(raf);
+  };
+  pdFx = () => {
+    if (!document.body.animate || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) return;
+    document.querySelectorAll('[data-pd-float]').forEach(el => { if (el.dataset.pdOn) return; el.dataset.pdOn = '1'; const i = +el.dataset.pdFloat || 0; el.animate([{ transform: 'translateY(2px)' }, { transform: 'translateY(-4px)' }], { duration: 5200 + i * 400, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out', delay: -i * 900 }); });
+    document.querySelectorAll('[data-pd-orbit]').forEach(el => { if (el.dataset.pdOn) return; el.dataset.pdOn = '1'; const i = +el.dataset.pdOrbit || 0; el.animate([{ transform: 'rotate(0deg)' }, { transform: 'rotate(' + (i % 2 ? -360 : 360) + 'deg)' }], { duration: 26000 + i * 4000, iterations: Infinity, easing: 'linear' }); });
+    document.querySelectorAll('[data-pd-glow]').forEach((el, i) => { if (el.dataset.pdOn) return; el.dataset.pdOn = '1'; el.animate([{ opacity: .75, transform: 'scale(.97)' }, { opacity: 1, transform: 'scale(1.03)' }], { duration: 6000, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out', delay: -i * 1100 }); });
+  };
+  rmFx = () => {
+    const box = document.querySelector('[data-rm]'); if (!box || box.dataset.rmOn) return; box.dataset.rmOn = '1';
+    const line = box.querySelector('[data-rm-line]'), len = line.getTotalLength ? line.getTotalLength() : 3000;
+    const reduce = !document.body.animate || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+    const show = (el) => { el.style.opacity = '1'; };
+    if (reduce) { box.querySelectorAll('[data-rm-node],[data-rm-label],[data-rm-arrow],[data-rm-rocket]').forEach(show); return; }
+    line.style.strokeDasharray = len; line.style.strokeDashoffset = len;
+    const run = () => {
+      const E = 'cubic-bezier(.22,1,.36,1)', D = 2600;
+      line.animate([{ strokeDashoffset: len }, { strokeDashoffset: 0 }], { duration: D, easing: 'cubic-bezier(.45,.05,.35,1)', fill: 'forwards' });
+      const pts = line.getAttribute('points').split(' ').map(s => s.split(',').map(Number));
+      let acc = 0; const seg = [0]; for (let i = 1; i < pts.length; i++) { acc += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); seg.push(acc); }
+      box.querySelectorAll('[data-rm-node]').forEach(n => { const i = +n.dataset.rmNode, t = seg[i] / acc * D; n.animate([{ opacity: 0, transform: 'scale(.3)' }, { opacity: 1, transform: 'scale(1.15)', offset: .7 }, { opacity: 1, transform: 'scale(1)' }], { duration: 500, delay: t, easing: E, fill: 'forwards' }); });
+      box.querySelectorAll('[data-rm-label]').forEach(l => { const i = +l.dataset.rmLabel, t = seg[i] / acc * D + 120; l.animate([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 600, delay: t, easing: E, fill: 'forwards' }); });
+      box.querySelector('[data-rm-arrow]').animate([{ opacity: 0 }, { opacity: 1 }], { duration: 300, delay: D - 150, fill: 'forwards' });
+      const rk = box.querySelector('[data-rm-rocket]');
+      rk.animate([{ opacity: 0, transform: 'translate(-60px,60px) scale(.8)' }, { opacity: 1, transform: 'translate(0,0) scale(1)' }], { duration: 900, delay: D - 100, easing: E, fill: 'forwards' });
+      setTimeout(() => rk.firstElementChild.animate([{ transform: 'translate(0,0) rotate(0deg)' }, { transform: 'translate(6px,-8px) rotate(-2deg)' }], { duration: 2200, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' }), D + 800);
+      const puff = () => { if (!rk.isConnected) return; const o = document.createElement('span'), sz = 8 + Math.random() * 12; o.style.cssText = 'position:absolute;left:20%;top:70%;width:' + sz + 'px;height:' + sz + 'px;margin:' + (-sz / 2) + 'px 0 0 ' + (-sz / 2) + 'px;border-radius:50%;background:radial-gradient(circle,#E4F0FF,rgba(140,190,255,.55) 55%,rgba(140,190,255,0));pointer-events:none;z-index:-1'; rk.appendChild(o); const dx = -(18 + Math.random() * 26), dy = 14 + Math.random() * 22; o.animate([{ transform: 'translate(0,0) scale(.5)', opacity: .95 }, { transform: 'translate(' + dx + 'px,' + dy + 'px) scale(2.2)', opacity: 0 }], { duration: 1000 + Math.random() * 600, easing: 'cubic-bezier(.2,.7,.3,1)', fill: 'forwards' }).onfinish = () => o.remove(); };
+      const loop = () => { if (!rk.isConnected) return; const n = Math.random() < .35 ? 4 : 1; for (let i = 0; i < n; i++) setTimeout(puff, i * 90); setTimeout(loop, 600 + Math.random() * 1200); };
+      setTimeout(loop, D + 500);
+    };
+    const io = new IntersectionObserver(es => { if (es.some(x => x.isIntersecting)) { io.disconnect(); run(); } }, { threshold: .3 });
+    io.observe(box);
+  };
+  dsFx = () => {
+    const box = document.querySelector('[data-ds]'); if (!box || box.dataset.dsOn) return; box.dataset.dsOn = '1';
+    const tr = box.querySelector('[data-ds-track]'), dup = box.querySelector('[data-ds-dup]');
+    const mode = this.props.designShowcase || 'parallax';
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (mode === 'marquee') {
+      dup.style.display = 'block'; tr.style.left = '0'; tr.style.top = '0'; tr.style.height = '100%';
+      const go = () => { const w = tr.firstElementChild.offsetWidth; if (!w) return setTimeout(go, 200); tr.animate([{ transform: 'translateX(0)' }, { transform: 'translateX(' + (-w) + 'px)' }], { duration: 60000, iterations: Infinity, easing: 'linear' }); };
+      go(); return;
+    }
+    if (mode === 'static') return;
+    let raf = 0;
+    const upd = () => { raf = 0; const r = box.getBoundingClientRect(), vh = innerHeight; const p = Math.max(-1, Math.min(1, ((r.top + r.height / 2) - vh / 2) / (vh / 2 + r.height / 2))); const en = Math.max(0, Math.min(1, (vh - r.top) / (vh * .85))), ez = 1 - Math.pow(1 - en, 3); box.style.clipPath = 'none'; box.style.webkitMaskImage = 'none'; box.style.maskImage = 'none'; box.style.transform = 'scale(' + (.82 + .18 * ez) + ')'; box.style.borderRadius = (40 * (1 - ez)) + 'px'; tr.style.transform = 'translate(' + (p * -5) + '%,' + (p * 6) + '%) scale(' + (1.12 - ez * .06) + ') rotate(' + (p * -1.2) + 'deg)'; };
+    const on = () => { if (!raf) raf = requestAnimationFrame(upd); };
+    window.addEventListener('scroll', on, { passive: true }); window.addEventListener('resize', on); upd();
+  };
+  fmFx = () => { const el = document.querySelector('[data-fm-float]'); if (!el || el.dataset.on || !el.animate || (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)) return; el.dataset.on = '1'; el.animate([{ transform: 'translateY(0) rotate(-.6deg)' }, { transform: 'translateY(-8px) rotate(.4deg)' }], { duration: 3400, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' }); };
+  componentDidMount() { if (!window.__imgHide) { window.__imgHide = 1; document.addEventListener('error', (e) => { const t = e.target; if (t && t.tagName === 'IMG') { t.style.visibility = 'hidden'; } }, true); } setTimeout(this.fmFx, 600); setTimeout(this.dsFx, 600); setTimeout(this.rmFx, 500); setTimeout(this.pdFx, 400); setTimeout(this.pdFx, 2000); this.globe(); this.loadImgs(); setTimeout(this.loadImgs, 50); this.trail(); this.fit(); window.addEventListener('resize', this.fit); setTimeout(this.fx, 80); }
+  componentWillUnmount() { if (this._globe) this._globe(); if (this._trail) this._trail(); window.removeEventListener('resize', this.fit); if (this.io) this.io.disconnect(); }
+  fx = () => {
+    const root = document.querySelector('[data-meel-root]'); if (!root || !root.animate || this.fxDone) return; this.fxDone = true;
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const E = 'cubic-bezier(.22,1,.36,1)';
+    const drift = (a, b, s) => [{ transform: 'translate(0,0) scale(1)' }, { transform: 'translate(' + a + 'px,' + b + 'px) scale(' + s + ')' }, { transform: 'translate(' + (-b) + 'px,' + a / 2 + 'px) scale(.92)' }];
+    const orb = (parent, c, size, x, y, dur, path) => {
+      const o = document.createElement('div');
+      o.style.cssText = 'position:absolute;left:' + x + ';top:' + y + ';width:' + size + 'px;height:' + size + 'px;margin:-' + size / 2 + 'px 0 0 -' + size / 2 + 'px;border-radius:50%;background:radial-gradient(circle,' + c + ',rgba(0,0,0,0) 65%);filter:blur(40px);mix-blend-mode:screen;pointer-events:none;z-index:0';
+      parent.prepend(o);
+      o.animate(path, { duration: dur, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
+      o.animate([{ scale: '.82', opacity: .75 }, { scale: '1.22', opacity: 1 }], { duration: Math.round(dur * .5), iterations: Infinity, direction: 'alternate', easing: 'ease-in-out', delay: -Math.round(Math.random() * dur) });
+    };
+    const sec = (k) => root.querySelector('[data-orbs="' + k + '"]');
+    if (sec('hero')) {
+      orb(sec('hero'), 'rgba(47,123,255,0.19)', 900, '72%', '50%', 15000, drift(-110, 70, 1.12));
+      orb(sec('hero'), 'rgba(72,96,255,0.16)', 640, '88%', '85%', 17000, drift(-120, -80, 1.15));
+      orb(sec('hero'), 'rgba(47,123,255,0.11)', 560, '12%', '20%', 16000, drift(90, 110, 1.1));
+    }
+    if (sec('ai')) {
+      orb(sec('ai'), 'rgba(47,123,255,.22)', 800, '80%', '15%', 16000, drift(-100, 80, 1.12));
+      orb(sec('ai'), 'rgba(72,96,255,.18)', 760, '15%', '55%', 18000, drift(120, -60, 1.15));
+      orb(sec('ai'), 'rgba(47,123,255,.2)', 760, '85%', '88%', 15000, drift(-90, -70, 1.1));
+    }
+    if (sec('close')) {
+      orb(sec('close'), 'rgba(47,123,255,.30)', 460, '40%', '50%', 15000, drift(160, 40, 1.15));
+      orb(sec('close'), 'rgba(72,96,255,.24)', 400, '62%', '50%', 17000, drift(-140, -50, 1.2));
+    }
+    const count = (el) => {
+      const n = parseFloat(el.dataset.count), dec = parseInt(el.dataset.dec || '0', 10); if (!n) return;
+      const t0 = performance.now(), dur = 1300;
+      const step = (t) => { const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3); el.textContent = (n * e).toFixed(dec); if (p < 1) requestAnimationFrame(step); };
+      el.textContent = (0).toFixed(dec); requestAnimationFrame(step);
+    };
+    const play = (el) => {
+      const d = (+(el.dataset.stagger || 0)) * 90;
+      el.style.opacity = '';
+      el.animate([{ opacity: 0, transform: 'translateY(40px)', filter: 'blur(6px)' }, { opacity: 1, transform: 'translateY(0)', filter: 'blur(0)' }], { duration: 900, delay: d, easing: E, fill: 'backwards' });
+      el.querySelectorAll('[data-count]').forEach(c => setTimeout(() => count(c), d + 200));
+      el.querySelectorAll('[data-bar]').forEach((b, k) => { b.style.transformOrigin = '0 50%'; b.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], { duration: 1100, delay: d + 250 + k * 70, easing: E, fill: 'backwards' }); });
+    };
+    const vh = window.innerHeight;
+    this.io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { this.io.unobserve(e.target); play(e.target); } }), { threshold: 0, rootMargin: '0px 0px -10% 0px' });
+    root.querySelectorAll('[data-reveal]').forEach(el => {
+      if (el.getBoundingClientRect().top < vh * 0.9) { play(el); return; }
+      el.style.opacity = '0';
+      this.io.observe(el);
+    });
+    root.querySelectorAll('[data-lift]').forEach(el => {
+      const img = el.dataset.lift === 'img';
+      el.style.transition = 'transform .45s ' + E + ',box-shadow .45s ' + E + ',filter .45s ' + E + ',border-color .3s';
+      const base = el.style.boxShadow, bc = el.style.borderColor, bf = el.style.filter, bt = el.style.transform;
+      el.addEventListener('mouseenter', () => {
+        el.style.transform = 'translateY(-4px)' + (bt ? ' ' + bt : '');
+        if (img) el.style.filter = 'drop-shadow(0 24px 40px rgba(47,123,255,.35))';
+        else { el.style.boxShadow = (base ? base + ',' : '') + '0 24px 60px rgba(47,123,255,.25)'; if (bc) el.style.borderColor = '#2E4F99'; }
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = bt; el.style.boxShadow = base; el.style.borderColor = bc; el.style.filter = bf; });
+    });
+  };
+  renderVals() {
+    const k = (arr) => arr.map((x, i) => ({ ...x, k: i }));
+    const rice = [['Smart Tracking',10,3,'90%',6,4.5],['AI Companion',10,3,'80%',7,3.43],['Health Scores',9,2.5,'85%',5,3.83],['Daily Summaries',8,2.5,'80%',5,3.2],['Dashboard',8,2.5,'85%',5,3.4],['Meal Suggestions',7,2.5,'75%',6,2.19],['Trend Detection',7,2.5,'70%',6,2.04],['Target Customization',7,2.5,'70%',6,2.04],['Integrations',7,2,'70%',7,1.4],['Meal Planning',6,2.5,'60%',8,1.13],['Streak & Badges',6,2,'75%',4,2.25],['Challenges',5,2,'70%',4,1.75],['Scoreboards',5,2,'60%',4,1.5],['Feed & Share',5,1.5,'60%',5,0.9],['Recipe Discovery',5,2,'65%',5,1.3],['Shopping List',4,1.5,'60%',4,0.9],['Dynamic AI Twin',8,2.8,'50%',10,1.12]];
+    return {
+      stats: k([
+        { tag: 'Mortality', pre: '', n: 11, dec: 0, suf: 'M', text: 'people die from diet-related diseases per year. It accounts for 22% of the total.' },
+        { tag: 'Deficiency', pre: '', n: 1.6, dec: 1, suf: 'B', text: '1/4 people worldwide, totaling 1.6 billion individuals, suffer from iron deficiency.' },
+        { tag: 'Economy', pre: '$', n: 4.3, dec: 1, suf: 'T', text: 'is the predicted global economic impact of overweight in 2035, up from $1.9T in 2020.' },
+        { tag: 'Overweight', pre: '', n: 51, dec: 0, suf: '%', text: 'is the estimated overweight population globally in 2035, up from 38% in 2020.' }
+      ]),
+      interviews: k([
+        { img: 'assets/meel/interview-1c.jpg', text: 'I don’t have time to track everything. I need something quick and easy.', theme: 'Friction', insight: 'Tracking feels time consuming and hard.', icon: 'M12 3a9 9 0 1 0 0 18a9 9 0 1 0 0-18M12 7v5l3 2' },
+        { img: 'assets/meel/interview-2c.jpg', text: 'I stay consistent for a week, then life gets in the way and I fall off again.', theme: 'Consistency', insight: 'It’s hard to maintain healthy habits long term.', icon: 'M3 17l6-6 4 4 8-8M15 7h6v6' },
+        { img: 'assets/meel/interview-3c.jpg', text: 'There’s too much information. I end up doing nothing because I don’t know what’s right.', theme: 'Clarity', insight: 'Conflicting advice makes it hard to know what to trust.', icon: 'M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8zM14 3v5h5M9 13h6M9 17h6' }
+      ]),
+      surveyStats: k([
+        { n: 59, suf: '%', text: 'Female · 22–38 years old' },
+        { n: 55, suf: '%', text: 'described their eating habits as “average” with room for improvement.' },
+        { n: 30, suf: '%', text: 'of respondents currently use a detailed meal or wellness planner.' },
+        { n: 75, suf: '%', text: 'expressed interest in using a planner if it were easy to maintain.' }
+      ]),
+      surveyLists: k([
+        { title: 'Obstacles', items: [['Lack of time to prepare healthy meals',68],['Difficulty staying motivated over time',61],['Confusion about what’s healthy',55],['Cravings & emotional eating, habits',47],['Social influences',39]].map(([label, v]) => ({ label, v, w: v + '%' })) },
+        { title: 'Motivation', items: [['Maintain weight',64],['Feeling energetic and healthy',59],['Body image & boost confidence',52],['Mental clarity & reduce stress',45],['Prevent future health issues',41]].map(([label, v]) => ({ label, v, w: v + '%' })) }
+      ]),
+      competitors: k([
+        { name: 'MyFitnessPal', role: 'Tracking powerhouse', ini: 'M', bg: 'linear-gradient(135deg,#2F7BFF,#1D4FBF)', good: ['Large food database', 'Barcode scanning', 'Fitness integrations'], bad: ['Overwhelming UI', 'Low personalization', 'Feels manual'] },
+        { name: 'Lifesum', role: 'Polished habit builder', ini: 'L', bg: 'linear-gradient(135deg,#2FBF71,#1E8A50)', good: ['Attractive design', 'Easy onboarding', 'Clear scoring'], bad: ['Generic recommendations', 'Passive feedback', 'Limited adaptation'] },
+        { name: 'Simple', role: 'Fasting-first experience', ini: 'S', bg: 'linear-gradient(135deg,#FF6B7A,#C9384A)', good: ['Strong niche focus', 'Habit reminders', 'Friendly UI'], bad: ['Lacks depth', 'Limited context', 'Doesn’t capture full intake'] },
+        { name: 'Yazio', role: 'Clean planner', ini: 'Y', bg: 'linear-gradient(135deg,#FFB070,#E07A2E)', good: ['Goal-based interface', 'Meal plans', 'Strong tracking'], bad: ['Data is collected but underused', 'Low personalization', 'Shallow guidance'] }
+      ]),
+      pillars: k([
+        { n: '01', icon: 'assets/meel/pd2-guidance.png', glow: 'rgba(47,123,255,.32)', dot: '#7FB4FF', title: 'Guidance &\nClarity', items: ['Misconceptions and conflicts', 'Hard-to-interpret data', 'Scattered health data'] },
+        { n: '02', icon: 'assets/meel/pd2-hands.png', glow: 'rgba(47,123,255,.32)', dot: '#7FB4FF', title: 'Consistency &\nMotivation', items: ['Tracking feels like a chore', 'No social encouragement', 'No support for behavior change'] },
+        { n: '03', icon: 'assets/meel/pd2-finger.png', glow: 'rgba(47,123,255,.32)', dot: '#7FB4FF', title: 'Personalization &\nAdaptation', items: ['Advice feels generic', 'Experience stays static', 'No adaptation to progress'] }
+      ]),
+      personas: k([
+        { qw: '100%', img: 'assets/meel/persona-mert-b2.webp', name: 'Mert, 27', quote: 'If I’m logging my life, I want meaningful feedback, not just numbers.', text: 'He wants deeper insights and smarter tracking without the hassle. He seeks data-driven feedback to improve his appearance.' },
+        { qw: '100%', img: 'assets/meel/persona-ayse-b2.webp', name: 'Ayşe, 34', quote: 'I’ve tried everything. I just want something that helps me stay consistent.', text: 'She struggles with her weight loss journey and often feels overwhelmed. She seeks emotional support and guidance.' },
+        { qw: '100%', img: 'assets/meel/persona-sinem-b2.webp', name: 'Sinem, 24', quote: 'I just want to eat\nwell and feel good\nwithout overthinking\nevery bite.', text: 'She maintains her thyroid health through a balanced diet. She seeks meal suggestions, smart planning, and social support.' }
+      ]),
+      ayseChar: ['Determined', 'Time-pressed', 'Goal-oriented', 'Habit seeker'],
+      ayseLists: [
+        { title: 'Pain points', items: ['Easily loses motivation after a few weeks', 'Feels confused', 'Lacks time and energy for meal prep or exercise', 'Gets discouraged when progress is slow', 'Emotional eating during stress'] },
+        { title: 'Goals', items: ['Lose weight sustainably', 'Feel confident in her body', 'Stay consistent with nutrition & activity', 'Balance health goals with a demanding job', 'Build long-term habits over quick diets'] },
+        { title: 'Needs', items: ['A supportive system that motivates her daily', 'Clear and easy-to-follow guidance', 'Emotional encouragement', 'A plan that adapts to her lifestyle', 'Gentle reminders'] }
+      ],
+      hmw: k(['Make tracking feel natural or even enjoyable?', 'Reveal the immediate impact of daily behaviors and choices?', 'Turn tracking data into valuable, actionable insights?', 'Sustain motivation and support users throughout their health journey?', 'Adapt to personal intricacies and evolve with each user over time?'].map((text, i) => ({ text, lc: text.charAt(0).toLowerCase() + text.slice(1), n: String(i + 1).padStart(2, '0') }))),
+      ideas: ['Smart tracking & planning through camera, voice, and assistant', 'Gamified tracking with animations, a reward & scoring system', 'Shareable moments to celebrate meals, wins, and progress', 'Daily summaries with tips', 'Adaptive learning model that evolves with each user', 'Invite-based challenges', 'Emotional check-ins to support well-being', 'Notifications as gentle nudges', 'Scoreboards and group progress'].map((text, i) => ({ text, n: String(i + 1).padStart(2, '0'), st: String(i % 3) })),
+      topIdeas: k([
+        { n: '01', title: 'AI Digital Twin', text: 'A reactive avatar that makes daily choices instantly visible and rewarding.' },
+        { n: '02', title: 'AI Companion', text: 'Conversational tracking with daily summaries, tips, and gentle nudges.' },
+        { n: '03', title: 'Community', text: 'Challenges and shared wins that keep motivation going together.' }
+      ]),
+      rice: rice.map(([f, r, i, c, e, s], n) => ({ f, r, i, c, e, s, st: String(n % 6), w: Math.round(s / 4.5 * 100) + '%' })),
+      moscow: k([
+        { title: 'Must-have', color: '#7FB4FF', items: ['Health Scores', 'AI Companion', 'Smart Tracking', 'Integrations', 'Meal Suggestions', 'Dashboard'] },
+        { title: 'Should-have', color: '#8FA0FF', items: ['Challenges', 'Target Customization', 'Dynamic AI Twin', 'Daily AI Summaries'] },
+        { title: 'Could-have', color: '#C2CCE0', items: ['Streak & Badges', 'Recipe Discovery', 'Scoreboards'] },
+        { title: 'Won’t have (for now)', color: '#8794AE', items: ['Trend Detection', 'Feed & Share', 'Meal Planning', 'Shopping List'] }
+      ]),
+      sortRaw: ["Quick Logs","Food Discovery","Daily Summaries","Dashboard","Savings","Chat","Profile","Recipe Discovery","Meal Suggestions","Content Discovery","Target Customization","Scoreboard","Integrations","Feed","Dynamic AI Twin","Health Scores","Challenges","Meal Planning","Customization"].map((t, i) => ({ t, r: ["-1.5deg","1deg","-.5deg","1.5deg","0deg","-1deg",".5deg"][i % 7] })),
+      sortGroups: [["Agenda",["Quick Logs","Integrations","Target Customization","Dashboard","Dynamic AI Twin","Health Scores","Profile","Meal Planning"]],["AI Companion",["Daily Summaries","Chat","Meal Suggestions","Customization"]],["Social",["Feed","Challenges","Scoreboard","Recipe Discovery","Food Discovery","Content Discovery"]]].map(([title, items], k) => ({ title, items, k, count: String(items.length).padStart(2, '0') })),
+      roadmap: k([['Information Architecture', 'Structured user flows'], ['Sketches', 'Early concept explorations'], ['Inspiration', 'Visual & mood references'], ['Brand Identity', 'Core visual language'], ['Design System', 'Reusable components for consistency'], ['Wireframes', 'Early usability testing'], ['Prototype', 'Interactive version for testing'], ['MVP', 'First product release'], ['Updates', 'Continuous improvement']].map(([title, text], i) => ({ title, text, n: String(i + 1).padStart(2, '0') }))),
+      agendaFeatures: [{ t: 'See the whole day', d: 'Meals, activity and wellness data in one timeline.' }, { t: 'Copy, move or delete', d: 'Manage entries directly from the timeline.' }, { t: 'Log in seconds', d: 'Quick add keeps tracking lightweight.' }]
+    };
+  }
+}
+</script>
+</body>
+</html>

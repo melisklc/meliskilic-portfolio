@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preload" as="image" href="assets/scan.webp">
+<link rel="preload" as="image" href="assets/summary.webp">
+<link rel="preload" as="image" href="assets/paywall.webp">
+<link rel="preload" as="image" href="assets/pitio/choose-trainer-bare.webp">
+<link rel="preload" as="image" href="assets/pitio/live-session-bare.webp">
+<link rel="preload" as="image" href="assets/pitio/home-bare.webp">
+<link rel="preload" as="image" href="assets/aurora/mock-hero-laptop.webp">
+<link rel="preload" as="image" href="assets/meel/agenda-bare.webp">
+<link rel="preload" as="image" href="assets/meel/chat-ainy-bare.webp">
+<link rel="preload" as="image" href="assets/meel/social-bare.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;family=Bodoni+Moda:opsz,wght@6..96,500&amp;display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:#0A0913;color:#F1EEFF;font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+::selection{background:#6B3CFF;color:#fff}
+a{color:#F1EEFF;text-decoration:none}
+a:hover{color:#FFFFFF}
+@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(185,166,255,.55)}70%{box-shadow:0 0 0 10px rgba(185,166,255,0)}100%{box-shadow:0 0 0 0 rgba(185,166,255,0)}}
+@keyframes pfShim{0%{background-position:150% 0}100%{background-position:-50% 0}}
+</style>
+</helmet>
+<div style="background:#0A0913"><div data-pf4-root="1" style="position:relative;width:1280px;background:#0A0913;overflow:hidden;color:#F1EEFF">
+
+<div style="position:absolute;top:0;bottom:0;left:96px;width:1px;background:#1A1828;pointer-events:none;z-index:0"></div>
+<div style="position:absolute;top:0;bottom:0;right:96px;width:1px;background:#1A1828;pointer-events:none;z-index:0"></div>
+<div style="position:absolute;left:0;right:0;top:112px;height:1px;background:#1A1828;pointer-events:none;z-index:0"></div>
+<header style="position:fixed;left:50%;top:22px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:40px;padding:8px 8px 8px 8px;border-radius:999px;border:1px solid rgba(185,166,255,.18);background:rgba(16,14,28,.7);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45)">
+  <a href="#top" style="display:flex;align-items:center;gap:12px;padding-right:8px">
+    <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid #3A3460;flex:0 0 40px"><img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
+    <span style="font-size:17px;font-weight:600;letter-spacing:-.01em">Melis K.</span>
+  </a>
+  <nav style="display:flex;align-items:center;gap:4px;font-size:16px;font-weight:500">
+    <sc-for list="{{ nav }}" as="n" hint-placeholder-count="3">
+      <a href="{{ n.href }}" onClick="{{ n.go }}" style="padding:10px 14px;border-radius:999px;color:{{ n.color }};transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">{{ n.label }}</a>
+    </sc-for>
+    <a href="#contact" style="margin-left:8px;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,#6B3CFF,#5B6BFF);color:#FFFFFF;font-weight:600;box-shadow:0 6px 18px rgba(107,60,255,.4),inset 0 1px 0 rgba(255,255,255,.25);transition:filter .3s" style-hover="filter:brightness(1.12);color:#FFFFFF">Contact</a>
+  </nav>
+</header>
+
+<section id="top" data-screen-label="Hero" data-orbs="hero" style="position:relative;min-height:100vh;padding-top:112px;display:flex;flex-direction:column;justify-content:center">
+  <div style="position:relative;z-index:1;max-width:1600px;width:100%;margin:0 auto;padding:40px 140px 100px;display:flex;flex-direction:column;gap:40px">
+    <div data-reveal="1" style="display:flex;align-items:center;gap:16px;font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">
+      <span>Melis Kılıç · Product Manager &amp; Designer</span>
+    </div>
+    <h1 data-reveal="1" style="margin: 0; font-size: 72px; line-height: 1; font-weight: 600; letter-spacing: -.045em; max-width: 1040px; text-wrap: balance">I build digital products <span style="color:#A096E0">that are strategic, functional, and</span> <span style="background:linear-gradient(90deg,#B9A6FF,#7F8CFF);-webkit-background-clip:text; background-clip: text; color: transparent">delightful.</span></h1>
+    <p data-reveal="1" style="margin:0;font-size:24px;line-height:1.5;color:#C9C4E0;max-width:760px;text-wrap:pretty">I own the end-to-end product lifecycle, integrating user needs, product strategy, design, and technical feasibility.</p>
+    <div data-reveal="1" style="display:flex;align-items:center;gap:24px;margin-top:16px">
+      <a data-lift="1" href="mailto:mk.meliskilic@gmail.com?subject=Excited%20to%20Hear%20About%20Your%20Project!" style="flex: 0 0 auto; padding: 18px 32px; white-space:nowrap;border-radius:999px; background: linear-gradient(90deg,#6B3CFF,#5B6BFF); color: #FFFFFF; font-size: 18px; font-weight: 600">Start your project →</a>
+      <a data-lift="1" href="#work" style="flex: 0 0 auto; padding: 18px 32px; white-space:nowrap;border-radius:999px; border: 1px solid #3A3460; background: rgba(18,16,29,.6); color: #F1EEFF; font-size: 18px; font-weight: 500">See my work</a>
+      <div style="flex:1;height:1px;background:#262338"></div>
+      <div style="flex: 0 0 auto; display: flex; align-items: center; gap: 10px; font-size: 16px; color: #A39FBD"><span style="width:8px;height:8px;border-radius:50%;background:#B9A6FF;animation:pulseDot 2s infinite"></span>Available to work</div>
+    </div>
+  </div>
+</section>
+
+<section id="work" data-orbs="work" data-orbs-behind="1" data-screen-label="Work" style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
+  
+<div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+    <div style="display: grid; grid-template-columns: 420px minmax(0,1fr); gap: 156px; align-items: end; justify-content: space-evenly">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">01 · Selected work</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">My projects</h2>
+      </div>
+      <p data-reveal="1" style="margin: 0; font-size: 22px; line-height: 1.5; color: #C9C4E0; max-width: 620px; text-wrap: pretty; text-align: left; width: 474px">From 0→1 products work across product strategy, research, UX, and visual design.</p>
+    </div>
+    <div onMouseLeave="{{ leave }}" style="display:flex;flex-direction:column;border-top:1px solid #262338">
+      <sc-for list="{{ work }}" as="w" hint-placeholder-count="4">
+        <a href="{{ w.href }}" data-reveal="1" onMouseEnter="{{ w.enter }}" style="display:flex;flex-direction:column;border-bottom:1px solid #262338;color:#F1EEFF;transition:opacity .4s;opacity:{{ w.dim }}">
+          <div style="display:grid;grid-template-columns:64px minmax(0,1fr) 340px 48px;gap:24px;align-items:center;padding:32px 0">
+            <span style="font-family:'Geist Mono',monospace;font-size:15px;color:#B9A6FF">{{ w.n }}</span>
+            <span style="font-size: 36px; line-height: 1; font-weight: 600; letter-spacing: -.04em">{{ w.name }}</span>
+            <span style="font-size:17px;color:#A39FBD">{{ w.cat }}</span>
+            <span style="width:48px;height:48px;border-radius:50%;border:1px solid {{ w.arrowBorder }};background:{{ w.arrowBg }};display:flex;align-items:center;justify-content:center;font-size:18px;color:{{ w.arrowColor }};transition:background .3s,border-color .3s,color .3s,transform .5s cubic-bezier(.22,1,.36,1);transform:{{ w.arrowT }}">↗</span>
+          </div>
+          <div style="overflow:hidden;transition:height .7s cubic-bezier(.22,1,.36,1);height:{{ w.h }}">
+            <div style="display:grid;grid-template-columns:64px minmax(0,1fr) 340px;gap:24px;padding-bottom:40px">
+              <span></span>
+              <div style="position:relative;height:380px;overflow:hidden;border-radius:28px;border:1px solid #262338;background:{{ w.bg }}">
+                <div data-skel="1" style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.06) 50%,rgba(255,255,255,0) 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;transition:opacity .6s ease;pointer-events:none"></div><sc-for list="{{ w.imgs }}" as="im" hint-placeholder-count="0"><img data-src="{{ im.src }}" alt="" style="opacity:0;transition:opacity .6s ease,transform .9s cubic-bezier(.22,1,.36,1);position:absolute;left:50%;top:{{ im.top }};width:{{ im.w }};margin-left:{{ im.ml }};height:{{ im.hgt }};object-fit:{{ im.fit }};border:{{ im.b }};border-radius:{{ im.r }}"></sc-for>
+              </div>
+              <div style="display:flex;flex-direction:column;justify-content:space-between;gap:24px">
+                <div style="display:flex;flex-direction:column;gap:16px">
+                  <p style="margin:0;font-size:18px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">{{ w.desc }}</p>
+                  <div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ w.tags }}" as="t" hint-placeholder-count="3"><span style="padding:8px 14px;border-radius:999px;border:1px solid #3A3460;font-size:14px;color:#C9C4E0;white-space:nowrap">{{ t }}</span></sc-for></div>
+                </div>
+                <span style="font-size:17px;font-weight:500;color:#B9A6FF">View case study →</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+  </div></section>
+
+<section id="about" data-screen-label="About" style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:56px">
+      <div data-reveal="1" data-lift="1" style="position:relative;border-radius:32px;overflow:hidden;border:1px solid #262338;aspect-ratio:4/5;background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite">
+        
+        <div style="position: absolute; inset: 0; background: linear-gradient(180deg,rgba(10,9,19,0) 60%,rgba(10,9,19,.55)); pointer-events: none; left: -1px; top: 179px"></div>
+      <img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display: block; width: 100%; height: 100%; object-fit: fill"></div>
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div data-reveal="1" style="font-size:24px;font-weight:600;letter-spacing:-.02em">My work history</div>
+        <div style="display:flex;flex-direction:column">
+          <sc-for list="{{ history }}" as="j" hint-placeholder-count="4">
+            <div style="display:grid;overflow:hidden;transition:grid-template-rows .6s cubic-bezier(.22,1,.36,1),opacity .45s,transform .6s cubic-bezier(.22,1,.36,1),margin .6s cubic-bezier(.22,1,.36,1);grid-template-rows:{{ j.rows }};opacity:{{ j.op }};transform:{{ j.tf }};margin-bottom:{{ j.mb }}">
+              <div style="min-height:0">
+                <div data-lift="1" style="padding:24px 28px;border:1px solid #262338;border-radius:22px;background:#12101D;display:flex;flex-direction:column;gap:10px">
+                  <div style="font-size:20px;font-weight:600;letter-spacing:-.01em">{{ j.co }}</div>
+                  <div style="display:flex;justify-content:space-between;gap:16px;font-size:15px;color:#A39FBD"><span>{{ j.role }}</span><span style="font-family:'Geist Mono',monospace;color:#B9A6FF">{{ j.years }}</span></div>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+        <button onClick="{{ toggleJobs }}" style="align-self:center;display:flex;align-items:center;gap:10px;padding:12px 22px;border-radius:999px;border:1px solid #3A3460;background:#12101D;color:#F1EEFF;font-family:'Geist',sans-serif;font-size:15px;font-weight:500;cursor:pointer;transition:border-color .3s,background .3s" style-hover="border-color:#6B5BD6;background:#1A1729">{{ jobsLabel }}<span style="display:flex;width:20px;height:20px;border-radius:50%;background:#F1EEFF;color:#0A0913;align-items:center;justify-content:center;font-size:12px;transition:transform .5s cubic-bezier(.22,1,.36,1);transform:{{ jobsArrow }}">↓</span></button>
+      </div>
+    </div><div style="display: flex; flex-direction: column; gap: 48px; padding-top: 8px; align-self: stretch">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">02 · About me</div><h2 style="margin: 0; font-size: 42px; line-height: 1.05; font-weight: 600; letter-spacing: -.04em; text-wrap: balance; width: 100%; height: 100%">A product thinker <span style="color: #A096E0; font-size: 42px; width: 100%; display: inline-block; height: 100%">shaped by creativity, strategy &amp; human behavior.</span></h2>
+        
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
+        <p style="margin:0;font-size:24px;line-height:1.5;font-weight:500;letter-spacing:-.01em;color:#E4E0F5;text-wrap:pretty">I’ve always been curious about people, how they think, what they’re drawn to, and why they make the choices they do. I’m equally drawn to creating things that feel thoughtful, beautiful, and clear.</p>
+        <p style="margin:0;font-size:20px;line-height:1.6;color:#8C87A8;text-wrap:pretty">That’s what shaped the way I work today: somewhere between design, product, and strategy, creating digital products that people enjoy using and that make sense for the business.</p>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-size:24px;font-weight:600;letter-spacing:-.02em">What I bring</div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px">
+          <sc-for list="{{ bring }}" as="b" hint-placeholder-count="10"><span data-lift="1" style="padding:12px 18px;border-radius:16px;border:1px solid #262338;background:#12101D;font-size:16px;color:#C9C4E0">{{ b }}</span></sc-for>
+        </div>
+      </div>
+      <div data-reveal="1" style="display:flex;gap:12px"><a data-lift="1" href="Resume.dc.html" style="padding:14px 26px;white-space:nowrap;border-radius:999px;border:1px solid #3A3460;background:#12101D;font-size:16px;font-weight:500">Resume →</a></div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="beyond" data-orbs="beyond" data-orbs-behind="1" data-screen-label="Beyond work" style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">04 · Beyond work</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em;text-wrap:balance">Fascinated by the world and its beings</h2>
+      </div><p data-reveal="1" style="margin: 0; font-size: 22px; line-height: 1.5; color: #C9C4E0; max-width: 620px; text-wrap: pretty; text-align: right">A few things that inspire me every day.</p>
+      
+    </div>
+    <div data-reveal="1" onMouseLeave="{{ hobLeave }}" style="display:flex;gap:16px;height:520px">
+      <sc-for list="{{ hobbies }}" as="h" hint-placeholder-count="5">
+        <div onMouseEnter="{{ h.enter }}" style="position:relative;flex:{{ h.flex }};min-width:0;border-radius:28px;overflow:hidden;border:1px solid {{ h.border }};background:#12101D;cursor:default;transition:flex .7s cubic-bezier(.22,1,.36,1),border-color .3s">
+          <div data-skel="1" style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.06) 50%,rgba(255,255,255,0) 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;transition:opacity .6s ease;pointer-events:none"></div><sc-if value="{{ h.hasImg }}" hint-placeholder-val="{{ true }}"><img data-src="{{ h.img }}" alt="{{ h.title }}" style="opacity:0;transition:opacity .6s ease,transform .9s cubic-bezier(.22,1,.36,1);position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.22,1,.36,1),filter .5s;transform:{{ h.scale }};filter:{{ h.filter }}"></sc-if><sc-if value="{{ h.noImg }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:0;background:radial-gradient(120% 80% at 30% 20%,rgba(122,104,200,.45),rgba(43,31,92,.5) 50%,#12101D 85%);transition:transform .9s cubic-bezier(.22,1,.36,1);transform:{{ h.scale }}"></div></sc-if>
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,9,19,0) 45%,rgba(10,9,19,.85) 100%)"></div>
+          <div style="position:absolute;left:28px;right:28px;bottom:28px;display:flex;flex-direction:column;gap:10px;transition:opacity .45s,transform .6s cubic-bezier(.22,1,.36,1);opacity:{{ h.textOp }};transform:{{ h.textT }}">
+            <span style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">{{ h.n }}</span>
+            <span style="max-width:300px;font-size:26px;line-height:1.15;font-weight:600;letter-spacing:-.02em;color:#FFFFFF;text-wrap:balance">{{ h.title }}</span>
+            <p style="margin:0;max-width:300px;font-size:16px;line-height:1.5;color:#E4E0F5;transition:opacity .4s,transform .5s cubic-bezier(.22,1,.36,1);opacity:{{ h.textOp }};transform:{{ h.textT }}">{{ h.desc }}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="faq" data-screen-label="FAQ" data-orbs="close" style="border-top:1px solid #1E1B2E;position:relative">
+  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:140px 140px 180px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:56px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:56px">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">05 · FAQ</div>
+        <h2 style="margin: 0; font-size: 80px; line-height: .98; font-weight: 600; letter-spacing: -.05em">Your <br>questions<br><span style="color: #A096E0; font-size: 76px">answered.</span></h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <sc-for list="{{ faq }}" as="q" hint-placeholder-count="4">
+          <div data-reveal="1" data-stagger="{{ q.k }}" style="border:1px solid {{ q.border }};border-radius:24px;background:#12101D;overflow:hidden;transition:border-color .3s,box-shadow .4s;box-shadow:{{ q.shadow }}">
+            <button onClick="{{ q.toggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 28px;border:0;background:transparent;color:#F1EEFF;font-family:'Geist',sans-serif;font-size:20px;font-weight:600;letter-spacing:-.01em;text-align:left;cursor:pointer">{{ q.q }}<span style="position:relative;flex:0 0 18px;width:18px;height:18px"><span style="position:absolute;left:0;right:0;top:8px;height:2px;border-radius:2px;background:#B9A6FF"></span><span style="position:absolute;top:0;bottom:0;left:8px;width:2px;border-radius:2px;background:#B9A6FF;transition:transform .45s cubic-bezier(.22,1,.36,1);transform:{{ q.plus }}"></span></span></button>
+            <div style="display:grid;transition:grid-template-rows .55s cubic-bezier(.22,1,.36,1);grid-template-rows:{{ q.rows }}"><div style="min-height:0;overflow:hidden"><p style="margin:0;padding:22px 28px 28px;border-top:1px solid #262338;font-size:17px;line-height:1.6;color:#A39FBD;text-wrap:pretty;transition:opacity .4s;opacity:{{ q.op }}">{{ q.a }}</p></div></div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+    <div data-reveal="1" data-lift="1" style="position:sticky;top:120px;padding:44px;border:1px solid #2E2A45;border-radius:32px;background:linear-gradient(160deg,rgba(107,60,255,.14),rgba(18,16,29,.9) 55%);display:flex;flex-direction:column;gap:28px">
+      <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:88px;height:88px;border-radius:50%;overflow:hidden;border:1px solid #3A3460;box-shadow:0 0 0 6px rgba(107,60,255,.12)"><img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
+      <h3 style="margin: 0; font-size: 38px; line-height: 1.08; font-weight: 600; letter-spacing: -.03em"><span style="color:#A096E0">Still not sure?</span><br>Let’s have a quick call.</h3>
+      <p style="margin:0;font-size:18px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">Tell me about your product and what’s not working. I’ll tell you honestly how I can help.</p>
+      <div style="display:flex;align-items:center;gap:16px">
+        <a data-lift="1" href="mailto:mk.meliskilic@gmail.com?subject=Let%E2%80%99s%20talk" style="padding:16px 28px;white-space:nowrap;border-radius:999px;background:linear-gradient(90deg,#6B3CFF,#5B6BFF);color:#FFFFFF;font-size:17px;font-weight:600">Let’s talk</a>
+        <a href="https://www.linkedin.com/in/melis-k%C4%B1l%C4%B1%C3%A7-139136188/" target="_blank" style="font-size:16px;color:#A39FBD" style-hover="color:#FFFFFF">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" data-screen-label="Contact" style="border-top:1px solid #1E1B2E;position:relative">
+  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:160px 140px;display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center">
+    <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">06 · Contact</div>
+    <h2 data-reveal="1" style="position:relative;align-self:stretch;margin: 0; height:1.15em; font-size: 64px; line-height: 1.15; font-weight: 600; letter-spacing: -.04em">
+      <sc-for list="{{ rot }}" as="r" hint-placeholder-count="1"><span style="position:absolute;left:0;right:0;top:0;text-align:center;white-space:nowrap;transition:transform .9s cubic-bezier(.22,1,.36,1),opacity .6s cubic-bezier(.22,1,.36,1),filter .7s cubic-bezier(.22,1,.36,1);transform:{{ r.t }};opacity:{{ r.op }};filter:{{ r.f }}">Let’s {{ r.a }} <span style="color:#A096E0">{{ r.b }}</span></span></sc-for>
+    </h2>
+    <p data-reveal="1" style="margin:0;font-size:22px;line-height:1.5;color:#C9C4E0;max-width:560px">Have a project in mind? I’d love to hear about it.</p>
+    <div data-reveal="1" style="display:flex;gap:14px;margin-top:12px">
+      <a data-lift="1" href="mailto:mk.meliskilic@gmail.com" style="padding:18px 32px;white-space:nowrap;border-radius:999px;background:linear-gradient(90deg,#6B3CFF,#5B6BFF);color:#FFFFFF;font-size:18px;font-weight:600">Let's work together</a>
+      <a data-lift="1" href="https://www.linkedin.com/in/melis-k%C4%B1l%C4%B1%C3%A7-139136188/" target="_blank" style="padding:18px 32px;white-space:nowrap;border-radius:999px;border:1px solid #3A3460;background:rgba(18,16,29,.6);font-size:18px;font-weight:500">LinkedIn ↗</a>
+    </div>
+  </div>
+  <footer style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
+    <div style="max-width:1600px;margin:0 auto;padding:32px 140px;display:flex;justify-content:space-between;gap:24px;font-size:15px;color:#6E6A85">
+      <span>© Melis Kılıç</span>
+      <div style="display:flex;gap:28px"><a href="#work" style="color:#6E6A85" style-hover="color:#FFFFFF">Work</a><a href="#about" style="color:#6E6A85" style-hover="color:#FFFFFF">About</a><a href="#faq" style="color:#6E6A85" style-hover="color:#FFFFFF">FAQ</a><a href="#contact" style="color:#6E6A85" style-hover="color:#FFFFFF">Contact</a></div>
+    </div>
+  </footer>
+</section>
+
+
+<div onMouseEnter="{{ fabEnter }}" onMouseLeave="{{ fabLeave }}" style="position:fixed;left:50%;bottom:28px;z-index:50;display:flex;align-items:center;gap:10px;padding:10px;border-radius:999px;border:1px solid rgba(185,166,255,.22);background:rgba(16,14,28,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 40px rgba(107,60,255,.18);transition:transform .7s cubic-bezier(.22,1,.36,1),opacity .5s;transform:{{ fabT }};opacity:{{ fabOp }};pointer-events:{{ fabPe }}">
+  <div style="display:flex;flex-direction:column;gap:2px;overflow:hidden;white-space:nowrap;transition:max-width .55s cubic-bezier(.22,1,.36,1),opacity .35s,padding .55s cubic-bezier(.22,1,.36,1);max-width:{{ fabTextW }};opacity:{{ fabTextOp }};padding:0 {{ fabTextPad }}">
+    <span style="font-size:16px;font-weight:600;color:#F1EEFF">Speak to me</span>
+    <span style="font-size:13px;color:#A39FBD">Email or book a call</span>
+  </div>
+  <a href="mailto:mk.meliskilic@gmail.com" style="display:flex;align-items:center;height:52px;min-width:52px;border-radius:999px;background:linear-gradient(135deg,#6B3CFF,#5B6BFF);color:#FFFFFF;box-shadow:0 8px 24px rgba(107,60,255,.45),inset 0 1px 0 rgba(255,255,255,.25);overflow:hidden;white-space:nowrap;transition:padding .55s cubic-bezier(.22,1,.36,1),filter .3s;padding:0 {{ fabBtnPad }}" style-hover="filter:brightness(1.12);color:#FFFFFF">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 22px"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="m4 7 8 6 8-6"></path></svg>
+    <span style="overflow:hidden;font-size:16px;font-weight:600;transition:max-width .55s cubic-bezier(.22,1,.36,1),opacity .35s,margin .55s cubic-bezier(.22,1,.36,1);max-width:{{ fabLblW }};opacity:{{ fabLblOp }};margin-left:{{ fabLblM }}">Contact</span>
+  </a>
+  <a href="mailto:mk.meliskilic@gmail.com?subject=Let%E2%80%99s%20book%20a%20call" style="display:flex;align-items:center;height:52px;min-width:52px;border-radius:999px;border:1px solid #3A3460;background:#1A1729;color:#F1EEFF;overflow:hidden;white-space:nowrap;transition:padding .55s cubic-bezier(.22,1,.36,1),border-color .3s,background .3s;padding:0 {{ fabBtnPad }}" style-hover="border-color:#6B5BD6;background:#221E36">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F1EEFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 22px"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M8 3v4M16 3v4M3.5 10h17"></path><path d="m9 15 2 2 4-4"></path></svg>
+    <span style="overflow:hidden;font-size:16px;font-weight:600;transition:max-width .55s cubic-bezier(.22,1,.36,1),opacity .35s,margin .55s cubic-bezier(.22,1,.36,1);max-width:{{ fabLblW2 }};opacity:{{ fabLblOp }};margin-left:{{ fabLblM }}">Book a call</span>
+  </a>
+</div>
+
+</div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;cursorTrail&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;meteor&quot;,&quot;stardust&quot;,&quot;comet&quot;,&quot;off&quot;],&quot;default&quot;:&quot;meteor&quot;,&quot;tsType&quot;:&quot;'stardust'|'meteor'|'comet'|'off'&quot;}}">
+class Component extends DCLogic {
+  state = { rot: 0, rotAnim: true, rotWs: [], open: -1, nav: 0, hob: 0, allJobs: false, fab: false, fabShow: false, faq: 0 };
+  fit = () => {
+    const el = document.querySelector('[data-pf4-root]'); if (!el) return;
+    const w = document.documentElement.clientWidth, S = 1.34;
+    const z = (w / S) < 1280 ? w / 1280 : S;
+    el.style.width = (w / z) + 'px';
+    el.style.zoom = String(z);
+    const h = el.querySelector('[data-screen-label="Hero"]');
+    if (h) h.style.minHeight = (window.innerHeight / z) + 'px';
+  };
+  onScroll = () => { const s = window.scrollY > 240; if (s !== this.state.fabShow) this.setState({ fabShow: s }); };
+  measureRot = () => { const ws = [...document.querySelectorAll('[data-rot-item]')].map(e => e.offsetWidth); if (ws.length) this.setState({ rotWs: ws }); };
+  loadImgs = () => { document.querySelectorAll('img[data-src]').forEach(el => { const v = el.getAttribute('data-src'); const show = () => { el.style.opacity = '1'; const sk = el.parentElement && el.parentElement.querySelector('[data-skel]'); if (sk) { sk.style.opacity = '0'; setTimeout(() => { sk.style.animation = 'none'; }, 600); } }; if (!el.dataset.fx) { el.dataset.fx = '1'; el.addEventListener('load', show); } if (v && v.indexOf('{{') < 0 && el.getAttribute('src') !== v) el.setAttribute('src', v); if (el.complete && el.naturalWidth) show(); }); };
+  componentDidUpdate() { this.loadImgs(); }
+  trail = () => {
+    if ((this.props.cursorTrail || 'meteor') === 'off') return;
+    if (this._trail || (window.matchMedia && matchMedia('(pointer: coarse), (prefers-reduced-motion: reduce)').matches)) return;
+    const cv = document.createElement('canvas'); cv.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:70;mix-blend-mode:screen';
+    document.body.appendChild(cv); const x = cv.getContext('2d'); let W = 0, H = 0, dpr = 1;
+    const size = () => { dpr = Math.min(2, window.devicePixelRatio || 1); W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; x.setTransform(dpr, 0, 0, dpr, 0, 0); };
+    size(); window.addEventListener('resize', size);
+    const C = ['185,166,255', '143,160,255', '255,255,255', '139,108,255'];
+    const P = [], pts = []; let mx = -100, my = -100, lx = -100, ly = -100, raf = 0, last = 0;
+    const mode = () => this.props.cursorTrail || 'meteor';
+    const onMove = (e) => { mx = e.clientX; my = e.clientY; const now = performance.now(); const dx = mx - lx, dy = my - ly, sp = Math.min(40, Math.hypot(dx, dy)); const m = mode(); if (m === 'off') return;
+      if (m === 'meteor') pts.push({ x: mx, y: my, t: now });
+      const n = m === 'stardust' ? Math.ceil(sp / 6) + 1 : m === 'meteor' ? (sp > 4 ? 1 : 0) : (now - last > 16 ? 1 : 0);
+      for (let i = 0; i < n; i++) { const a = Math.random() * Math.PI * 2, v = m === 'stardust' ? .4 + Math.random() * 1.6 : .2 + Math.random() * .5;
+        P.push({ x: mx - dx * Math.random() * .6, y: my - dy * Math.random() * .6, vx: Math.cos(a) * v - dx * .02, vy: Math.sin(a) * v - dy * .02 + (m === 'stardust' ? .25 : 0), life: 1, d: m === 'stardust' ? .012 + Math.random() * .02 : .025, r: m === 'stardust' ? .8 + Math.random() * 2.2 : 1.5 + Math.random() * 2, c: C[Math.random() * C.length | 0], star: m === 'stardust' && Math.random() < .35 }); }
+      last = now; lx = mx; ly = my; if (!raf) raf = requestAnimationFrame(tick); };
+    const star = (px, py, r) => { x.beginPath(); for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2; x.moveTo(px, py); x.lineTo(px + Math.cos(a) * r * 2.6, py + Math.sin(a) * r * 2.6); } x.stroke(); };
+    const tick = () => { x.clearRect(0, 0, W, H); const now = performance.now();
+      while (pts.length && now - pts[0].t > 260) pts.shift();
+      if (pts.length > 1) { for (let i = 1; i < pts.length; i++) { const k = 1 - (now - pts[i].t) / 260; x.strokeStyle = 'rgba(185,166,255,' + (k * .85) + ')'; x.lineWidth = k * 5; x.lineCap = 'round'; x.shadowColor = 'rgba(139,108,255,.9)'; x.shadowBlur = 14 * k; x.beginPath(); x.moveTo(pts[i - 1].x, pts[i - 1].y); x.lineTo(pts[i].x, pts[i].y); x.stroke(); } x.shadowBlur = 0; }
+      for (let i = P.length - 1; i >= 0; i--) { const p = P[i]; p.x += p.vx; p.y += p.vy; p.vx *= .96; p.vy *= .96; p.life -= p.d; if (p.life <= 0) { P.splice(i, 1); continue; }
+        const al = p.life * p.life; x.fillStyle = 'rgba(' + p.c + ',' + al + ')'; x.shadowColor = 'rgba(' + p.c + ',' + al + ')'; x.shadowBlur = 8;
+        if (p.star) { x.strokeStyle = x.fillStyle; x.lineWidth = .8; star(p.x, p.y, p.r * p.life); } x.beginPath(); x.arc(p.x, p.y, p.r * (.4 + p.life * .6), 0, Math.PI * 2); x.fill(); }
+      x.shadowBlur = 0;
+      raf = (P.length || pts.length) ? requestAnimationFrame(tick) : 0; };
+    window.addEventListener('mousemove', onMove, { passive: true });
+    this._trail = () => { window.removeEventListener('mousemove', onMove); window.removeEventListener('resize', size); cancelAnimationFrame(raf); cv.remove(); };
+  };
+  componentDidMount() { if (!window.__imgHide) { window.__imgHide = 1; document.addEventListener('error', (e) => { const t = e.target; if (t && t.tagName === 'IMG') { t.style.visibility = 'hidden'; } }, true); } this.trail(); this.loadImgs(); setTimeout(this.loadImgs, 50); this.rotTimer = setInterval(() => this.setState(s => ({ rot: (s.rot + 1) % 6 })), 2800); this.fit(); window.addEventListener('resize', this.fit); window.addEventListener('scroll', this.onScroll, { passive: true }); this.onScroll(); setTimeout(this.fx, 80); }
+  componentWillUnmount() { if (this._trail) this._trail(); clearInterval(this.rotTimer); window.removeEventListener('resize', this.fit); window.removeEventListener('scroll', this.onScroll); if (this.io) this.io.disconnect(); }
+  fx = () => {
+    const root = document.querySelector('[data-pf4-root]'); if (!root || !root.animate || this.fxDone) return; this.fxDone = true;
+    const E = 'cubic-bezier(.22,1,.36,1)';
+    root.querySelectorAll('[data-lift]').forEach(el => {
+      el.style.transition = 'transform .45s ' + E + ',box-shadow .45s ' + E + ',border-color .3s';
+      const base = el.style.boxShadow, bc = el.style.borderColor;
+      el.addEventListener('mouseenter', () => { el.style.transform = 'translateY(-4px)'; el.style.boxShadow = '0 24px 60px rgba(107,60,255,.25)'; if (bc) el.style.borderColor = '#4A3A99'; });
+      el.addEventListener('mouseleave', () => { el.style.transform = ''; el.style.boxShadow = base; el.style.borderColor = bc; });
+    });
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const drift = (a, b, s) => [{ transform: 'translate(0,0) scale(1)' }, { transform: 'translate(' + a + 'px,' + b + 'px) scale(' + s + ')' }, { transform: 'translate(' + (-b) + 'px,' + a / 2 + 'px) scale(.92)' }];
+    const orb = (parent, c, size, x, y, dur, path) => {
+      const o = document.createElement('div');
+      o.style.cssText = 'position:absolute;left:' + x + ';top:' + y + ';width:' + size + 'px;height:' + size + 'px;margin:-' + size / 2 + 'px 0 0 -' + size / 2 + 'px;border-radius:50%;background:radial-gradient(circle,' + c + ',rgba(0,0,0,0) 65%);filter:blur(40px);mix-blend-mode:screen;pointer-events:none;z-index:' + (parent.dataset.orbsBehind ? '-1' : '0') + '';
+      parent.prepend(o);
+      o.animate(path, { duration: dur, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
+      o.animate([{ scale: '.82', opacity: .75 }, { scale: '1.22', opacity: 1 }], { duration: Math.round(dur * .5), iterations: Infinity, direction: 'alternate', easing: 'ease-in-out', delay: -Math.round(Math.random() * dur) });
+    };
+    const sec = (k) => root.querySelector('[data-orbs="' + k + '"]');
+    if (sec('hero')) {
+      orb(sec('hero'), 'rgba(107,60,255,.32)', 900, '78%', '35%', 15000, drift(-110, 70, 1.12));
+      orb(sec('hero'), 'rgba(91,107,255,.26)', 640, '92%', '85%', 17000, drift(-120, -80, 1.15));
+      orb(sec('hero'), 'rgba(107,60,255,.16)', 560, '10%', '15%', 16000, drift(90, 110, 1.1));
+    }
+    if (sec('work')) orb(sec('work'), 'rgba(91,107,255,.16)', 620, '96%', '30%', 18000, drift(-80, 60, 1.1));
+    if (sec('experience')) { orb(sec('experience'), 'rgba(107,60,255,.16)', 680, '2%', '35%', 17000, drift(90, -60, 1.12)); orb(sec('experience'), 'rgba(91,107,255,.12)', 520, '98%', '80%', 19000, drift(-70, -50, 1.1)); }
+    if (sec('beyond')) orb(sec('beyond'), 'rgba(107,60,255,.15)', 600, '92%', '20%', 16000, drift(-90, 70, 1.12));
+    if (sec('close')) {
+      orb(sec('close'), 'rgba(107,60,255,.30)', 460, '40%', '45%', 15000, drift(160, 40, 1.15));
+      orb(sec('close'), 'rgba(91,107,255,.24)', 400, '62%', '45%', 17000, drift(-140, -50, 1.2));
+    }
+    const play = (el) => {
+      const d = (+(el.dataset.stagger || 0)) * 90;
+      el.style.opacity = '';
+      el.animate([{ opacity: 0, transform: 'translateY(40px)', filter: 'blur(6px)' }, { opacity: 1, transform: 'translateY(0)', filter: 'blur(0)' }], { duration: 900, delay: d, easing: E, fill: 'backwards' });
+    };
+    const vh = window.innerHeight;
+    this.io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { this.io.unobserve(e.target); play(e.target); } }), { threshold: 0, rootMargin: '0px 0px -10% 0px' });
+    root.querySelectorAll('[data-reveal]').forEach(el => { if (el.getBoundingClientRect().top < vh * 0.9) { play(el); return; } el.style.opacity = '0'; this.io.observe(el); });
+  };
+  renderVals() {
+    const open = this.state.open;
+    const im = (src, top, w, ml, r, cover) => ({ src, top, w, ml, r: r || '0', hgt: cover ? '100%' : 'auto', fit: cover ? 'cover' : 'fill', b: r ? '1px solid #3A3460' : 'none' });
+    const work = [
+      { name: 'Cardly', cat: 'AI card scanner · design challenge', accent: '#8FA0FF', accentText: '#8FA0FF', glow: 'rgba(91,107,255,.32)', base: '#07060E', href: 'Cardly Case Study.dc.html', tags: ['Onboarding', 'Paywall', 'First Scan'], desc: 'Closing the ad-to-app gap across onboarding, paywall, and the core scan experience.', imgs: [im('assets/scan.webp', '50px', '140px', '-240px', '20px'), im('assets/summary.webp', '30px', '150px', '-75px', '22px'), im('assets/paywall.webp', '50px', '140px', '95px', '20px')] },
+      { name: 'Pitio', cat: 'AI personal trainer app', accent: '#E5483A', accentText: '#FF8A7E', glow: 'rgba(229,72,58,.35)', base: '#0B0606', href: 'Pitio Case Study.dc.html', tags: ['0→1', 'AI / CV', 'iOS'], desc: 'An AI personal trainer that watches you move, remembers your journey, and adapts every session.', imgs: [im('assets/pitio/choose-trainer-bare.webp', '50px', '140px', '-240px', '20px'), im('assets/pitio/live-session-bare.webp', '30px', '150px', '-75px', '22px'), im('assets/pitio/home-bare.webp', '50px', '140px', '95px', '20px')] },
+      { name: 'Aurora', cat: 'CRM platform · landing page', accent: '#DD97FF', accentText: '#DD97FF', glow: 'rgba(98,73,255,.4)', base: '#04030C', href: 'Aurora CRM Showcase.dc.html', tags: ['Landing page', 'Brand identity'], desc: 'A landing page that makes a complex AI customer-experience platform easy to understand and act on.', imgs: [im('assets/aurora/mock-hero-laptop.webp', '0px', '100%', '-50%', '', true)] },
+      { name: 'Meel', cat: 'AI wellness app', accent: '#B9A6FF', accentText: '#B9A6FF', glow: 'rgba(107,60,255,.32)', base: '#08070F', href: 'Meel Case Study.dc.html', tags: ['PM & PD', 'iOS · Android · Web'], desc: 'A wellness platform that brings planning, guidance, and social support into one adaptive experience.', imgs: [im('assets/meel/agenda-bare.webp', '50px', '140px', '-240px', '20px'), im('assets/meel/chat-ainy-bare.webp', '30px', '150px', '-75px', '22px'), im('assets/meel/social-bare.webp', '50px', '140px', '95px', '20px')] }
+    ].map((w, i) => {
+      const on = open === i;
+      return { ...w, n: String(i + 1).padStart(2, '0'), h: on ? '420px' : '0px', dim: open === -1 || on ? 1 : 0.4, bg: 'radial-gradient(circle at 50% 60%,' + w.glow + ',rgba(0,0,0,0) 62%),' + w.base, arrowBg: on ? '#F1EEFF' : 'transparent', arrowBorder: on ? '#F1EEFF' : '#3A3460', arrowT: on ? 'rotate(45deg)' : 'none', arrowColor: on ? '#0A0913' : '#F1EEFF', enter: () => this.setState({ open: i }) };
+    });
+    const k = (arr) => arr.map((x, i) => ({ ...x, k: i }));
+    return {
+      nav: [['Work', '#work'], ['About', '#about'], ['FAQ', '#faq']].map(([label, href], i) => ({ label, href, go: () => this.setState({ nav: i }), color: this.state.nav === i ? '#FFFFFF' : '#A39FBD' })),
+      work,
+      leave: () => this.setState({ open: -1 }),
+      hobLeave: () => this.setState({ hob: 0 }),
+      hobbies: [
+        ['painting', 'Painting', 'Sharpens my artistic eye and awareness, noticing details around me.'],
+        ['coffee', 'Coffee', 'Boosts my focus and creativity, fueling shared memories.'],
+        ['swimming', 'Swimming', 'Builds my resilience and clarity, calming my mind.'],
+        ['movies', 'Movies &\nBooks', 'Expands my imagination and empathy, exploring new perspectives and stories.'],
+        ['dance', 'Dancing', 'Enhances my rhythm and adaptability, keeping my expression fluid and engaging.'],
+        ['mindfulness', 'Mindfulness', 'Cultivates my presence and clarity, simplifying thoughts and deepening awareness.'],
+        ['nature', 'Being in nature', 'Strengthens my observation and harmony, inspiring balance and authenticity.'],
+        ['skate', 'Skateboarding', 'Fosters my courage, embracing risks and freedom.'],
+        ['beings', 'Loving living beings', 'Nurtures my empathy and kindness, creating genuine care and bonds.']
+      ].map(([k, title, desc], i) => {
+        const on = this.state.hob === i;
+        return { hasImg: !!k, noImg: !k, img: k ? 'assets/portfolio/hobby-' + k + '-tint3.jpg' : '', title, desc, n: String(i + 1).padStart(2, '0'), flex: on ? '3.2 1 0' : '1 1 0', border: on ? '#4A3A99' : '#262338', scale: on ? 'scale(1.04)' : 'scale(1)', filter: on ? 'none' : 'brightness(.78)', textOp: on ? 1 : 0, textT: on ? 'translateY(0)' : 'translateY(8px)', enter: () => this.setState({ hob: i }) };
+      }),
+      ...(() => {
+        const st = this.state, f = st.fab;
+        const hist = [['Pitio', 'Product Manager & Designer', '2026 — Now'], ['Meel', 'Product Manager & Designer', '2022 — 2026'], ['Reef Technology', 'AR Operations Lead', '2020 — 2022'], ['EY', 'Financial Operations Associate', '2018 — 2020']];
+        const faq = [
+          ['What do you work on?', 'End-to-end product work: strategy, research, UX/UI, and execution through launch and growth. I can own the whole lifecycle or plug into the part where you need the most help.'],
+          ['Can you work with our existing team and design system?', 'Yes. I can design within your existing design system, or help build one if it doesn’t exist yet, while working closely with engineering and stakeholders.'],
+          ['How do you start a new project?', 'With discovery: goals, users, constraints, and what success looks like. From there I shape a clear plan and roadmap before moving into design.'],
+          ['Do you have experience with AI products?', 'Yes. At Meel and Pitio I designed AI features end to end, from prompt design and RAG optimisations to real-time computer-vision coaching.']
+        ];
+        return {
+          history: hist.map(([co, role, years], i) => { const vis = i < 2 || st.allJobs; return { co, role, years, rows: vis ? '1fr' : '0fr', op: vis ? 1 : 0, tf: vis ? 'translateY(0)' : 'translateY(-8px)', mb: vis ? '12px' : '0px' }; }),
+          toggleJobs: () => this.setState(s => ({ allJobs: !s.allJobs })),
+          jobsLabel: st.allJobs ? 'Hide' : 'Show all',
+          jobsArrow: st.allJobs ? 'rotate(180deg)' : 'rotate(0deg)',
+          bring: ['Product strategy', 'Roadmap & OKRs', 'User research', 'UX / UI', 'Design systems', 'Prototyping', 'A/B testing', 'AI features', 'GTM & growth'],
+          faq: faq.map(([q, a], i) => { const on = st.faq === i; return { q, a, k: i, rows: on ? '1fr' : '0fr', op: on ? 1 : 0, plus: on ? 'scaleY(0)' : 'scaleY(1)', border: on ? '#4A3A99' : '#262338', shadow: on ? '0 0 0 1px rgba(107,60,255,.25),0 18px 48px rgba(107,60,255,.14)' : 'none', toggle: () => this.setState(s => ({ faq: s.faq === i ? -1 : i })) }; }),
+          fabEnter: () => this.setState({ fab: true }),
+          fabLeave: () => this.setState({ fab: false }),
+          fabT: st.fabShow ? 'translate(-50%,0)' : 'translate(-50%,140%)',
+          fabOp: st.fabShow ? 1 : 0,
+          fabPe: st.fabShow ? 'auto' : 'none',
+          fabTextW: f ? '0px' : '200px', fabTextOp: f ? 0 : 1, fabTextPad: f ? '0px' : '14px',
+          fabBtnPad: f ? '20px' : '15px',
+          fabLblW: f ? '90px' : '0px', fabLblW2: f ? '110px' : '0px', fabLblOp: f ? 1 : 0, fabLblM: f ? '10px' : '0px'
+        };
+      })(),
+      ...(() => {
+        const P = [['solve', 'what’s not working.'], ['discover', 'what’s missing.'], ['create', 'what’s next.'], ['improve', 'what exists.'], ['find', 'the opportunity.'], ['uncover', 'what matters.']];
+        const N = P.length, cur = this.state.rot % N, prev = (cur + N - 1) % N;
+        return {
+          rot: P.map(([a, b], i) => i === cur ? { a, b, t: 'translateY(0)', op: 1, f: 'blur(0px)' } : i === prev ? { a, b, t: 'translateY(-60%)', op: 0, f: 'blur(10px)' } : { a, b, t: 'translateY(60%)', op: 0, f: 'blur(10px)' })
+        };
+      })(),
+      showB: (this.props.aboutPhoto || 'B') === 'B' ? 'block' : 'none', showA: (this.props.aboutPhoto || 'B') === 'B' ? 'none' : 'block',
+      aboutSrc: (this.props.aboutPhoto || 'B') === 'B' ? 'assets/portfolio/melis-real.webp' : './moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp',
+      jobs: [
+        { co: 'Pitio', role: 'Product Manager & Designer', years: '2026 — Present', loc: 'Istanbul', text: 'Leading development of an AI personal trainer app (concept), focused on real-time video interaction with animated AI coaches. Led competitor research and designed user flows, real-time feedback, and retention system (habit loops, coach memory). Designed UI and narratives for early-stage positioning and investor discussions.', ach: [] },
+        { co: 'Meel', role: 'Product Manager & Designer', years: '2022 — 2026', loc: 'Istanbul', text: 'Owned the P&L of an AI wellness app from 0 to 1, defining product vision, roadmap, and OKRs. Led user research, competitor analysis, and hypothesis validation. Drove execution through PRDs and close collaboration with engineering. Designed UX/UI and iterated through usability and A/B testing. Built AI features via prompt design and RAG optimizations. Led GTM, ASO, marketing and fundraising efforts.', ach: ['2K+ paid users in 3 months', '4.6★ rating', '+34% conversion', 'Higher retention'] },
+        { co: 'Reef Technology', role: 'AR Operations Lead', years: '2020 — 2022', loc: 'Miami (Remote)', text: 'Led an 8-person team managing sales operations and data across major delivery platforms (Uber Eats, DoorDash). Identified usability gaps and revenue-impacting inefficiencies in high-volume payment systems (1M+ daily transactions), increasing performance by ~40%. Contributed to the launch of a SaaS financial product.', ach: [] },
+        { co: 'EY', role: 'Financial Operations Associate', years: '2018 — 2020', loc: 'Istanbul', text: 'Managed corporate accounting and compliance for multinational clients, delivering and presenting financial insights to executives, enabling data-driven strategic decisions.', ach: [] }
+      ].map(j => ({ ...j, hasAch: j.ach.length > 0 })),
+      skills: k([
+        { title: 'Strategy & Planning', items: ['Roadmap & Vision', 'PRD', 'Competitive Research', 'GTM', 'Growth & Habit Loops', 'A/B testing', 'KPI Tracking'] },
+        { title: 'UX / UI', items: ['Interviews', 'Surveys', 'Personas', 'Journeys', 'IA', 'Design System', 'Prototyping'] },
+        { title: 'Execution', items: ['Stakeholder Alignment', 'Backlog Grooming', 'Sprints', 'Feedback Loops'] },
+        { title: 'Mindset', items: ['Entrepreneurial', 'Product-Driven', 'Resourceful', 'Problem-Solver', 'Empathetic', 'Active Listener'] }
+      ]),
+      training: [
+        { name: 'Bootcamp: AI Product Manager', org: '' },
+        { name: 'Measuring Product Metrics for PMs', org: ' · Ayuda LLC' },
+        { name: 'Google UX Design Professional', org: ' · Coursera' },
+        { name: 'Visual Design: The Ultimate Guide', org: ' · IxDF' },
+        { name: 'Product Design Workshop', org: ' · Brainster' },
+        { name: 'Become a UX Designer from Scratch', org: ' · IxDF' },
+        { name: 'Figma for Designers', org: ' · Coursera' },
+        { name: 'Bootcamp: Boost Your App & Web3', org: ' · Rise in Company' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

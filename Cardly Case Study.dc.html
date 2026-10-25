@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="ext-resource-dependency" content="assets/scan.webp" data-resource-id="img-scan">
+<meta name="ext-resource-dependency" content="assets/market-strip.png" data-resource-id="img-market-strip">
+<meta name="ext-resource-dependency" content="assets/market.webp" data-resource-id="img-market">
+<meta name="ext-resource-dependency" content="assets/ai.webp" data-resource-id="img-ai">
+<meta name="ext-resource-dependency" content="assets/first-scan.webp" data-resource-id="img-first-scan">
+<meta name="ext-resource-dependency" content="assets/front.webp" data-resource-id="img-front">
+<meta name="ext-resource-dependency" content="assets/back.webp" data-resource-id="img-back">
+<meta name="ext-resource-dependency" content="assets/summary.webp" data-resource-id="img-summary">
+<meta name="ext-resource-dependency" content="assets/paywall.webp" data-resource-id="img-paywall">
+<meta name="ext-resource-dependency" content="assets/details-full.webp" data-resource-id="img-details-full">
+<template id="__bundler_thumbnail" data-bg-color="#0A0913"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#0A0913"/><rect x="34" y="26" width="32" height="48" rx="5" fill="none" stroke="#8B6CFF" stroke-width="4"/><line x1="28" y1="50" x2="72" y2="50" stroke="#E6DDFF" stroke-width="3"/></svg></template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+html,body{margin:0;background:#0A0913;color:#F1EEFF;font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+a{color:#B9A6FF;text-decoration:none}
+a:hover{color:#FFFFFF}
+@keyframes stripFlow{from{transform:translateX(0)}to{transform:translateX(-291px)}}
+@keyframes scrollNudge{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+@keyframes pfShim{0%{background-position:150% 0}100%{background-position:-50% 0}}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&display=swap" rel="stylesheet">
+</helmet>
+<div style="background:#0A0913"><div data-cardly-root="1" style="position:relative;width:1280px;background:#0A0913;overflow:hidden">
+<a data-site-back="1" href="Portfolio v5.dc.html#work" aria-label="Back to all work" style="position:fixed;left:32px;top:22px;z-index:60;box-sizing:border-box;height:60px;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;justify-content:center;width:60px;padding:0;border-radius:999px;border:1px solid rgba(93,29,245,.32);background:rgba(10,10,24,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif;font-size:16px;font-weight:500;color:#F1EEFF;transition:background .25s,transform .4s cubic-bezier(.22,1,.36,1)" style-hover="background:rgba(93,29,245,.14);transform:translateX(-3px);color:#FFFFFF"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F1EEFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg></a>
+<header data-site-nav="1" style="position:fixed;left:50%;top:22px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:32px;padding:8px;border-radius:999px;border:1px solid rgba(93,29,245,.32);background:rgba(10,10,24,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif">
+  <div style="display:flex;align-items:center;gap:12px">
+    <a href="Portfolio v5.dc.html" style="display:flex;align-items:center;gap:12px;padding-right:8px;color:#F1EEFF">
+      <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid #2E3466;flex:0 0 40px"><img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
+      <span style="font-size:17px;font-weight:600;letter-spacing:-.01em">Melis K.</span>
+    </a>
+  </div>
+  <nav style="display:flex;align-items:center;gap:4px;font-size:16px;font-weight:500">
+    <a href="Portfolio v5.dc.html#work" style="padding:10px 14px;border-radius:999px;color:#F1EEFF;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">Work</a>
+    <a href="Portfolio v5.dc.html#about" style="padding:10px 14px;border-radius:999px;color:#A3A6C9;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">About</a>
+    <a href="Portfolio v5.dc.html#faq" style="padding:10px 14px;border-radius:999px;color:#A3A6C9;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">FAQ</a>
+    <a href="Portfolio v5.dc.html#contact" style="margin-left:8px;padding:12px 22px;border-radius:999px;background:linear-gradient(90deg,#5D1DF5,#5853F8);color:#FFFFFF;font-weight:600;box-shadow:0 6px 18px rgba(93,29,245,.45),inset 0 1px 0 rgba(255,255,255,.25);transition:filter .3s" style-hover="filter:brightness(1.12);color:#FFFFFF">Contact</a>
+  </nav>
+</header>
+
+
+
+
+<section data-screen-label="Hero" style="position:relative;max-width:1600px;margin:0 auto;padding:48px 140px;min-height:100vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px;align-items:center;align-content:center">
+  <div style="position:absolute;left:55%;top:10%;width:900px;height:900px;border-radius:50%;background:radial-gradient(circle,rgba(107,60,255,.17),rgba(107,60,255,0) 65%);pointer-events:none"></div>
+  <div style="position:relative;display:flex;flex-direction:column;gap:28px">
+    <div style="font-family:'Geist Mono',monospace;font-size:16px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">Product Design Challenge · Mobile App</div>
+    <h1 style="margin:0;font-size:60px;line-height:1.04;font-weight:600;letter-spacing:-.035em;text-wrap:balance">From Ad Promise to Product</h1>
+    <p style="margin:0;font-size:24px;line-height:1.5;color:#C9C4E0;max-width:640px;text-wrap:pretty">Redesigning onboarding, first scan and paywall to deliver the experience users were promised in the ads.</p>
+    
+    <p style="margin:0;font-size:13px;line-height:1.6;color:#5A5673;max-width:520px;padding-top:4px">* Concept redesign for a design challenge. Not affiliated with Cardly.</p>
+  </div>
+  <div style="position:relative;height:560px">
+    <img src="assets/scan.webp" alt="Onboarding scan screen" style="position:absolute;left:60px;top:70px;width:220px;border-radius:40px;border:1px solid #2E2A45;transform:rotate(-7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+    <img src="assets/details.webp" alt="Card details screen" style="position:absolute;right:50px;top:70px;width:220px;border-radius:40px;border:1px solid #2E2A45;transform:rotate(7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+    <img src="assets/summary.webp" alt="Scan result screen" style="position:absolute;left:50%;top:0;margin-left:-125px;width:250px;border-radius:44px;border:1px solid #3A3460;box-shadow:0 40px 120px rgba(107,60,255,.35),0 30px 60px rgba(0,0,0,.6)">
+  </div>
+</section>
+
+<section id="challenge" data-screen-label="Challenge" style="position:relative;z-index:1;overflow:hidden;border-top:1px solid #1E1B2E">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">01 · Design challenge</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">What needed improvement</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-size:15px;font-family:'Geist Mono',monospace;color:#8C87A8;text-transform:uppercase;letter-spacing:.08em">What Cardly does</div>
+        <p style="margin:0;font-size:26px;line-height:1.45;text-wrap:pretty">Scan trading cards, estimate their grade, and understand market value.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-size:15px;font-family:'Geist Mono',monospace;color:#8C87A8;text-transform:uppercase;letter-spacing:.08em">The brief</div>
+        <p style="margin:0;font-size:26px;line-height:1.45;color:#C9C4E0;text-wrap:pretty">Redesign onboarding, paywall, and one core feature to close the ad-to-app gap.</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1600px;margin:0 auto;padding:60px 140px 140px;display:flex;flex-direction:column;gap:56px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:40px;margin-bottom:-32px">
+      <h3 style="margin:0;font-size:36px;font-weight:600;letter-spacing:-.02em">The three ads, each with its promise:</h3>
+    </div>
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr) auto minmax(0,1fr);align-items:stretch;gap:28px">
+      <div style="padding:40px;border:1px solid #262338;border-radius:24px;background:#12101D;display:flex;flex-direction:column;gap:12px">
+        <div style="font-family:'Geist Mono',monospace;font-size:13px;color:#B9A6FF">01</div>
+        <div style="font-size:24px;font-weight:600">Card shown</div>
+        <div style="margin-top:12px;padding-top:16px;border-top:1px solid #262338;display:flex;flex-direction:column;gap:8px">
+          <div style="font-family:'Geist Mono',monospace;font-size:12px;color:#8C87A8;letter-spacing:.06em">AD 01 · PROMISE</div>
+          <div style="font-size:17px;line-height:1.5;color:#C9C4E0">“Point your camera. Know what it’s worth.”</div>
+        </div>
+      </div>
+      <div style="align-self:center;font-size:28px;color:#6B3CFF">→</div>
+      <div style="padding:40px;border:1px solid #262338;border-radius:24px;background:#12101D;display:flex;flex-direction:column;gap:12px">
+        <div style="font-family:'Geist Mono',monospace;font-size:13px;color:#B9A6FF">02</div>
+        <div style="font-size:24px;font-weight:600">AI identifies</div>
+        <div style="margin-top:12px;padding-top:16px;border-top:1px solid #262338;display:flex;flex-direction:column;gap:8px">
+          <div style="font-family:'Geist Mono',monospace;font-size:12px;color:#8C87A8;letter-spacing:.06em">AD 02 · PROMISE</div>
+          <div style="font-size:17px;line-height:1.5;color:#C9C4E0">“AI grades your card in seconds.”</div>
+        </div>
+      </div>
+      <div style="align-self:center;font-size:28px;color:#6B3CFF">→</div>
+      <div style="padding:40px;border:1px solid #262338;border-radius:24px;background:#12101D;display:flex;flex-direction:column;gap:12px">
+        <div style="font-family:'Geist Mono',monospace;font-size:13px;color:#B9A6FF">03</div>
+        <div style="font-size:24px;font-weight:600">Value revealed</div>
+        <div style="margin-top:12px;padding-top:16px;border-top:1px solid #262338;display:flex;flex-direction:column;gap:8px">
+          <div style="font-family:'Geist Mono',monospace;font-size:12px;color:#8C87A8;letter-spacing:.06em">AD 03 · PROMISE</div>
+          <div style="font-size:17px;line-height:1.5;color:#C9C4E0">“Find out what your collection is really worth.”</div>
+        </div>
+      </div>
+    </div>
+    <div style="padding:72px 0 0;display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8C87A8">Emotional payoff</div>
+      <div style="font-size:60px;line-height:1.1;font-weight:600;letter-spacing:-.03em;max-width:1200px;text-wrap:balance">“This card might be worth <span style="color:#B9A6FF">more than I thought.</span>”</div>
+    </div>
+  </div>
+</section>
+
+<section id="problems" data-screen-label="Problems" style="position:relative;z-index:1;overflow:hidden;border-top:1px solid #1E1B2E">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:72px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">02 · Key problems</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Four gaps</h2>
+      </div>
+      <p style="margin:0;font-size:24px;line-height:1.5;color:#C9C4E0;max-width:820px;text-wrap:pretty">The ads deliver the payoff in seconds. The app made people earn it, and pay for it, before they saw it.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <div style="padding:40px;border:1px solid #262338;border-radius:28px;background:#12101D;display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">Speed</div>
+        <div style="font-size:72px;line-height:.9;font-weight:600;letter-spacing:-.05em">7</div>
+        <div style="font-size:19px;font-weight:600">screens before the first scan</div>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#A39FBD">Intro screens, a quiz, and a loader delay the camera and the instant scan-to-value moment promised in the ads.</p>
+      </div>
+      <div style="padding:40px;border:1px solid #262338;border-radius:28px;background:#12101D;display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">Proof</div>
+        <div style="font-size:72px;line-height:.9;font-weight:600;letter-spacing:-.05em">0</div>
+        <div style="font-size:19px;font-weight:600">results before the paywall</div>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#A39FBD">The paywall lands before a single result. Users are asked to pay before seeing the value, with no free trial.</p>
+      </div>
+      <div style="padding:40px;border:1px solid #262338;border-radius:28px;background:#12101D;display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">Promise</div>
+        <div style="font-size:72px;line-height:.9;font-weight:600;letter-spacing:-.05em">5</div>
+        <div style="font-size:19px;font-weight:600">stars instead of the 1–10</div>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#A39FBD">The ads show a confident PSA-style 1–10 grade. The app uses stars and vague confidence messaging.</p>
+      </div>
+      <div style="padding:40px;border:1px solid #262338;border-radius:28px;background:#12101D;display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">Value</div>
+        <div style="font-size:72px;line-height:.9;font-weight:600;letter-spacing:-.05em">3</div>
+        <div style="font-size:19px;font-weight:600">core needs underplayed</div>
+        <p style="margin:0;font-size:16px;line-height:1.55;color:#A39FBD">Intro and paywall both prioritize collection features over value, growth, and AI guidance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="strategy" data-screen-label="Strategy" style="position:relative;z-index:1;overflow:hidden;border-top:1px solid #1E1B2E">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:160px">
+    <div style="display:flex;flex-direction:column;gap:24px;align-items:flex-start;margin-bottom:-100px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">03 · Design strategy</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:360px minmax(576px,1fr);gap:64px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.06em;color:#B9A6FF">3.1.1 · ONBOARDING</div>
+        <h3 style="margin:0;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em">Shorten the path to the first scan</h3>
+        <p style="margin:0;font-size:20px;line-height:1.55;color:#A39FBD;text-wrap:pretty">7 screens delayed the first scan. The redesign removes the quiz and personalization steps, bringing the first scan into onboarding and closer to the ad promise.</p>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:flex-start;gap:16px">
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <div style="width:280px;display:flex;flex-wrap:nowrap;gap:12px;align-items:center;justify-content:center;height:44px"><span style="padding:6px 14px;border-radius:999px;background:#2A1520;color:#FF8FA6;font-size:14px;font-family:'Geist Mono',monospace">CURRENT</span></div>
+          <div style="width:280px;height:607px;border-radius:36px;overflow:hidden;border:1px solid #262338"><image-slot id="current-camera" shape="rect" placeholder="Original Cardly · camera (screen 8)"></image-slot></div>
+        </div>
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <div style="width:280px;display:flex;flex-wrap:nowrap;gap:12px;align-items:center;justify-content:center;height:44px"><span style="padding:6px 14px;border-radius:999px;background:#13291F;color:#5BE3A5;font-size:14px;font-family:'Geist Mono',monospace">REDESIGNED</span></div>
+          <img src="assets/first-scan.webp" alt="Redesigned first scan prompt" style="width:280px;height:607px;object-fit:cover;object-position:top;display:block;border-radius:36px;border:1px solid #3A3460;box-shadow:0 30px 100px rgba(107,60,255,.25)">
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(576px,1fr) 360px;gap:64px">
+      <div style="display:flex;flex-direction:column;gap:20px;order:2">
+        <div style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.06em;color:#B9A6FF">3.1.2 · ONBOARDING</div>
+        <h3 style="margin:0;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em">Reprioritize secondary features</h3>
+        <p style="margin:0;font-size:20px;line-height:1.55;color:#A39FBD;text-wrap:pretty">The ads prioritize value, growth, and AI guidance, not collection management. The redesign brings those same priorities into onboarding.</p>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:flex-start;gap:16px">
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <img src="assets/market.webp" alt="Market value and growth intro" style="width:280px;height:607px;object-fit:cover;object-position:top;display:block;border-radius:36px;border:1px solid #3A3460;box-shadow:0 30px 100px rgba(107,60,255,.25)">
+        </div>
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <img src="assets/ai.webp" alt="AI guidance intro" style="width:280px;height:607px;object-fit:cover;object-position:top;display:block;border-radius:36px;border:1px solid #3A3460;box-shadow:0 30px 100px rgba(107,60,255,.25)">
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:360px minmax(576px,1fr);gap:64px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.06em;color:#B9A6FF">3.2.1 · PAYWALL</div>
+        <h3 style="margin:0;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em">Prove value before asking people to pay</h3>
+        <p style="margin:0;font-size:20px;line-height:1.55;color:#A39FBD;text-wrap:pretty">The first result is free. The paywall comes after value, when users want more detail or another scan.</p>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:flex-start;gap:16px">
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <img src="assets/summary.webp" alt="Free first result" style="width:280px;height:607px;object-fit:cover;object-position:top;display:block;border-radius:36px;border:1px solid #3A3460;box-shadow:0 30px 100px rgba(107,60,255,.25)">
+        </div>
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <img src="assets/paywall.webp" alt="Redesigned paywall" style="width:280px;height:607px;object-fit:cover;object-position:top;display:block;border-radius:36px;border:1px solid #3A3460;box-shadow:0 30px 100px rgba(107,60,255,.25)">
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(576px,1fr) 360px;gap:64px">
+      <div style="display:flex;flex-direction:column;gap:20px;order:2">
+        <div style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.06em;color:#B9A6FF">3.2.2 · PAYWALL</div>
+        <h3 style="margin:0;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em">Reframe the paywall around core value</h3>
+        <p style="margin:0;font-size:20px;line-height:1.55;color:#A39FBD;text-wrap:pretty">The original paywall focused on broad features and pricing. I reframed it around the value users came for and added a monthly tier to make the plans easier to compare.</p>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:flex-start;gap:16px">
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <div style="width:280px;display:flex;flex-wrap:nowrap;gap:12px;align-items:center;justify-content:center;height:44px"><span style="padding:6px 14px;border-radius:999px;background:#2A1520;color:#FF8FA6;font-size:14px;font-family:'Geist Mono',monospace">CURRENT</span></div>
+          <div style="width:280px;height:607px;border-radius:36px;overflow:hidden;border:1px solid #262338"><image-slot id="paywall-322-current" shape="rect" placeholder="Original Cardly · paywall"></image-slot></div>
+        </div>
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <div style="width:280px;display:flex;flex-wrap:nowrap;gap:12px;align-items:center;justify-content:center;height:44px"><span style="padding:6px 14px;border-radius:999px;background:#13291F;color:#5BE3A5;font-size:14px;font-family:'Geist Mono',monospace">REDESIGNED</span></div>
+          <img src="assets/paywall.webp" alt="Redesigned paywall" style="width:280px;height:607px;object-fit:cover;object-position:top;display:block;border-radius:36px;border:1px solid #3A3460;box-shadow:0 30px 100px rgba(107,60,255,.25)">
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:360px minmax(576px,1fr);gap:64px">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-family:'Geist Mono',monospace;font-size:18px;letter-spacing:.06em;color:#B9A6FF">3.3 · CORE FEATURE</div>
+        <h3 style="margin:0;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em">Strengthen the result experience</h3>
+        <p style="margin:0;font-size:20px;line-height:1.55;color:#A39FBD;text-wrap:pretty">The redesign makes grading and valuation clearer and more credible, with a familiar 1–10 score, stronger value hierarchy, recent sales, and source-backed evidence.</p>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:flex-start;gap:16px">
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <div style="width:280px;display:flex;flex-wrap:nowrap;gap:12px;align-items:center;justify-content:center;height:44px"><span style="padding:6px 14px;border-radius:999px;background:#2A1520;color:#FF8FA6;font-size:14px;font-family:'Geist Mono',monospace">CURRENT</span></div>
+          <div style="width:280px;height:607px;border-radius:36px;overflow:hidden;border:1px solid #262338"><image-slot id="core-current" shape="rect" placeholder="Original Cardly · result"></image-slot></div>
+        </div>
+        <div style="width:280px;flex:0 0 280px;display:flex;flex-direction:column;gap:20px;align-items:flex-start">
+          <div style="width:280px;display:flex;flex-wrap:nowrap;gap:12px;align-items:center;justify-content:center;height:44px"><span style="padding:6px 14px;border-radius:999px;background:#13291F;color:#5BE3A5;font-size:14px;font-family:'Geist Mono',monospace">REDESIGNED</span></div>
+          <div style="width:280px;height:607px;border-radius:36px;overflow:hidden;border:1px solid #3A3460;box-shadow:0 30px 100px rgba(107,60,255,.25)"><img src="assets/details.webp" alt="Redesigned unlocked details" style="width:280px;height:607px;object-fit:cover;object-position:top;display:block"></div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:40px;padding:64px 140px;border:1px solid #262338;border-radius:32px;background:#0F0D1A">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:40px">
+        <h3 style="margin:0;font-size:36px;font-weight:600;letter-spacing:-.02em">How the hook works</h3>
+        <div style="font-size:18px;color:#A39FBD">Same order as the ads</div>
+      </div>
+      <div style="display:flex;justify-content:center;align-items:flex-start;gap:16px">
+        <div style="width:220px;display:flex;flex-direction:column;gap:16px"><img src="assets/first-scan.webp" alt="Ready to scan" style="width:220px;height:477px;object-fit:cover;object-position:top;display:block;border-radius:30px;border:1px solid #2E2A45"><div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'Geist Mono',monospace;color:#B9A6FF;font-size:16px">01</span><span style="font-size:18px;font-weight:600">Ready to scan</span></div></div>
+        <div style="width:220px;display:flex;flex-direction:column;gap:16px"><img src="assets/front.webp" alt="Scan" style="width:220px;height:477px;object-fit:cover;object-position:top;display:block;border-radius:30px;border:1px solid #2E2A45"><div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'Geist Mono',monospace;color:#B9A6FF;font-size:16px">02</span><span style="font-size:18px;font-weight:600">Scan the card</span></div></div>
+        <div style="width:220px;display:flex;flex-direction:column;gap:16px"><img src="assets/back.webp" alt="Identify" style="width:220px;height:477px;object-fit:cover;object-position:top;display:block;border-radius:30px;border:1px solid #2E2A45"><div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'Geist Mono',monospace;color:#B9A6FF;font-size:16px">03</span><span style="font-size:18px;font-weight:600">AI identifies it</span></div></div>
+        <div style="width:220px;display:flex;flex-direction:column;gap:16px"><img src="assets/summary.webp" alt="Value" style="width:220px;height:477px;object-fit:cover;object-position:top;display:block;border-radius:30px;border:1px solid #2E2A45"><div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'Geist Mono',monospace;color:#B9A6FF;font-size:16px">04</span><span style="font-size:18px;font-weight:600">Value revealed, free</span></div></div>
+        <div style="width:220px;display:flex;flex-direction:column;gap:16px"><img src="assets/paywall.webp" alt="Unlock" style="width:220px;height:477px;object-fit:cover;object-position:top;display:block;border-radius:30px;border:1px solid #2E2A45"><div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'Geist Mono',monospace;color:#B9A6FF;font-size:16px">05</span><span style="font-size:18px;font-weight:600">Unlock the proof</span></div></div>
+      </div>
+    </div>
+  
+</section>
+
+<section id="flow" data-screen-label="User flow" style="position:relative;z-index:1;overflow:hidden;border-top:1px solid #1E1B2E">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:72px">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">04 · User flow</div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8C87A8">Current flow</div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:12px">
+        <div style="padding:16px 22px;border-radius:14px;border:1px solid #262338;font-size:18px;color:#C9C4E0">1 · Intro slide</div>
+        <div style="padding:16px 22px;border-radius:14px;border:1px solid #262338;font-size:18px;color:#C9C4E0">2 · Intro slide</div>
+        <div style="padding:16px 22px;border-radius:14px;border:1px solid #262338;font-size:18px;color:#C9C4E0">3 · Intro slide</div>
+        <div style="padding:16px 22px;border-radius:14px;border:1px dashed #6A3A4A;font-size:18px;color:#FF8FA6">4 · Quiz</div>
+        <div style="padding:16px 22px;border-radius:14px;border:1px dashed #6A3A4A;font-size:18px;color:#FF8FA6">5 · Quiz</div>
+        <div style="padding:16px 22px;border-radius:14px;border:1px dashed #6A3A4A;font-size:18px;color:#FF8FA6">6 · Quiz</div>
+        <div style="padding:16px 22px;border-radius:14px;border:1px dashed #6A3A4A;font-size:18px;color:#FF8FA6">7 · Loader</div>
+        <div style="padding:16px 22px;border-radius:14px;border:1px solid #262338;font-size:18px;color:#C9C4E0">8 · Camera</div>
+        <div style="padding:16px 22px;border-radius:14px;border:1px dashed #6A3A4A;font-size:18px;color:#FF8FA6">9 · Paywall</div>
+        <div style="padding:16px 22px;border-radius:14px;border:1px solid #262338;font-size:18px;color:#C9C4E0">10 · Result</div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:24px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8C87A8">Redesigned flow</div>
+        <div style="font-size:16px;color:#A39FBD">Click a screen to open it in the prototype</div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:16px">
+        <sc-for list="{{ flowA }}" as="s" hint-placeholder-count="3">
+          <button onClick="{{ s.go }}" style="flex:1 1 0;min-width:0;padding:0;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:12px;text-align:left;color:#F1EEFF;font-family:inherit">
+            <sc-if value="{{ s.src }}" hint-placeholder-val="{{ false }}"><img src="{{ s.src }}" alt="{{ s.label }}" style="width:100%;border-radius:18px;border:{{ s.border }};transition:transform .2s" style-hover="transform:translateY(-4px)"></sc-if>
+            <div style="display:flex;flex-wrap:wrap;gap:2px 6px;font-size:12px;line-height:1.3"><span style="font-family:'Geist Mono',monospace;color:#B9A6FF">{{ s.n }}</span><span style="color:#C9C4E0">{{ s.short }}</span></div>
+          </button>
+        </sc-for>
+        <div style="flex:0 0 86px;align-self:stretch;display:flex;flex-direction:column;align-items:center;gap:12px;padding-top:40px">
+          <div style="flex:1;width:0;border-left:2px dashed #6A3A4A"></div>
+          <div style="writing-mode:vertical-rl;transform:rotate(180deg);font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;color:#FF8FA6;text-transform:uppercase">Quiz + loader removed</div>
+          <div style="flex:1;width:0;border-left:2px dashed #6A3A4A"></div>
+        </div>
+        <sc-for list="{{ flowB }}" as="s" hint-placeholder-count="6">
+          <button onClick="{{ s.go }}" style="flex:1 1 0;min-width:0;padding:0;background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:12px;text-align:left;color:#F1EEFF;font-family:inherit">
+            <sc-if value="{{ s.src }}" hint-placeholder-val="{{ false }}"><img src="{{ s.src }}" alt="{{ s.label }}" style="width:100%;border-radius:18px;border:{{ s.border }};transition:transform .2s" style-hover="transform:translateY(-4px)"></sc-if>
+            <div style="display:flex;flex-wrap:wrap;gap:2px 6px;font-size:12px;line-height:1.3"><span style="font-family:'Geist Mono',monospace;color:#B9A6FF">{{ s.n }}</span><span style="color:#C9C4E0">{{ s.short }}</span></div>
+          </button>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <div style="padding:28px 0 0;border-top:2px solid #6B3CFF;display:flex;flex-direction:column;gap:12px"><div style="font-size:21px;line-height:1.25;font-weight:600">Personalization only where it adds value</div><p style="margin:0;font-size:16px;line-height:1.55;color:#A39FBD;text-wrap:pretty">The quiz wasn’t used meaningfully later, so it only added friction. Removing it keeps onboarding focused on scanning.</p></div>
+      <div style="padding:28px 0 0;border-top:2px solid #6B3CFF;display:flex;flex-direction:column;gap:12px"><div style="font-size:21px;line-height:1.25;font-weight:600">The first scan becomes the CTA</div><p style="margin:0;font-size:16px;line-height:1.55;color:#A39FBD;text-wrap:pretty">Onboarding now ends with a clear “Scan your first card for free” action instead of making users search for the camera.</p></div>
+      <div style="padding:28px 0 0;border-top:2px solid #6B3CFF;display:flex;flex-direction:column;gap:12px"><div style="font-size:21px;line-height:1.25;font-weight:600">Prove value before payment</div><p style="margin:0;font-size:16px;line-height:1.55;color:#A39FBD;text-wrap:pretty">The old flow showed a paywall immediately after scanning. The redesign gives users one real free scan first, matching the ad promise.</p></div>
+      <div style="padding:28px 0 0;border-top:2px solid #6B3CFF;display:flex;flex-direction:column;gap:12px"><div style="font-size:21px;line-height:1.25;font-weight:600">Intent opens the paywall</div><p style="margin:0;font-size:16px;line-height:1.55;color:#A39FBD;text-wrap:pretty">A free summary proves the product works. The paywall appears only when users ask for deeper proof or another scan.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="prototype" data-screen-label="Prototype" style="position:relative;z-index:1;overflow:hidden;border-top:1px solid #1E1B2E;">
+  <div style="position:absolute;left:50%;top:50%;width:1100px;height:1100px;margin:-550px 0 0 -550px;border-radius:50%;background:radial-gradient(circle,rgba(107,60,255,.22),rgba(107,60,255,0) 62%);pointer-events:none"></div>
+  <div style="position:relative;max-width:1600px;margin:0 auto;padding:80px 140px;min-height:80vh;display:grid;grid-template-columns:minmax(0,1fr) 295px minmax(0,1fr);gap:80px;align-items:center">
+    <div style="display:flex;flex-direction:column;gap:24px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">06 · Prototype</div>
+      <div ref="{{ textRef }}" style="display:flex;flex-direction:column;gap:16px;min-height:220px">
+        <h2 style="margin:0;font-size:28px;line-height:1.15;font-weight:600;letter-spacing:-.02em;text-wrap:balance">{{ cur.title }}</h2>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#A39FBD;max-width:380px;text-wrap:pretty">{{ cur.desc }}</p>
+      </div>
+    </div>
+
+    <div style="width:295px;height:639px;position:relative"><div style="position:absolute;left:0;top:0;transform:scale(.75);transform-origin:0 0;width:393px;height:852px;border-radius:52px;overflow:hidden;border:1px solid #3A3460;box-shadow:0 0 0 10px #16132A,0 0 0 11px #2E2A45,0 60px 140px rgba(0,0,0,.6);background:#0A0913" ref="{{ phoneRef }}"><div ref="{{ screenRef }}" style="position:absolute;inset:0;z-index:1;background:#0A0913">
+      <sc-if value="{{ isLong }}" hint-placeholder-val="{{ false }}">
+        <div ref="{{ scrollRef }}" onScroll="{{ onScroll }}" style="position:absolute;inset:0;overflow-y:auto;scrollbar-width:none">
+          <sc-if value="{{ cur.src }}" hint-placeholder-val="{{ false }}"><img src="{{ cur.src }}" alt="{{ cur.label }}" style="display:block;width:393px"></sc-if>
+          <button onClick="{{ toSummary }}" style="position:absolute;left:8px;top:60px;width:48px;height:48px;border:none;background:transparent;cursor:pointer;border-radius:50%;outline:{{ hsOutline }}"></button>
+        </div>
+      <sc-if value="{{ showScrollHint }}" hint-placeholder-val="{{ false }}">
+          <div style="position:absolute;left:0;right:0;bottom:0;height:200px;background:linear-gradient(180deg,rgba(10,9,19,0),rgba(10,9,19,.92));pointer-events:none"></div>
+          {{ scrollHintEl }}
+        </sc-if>
+      </sc-if>
+      <sc-if value="{{ isShort }}" hint-placeholder-val="{{ true }}">
+        <sc-if value="{{ cur.src }}" hint-placeholder-val="{{ false }}"><img src="{{ cur.src }}" alt="{{ cur.label }}" style="display:block;width:393px;height:852px"></sc-if>
+        <sc-if value="{{ isMarket }}" hint-placeholder-val="{{ false }}">{{ stripEl }}</sc-if>
+        <sc-for list="{{ hotspots }}" as="h" hint-placeholder-count="0">
+          <button onClick="{{ h.go }}" aria-label="{{ h.label }}" style="position:absolute;left:{{ h.left }};top:{{ h.top }};width:{{ h.width }};height:{{ h.height }};border:none;background:transparent;cursor:pointer;border-radius:999px;outline:{{ hsOutline }};outline-offset:-2px" style-hover="background:rgba(255,255,255,.08)"></button>
+        </sc-for>
+      </sc-if>
+    </div></div></div>
+
+    <div style="display:flex;flex-direction:column;gap:4px">
+      <sc-for list="{{ steps }}" as="s" hint-placeholder-count="9">
+        <button onClick="{{ s.go }}" style="display:grid;grid-template-columns:32px minmax(0,1fr);gap:10px;align-items:center;padding:9px 14px;border-radius:12px;border:none;background:{{ s.bg }};color:{{ s.color }};font-family:inherit;font-size:15px;text-align:left;cursor:pointer;transition:background .35s ease,color .35s ease" style-hover="color:#FFFFFF">
+          <span style="font-family:'Geist Mono',monospace;font-size:15px;color:#B9A6FF">{{ s.n }}</span><span>{{ s.label }}</span>
+        </button>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="impact" data-screen-label="Impact" style="position:relative;z-index:1;overflow:hidden;border-top:1px solid #1E1B2E">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+    <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:64px;align-items:end">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">07 · Expected impact</div>
+        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Five hypotheses</h2>
+      </div>
+      <p style="margin:0;font-size:22px;line-height:1.5;color:#A39FBD;max-width:760px">This is a concept, so these are bets to test, not results. Each one comes with the signal I’d measure.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;border-top:1px solid #262338">
+      <div style="display:grid;grid-template-columns:240px minmax(0,1.2fr) minmax(0,1fr);gap:48px;padding:20px 0;border-bottom:1px solid #262338;font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#8C87A8"><div>Metric</div><div>Expected impact</div><div>What I’d measure</div></div>
+      <div style="display:grid;grid-template-columns:240px minmax(0,1.2fr) minmax(0,1fr);gap:48px;padding:28px 0;border-bottom:1px solid #262338"><div style="font-size:20px;font-weight:600">Activation</div><div style="font-size:16px;line-height:1.55;color:#C9C4E0">Shortens time-to-first-scan, helping more users reach core value in their first session.</div><div style="font-size:16px;line-height:1.55;color:#A39FBD">% of installs completing a first scan · time from install to first value</div></div>
+      <div style="display:grid;grid-template-columns:240px minmax(0,1.2fr) minmax(0,1fr);gap:48px;padding:28px 0;border-bottom:1px solid #262338"><div style="font-size:20px;font-weight:600">Trial starts</div><div style="font-size:16px;line-height:1.55;color:#C9C4E0">A paywall that follows a real result converts better than a cold one.</div><div style="font-size:16px;line-height:1.55;color:#A39FBD">Paywall view → trial start, split by trigger</div></div>
+      <div style="display:grid;grid-template-columns:240px minmax(0,1.2fr) minmax(0,1fr);gap:48px;padding:28px 0;border-bottom:1px solid #262338"><div style="font-size:20px;font-weight:600">Trial-to-paid</div><div style="font-size:16px;line-height:1.55;color:#C9C4E0">People who’ve seen their own card’s value have a reason to stay past day 3.</div><div style="font-size:16px;line-height:1.55;color:#A39FBD">Trial → paid conversion · cancellations during trial</div></div>
+      <div style="display:grid;grid-template-columns:240px minmax(0,1.2fr) minmax(0,1fr);gap:48px;padding:28px 0;border-bottom:1px solid #262338"><div style="font-size:20px;font-weight:600">Engagement</div><div style="font-size:16px;line-height:1.55;color:#C9C4E0">A satisfying first reveal leads to a second scan, and to building a collection.</div><div style="font-size:16px;line-height:1.55;color:#A39FBD">Scans per user in week one · cards added to collection · D7 retention</div></div>
+      <div style="display:grid;grid-template-columns:240px minmax(0,1.2fr) minmax(0,1fr);gap:48px;padding:28px 0;border-bottom:1px solid #262338"><div style="font-size:20px;font-weight:600">Trust</div><div style="font-size:16px;line-height:1.55;color:#C9C4E0">Showing confidence and named sources reduces doubt about accuracy.</div><div style="font-size:16px;line-height:1.55;color:#A39FBD">Taps on “See the sales behind this” · rescans · accuracy mentions in reviews</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="visual" data-screen-label="Visual language" style="position:relative;z-index:1;overflow:hidden;border-top:1px solid #1E1B2E">
+  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.8fr);gap:64px">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">08 · Visual language</div>
+      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">“Smart hype”</h2>
+      <p style="margin:0;font-size:18px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">A “smart hype” AI aesthetic: premium and energetic, while still feeling credible.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:48px">
+      <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px">
+        <div style="display:flex;flex-direction:column;gap:12px"><div style="height:140px;border-radius:20px;background:#0A0913;border:1px solid #2E2A45"></div><div style="font-size:16px">Night</div><div style="font-family:'Geist Mono',monospace;font-size:13px;color:#8C87A8">#0A0913</div></div>
+        <div style="display:flex;flex-direction:column;gap:12px"><div style="height:140px;border-radius:20px;background:#6B3CFF"></div><div style="font-size:16px">Scan violet</div><div style="font-family:'Geist Mono',monospace;font-size:13px;color:#8C87A8">#6B3CFF</div></div>
+        <div style="display:flex;flex-direction:column;gap:12px"><div style="height:140px;border-radius:20px;background:#5B6BFF"></div><div style="font-size:16px">Signal blue</div><div style="font-family:'Geist Mono',monospace;font-size:13px;color:#8C87A8">#5B6BFF</div></div>
+        <div style="display:flex;flex-direction:column;gap:12px"><div style="height:140px;border-radius:20px;background:#3DDC97"></div><div style="font-size:16px">Gain</div><div style="font-family:'Geist Mono',monospace;font-size:13px;color:#8C87A8">#3DDC97</div></div>
+        <div style="display:flex;flex-direction:column;gap:12px"><div style="height:140px;border-radius:20px;background:#EDE9FF"></div><div style="font-size:16px">Ink</div><div style="font-family:'Geist Mono',monospace;font-size:13px;color:#8C87A8">#EDE9FF</div></div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px">
+        <div style="padding:28px 0 0;border-top:1px solid #2E2A45"><p style="margin:0;font-size:17px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">Deep violet-to-black backgrounds echo the reflective feel of foil/holo cards.</p></div>
+        <div style="padding:28px 0 0;border-top:1px solid #2E2A45"><p style="margin:0;font-size:17px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">A consistent violet → blue gradient connects buttons, progress, pills, charts, and key interactions.</p></div>
+        <div style="padding:28px 0 0;border-top:1px solid #2E2A45"><p style="margin:0;font-size:17px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">Frosted-glass surfaces and subtle luminous borders create depth without overwhelming the UI.</p></div>
+        <div style="padding:28px 0 0;border-top:1px solid #2E2A45"><p style="margin:0;font-size:17px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">Glowing scan lines and corner brackets visually signal that the AI is actively analyzing the card.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="closing" data-screen-label="Closing" style="position:relative;z-index:1;overflow:hidden;border-top:1px solid #1E1B2E;">
+  <div style="max-width:1600px;margin:0 auto;padding:160px 140px;display:flex;justify-content:center">
+    <h2 style="margin:0;font-size:80px;line-height:1;font-weight:600;letter-spacing:-.035em">Thank you.</h2>
+  </div>
+  <footer style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
+    <div style="max-width:1600px;margin:0 auto;padding:32px 140px;display:flex;justify-content:space-between;gap:24px;font-size:15px;color:#6E6A85">
+      <span>© Melis Kılıç</span>
+      <div style="display:flex;gap:28px"><a href="Portfolio v5.dc.html#work" style="color:#6E6A85" style-hover="color:#FFFFFF">Work</a><a href="Portfolio v5.dc.html#about" style="color:#6E6A85" style-hover="color:#FFFFFF">About</a><a href="Portfolio v5.dc.html#faq" style="color:#6E6A85" style-hover="color:#FFFFFF">FAQ</a><a href="Portfolio v5.dc.html#contact" style="color:#6E6A85" style-hover="color:#FFFFFF">Contact</a></div>
+    </div>
+  </footer>
+</section>
+
+</div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showHotspots&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Prototype&quot;},&quot;showAnnotations&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Solutions&quot;}}">
+class Component extends DCLogic {
+  state = { i: 0 };
+  scrollRef = React.createRef();
+  screens = (() => { const R = (n) => (window.__resources && window.__resources['img-' + n]) || ('assets/' + n + '.webp'); return [
+    { src: R('scan'), label: 'Intro · Scan', short: 'Scan', hs: [[83,748,278,54,1,'Next'],[16,755,64,40,3,'Skip']] },
+    { src: R('market'), label: 'Intro · Collection value', short: 'Value', hs: [[83,748,278,54,2,'Next'],[16,755,64,40,3,'Skip'],[0,58,44,44,0,'Back']] },
+    { src: R('ai'), label: 'Intro · AI guidance', short: 'AI', hs: [[83,748,278,54,3,'Next'],[16,755,64,40,3,'Skip'],[0,58,44,44,1,'Back']] },
+    { src: R('first-scan'), label: 'First free scan', short: 'Free scan', hs: [[32,708,330,54,4,'Scan first card for free'],[0,58,44,44,2,'Back']] },
+    { src: R('front'), label: 'Camera · Front', short: 'Front', hs: [[160,730,74,74,5,'Capture'],[276,740,98,52,5,'Scan'],[0,58,44,44,3,'Back']] },
+    { src: R('back'), label: 'Camera · Back', short: 'Back', hs: [[160,730,74,74,6,'Capture'],[276,740,98,52,6,'Scan'],[140,62,50,72,4,'Front']] },
+    { src: R('summary'), label: 'Free result', short: 'Result', hs: [[24,694,346,54,7,'See the sales behind this'],[24,757,346,54,4,'Scan another'],[8,60,48,48,4,'Close']] },
+    { src: R('paywall'), label: 'Paywall', short: 'Paywall', hs: [[24,752,346,54,8,'Start free trial']] },
+    { src: R('details-full'), label: 'Unlocked details', short: 'Details', long: true, hs: [] }
+  ]; })();
+  go = (i) => { const f = this.state.i; if (f === i) return; this.setState({ i, scrolled: false }); requestAnimationFrame(() => this.transition(f, i)); };
+  jump = (i) => {
+    this.go(i);
+    const el = document.getElementById('prototype');
+    if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY, behavior: 'smooth' });
+  };
+  rootRef = React.createRef();
+  fit = () => {
+    const el = document.querySelector('[data-cardly-root]'); if (!el) return;
+    const w = document.documentElement.clientWidth;
+    const S = 1.34;
+    const z = (w / S) < 1280 ? w / 1280 : S;
+    el.style.width = (w / z) + 'px';
+    el.style.zoom = String(z);
+    const hero = el.querySelector('[data-screen-label="Hero"]');
+    if (hero) hero.style.minHeight = (window.innerHeight / z) + 'px';
+  };
+  trail = () => {
+    if ((this.props.cursorTrail || 'meteor') === 'off') return;
+    if (this._trail || (window.matchMedia && matchMedia('(pointer: coarse), (prefers-reduced-motion: reduce)').matches)) return;
+    const cv = document.createElement('canvas'); cv.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:70;mix-blend-mode:screen';
+    document.body.appendChild(cv); const x = cv.getContext('2d'); let W = 0, H = 0, dpr = 1;
+    const size = () => { dpr = Math.min(2, window.devicePixelRatio || 1); W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; x.setTransform(dpr, 0, 0, dpr, 0, 0); };
+    size(); window.addEventListener('resize', size);
+    const C = ['93,29,245', '88,83,248', '255,255,255', '91,56,246'];
+    const P = [], pts = []; let mx = -100, my = -100, lx = -100, ly = -100, raf = 0, last = 0;
+    const mode = () => this.props.cursorTrail || 'meteor';
+    const onMove = (e) => { mx = e.clientX; my = e.clientY; const now = performance.now(); const dx = mx - lx, dy = my - ly, sp = Math.min(40, Math.hypot(dx, dy)); const m = mode(); if (m === 'off') return;
+      if (m === 'meteor') pts.push({ x: mx, y: my, t: now });
+      const n = m === 'stardust' ? Math.ceil(sp / 6) + 1 : m === 'meteor' ? (sp > 4 ? 1 : 0) : (now - last > 16 ? 1 : 0);
+      for (let i = 0; i < n; i++) { const a = Math.random() * Math.PI * 2, v = m === 'stardust' ? .4 + Math.random() * 1.6 : .2 + Math.random() * .5;
+        P.push({ x: mx - dx * Math.random() * .6, y: my - dy * Math.random() * .6, vx: Math.cos(a) * v - dx * .02, vy: Math.sin(a) * v - dy * .02 + (m === 'stardust' ? .25 : 0), life: 1, d: m === 'stardust' ? .012 + Math.random() * .02 : .025, r: m === 'stardust' ? .8 + Math.random() * 2.2 : 1.5 + Math.random() * 2, c: C[Math.random() * C.length | 0], star: m === 'stardust' && Math.random() < .35 }); }
+      last = now; lx = mx; ly = my; if (!raf) raf = requestAnimationFrame(tick); };
+    const star = (px, py, r) => { x.beginPath(); for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2; x.moveTo(px, py); x.lineTo(px + Math.cos(a) * r * 2.6, py + Math.sin(a) * r * 2.6); } x.stroke(); };
+    const tick = () => { x.clearRect(0, 0, W, H); const now = performance.now();
+      while (pts.length && now - pts[0].t > 260) pts.shift();
+      if (pts.length > 1) { for (let i = 1; i < pts.length; i++) { const k = 1 - (now - pts[i].t) / 260; x.strokeStyle = 'rgba(143,160,255,' + (k * .85) + ')'; x.lineWidth = k * 5; x.lineCap = 'round'; x.shadowColor = 'rgba(91,107,255,.9)'; x.shadowBlur = 14 * k; x.beginPath(); x.moveTo(pts[i - 1].x, pts[i - 1].y); x.lineTo(pts[i].x, pts[i].y); x.stroke(); } x.shadowBlur = 0; }
+      for (let i = P.length - 1; i >= 0; i--) { const p = P[i]; p.x += p.vx; p.y += p.vy; p.vx *= .96; p.vy *= .96; p.life -= p.d; if (p.life <= 0) { P.splice(i, 1); continue; }
+        const al = p.life * p.life; x.fillStyle = 'rgba(' + p.c + ',' + al + ')'; x.shadowColor = 'rgba(' + p.c + ',' + al + ')'; x.shadowBlur = 8;
+        if (p.star) { x.strokeStyle = x.fillStyle; x.lineWidth = .8; star(p.x, p.y, p.r * p.life); } x.beginPath(); x.arc(p.x, p.y, p.r * (.4 + p.life * .6), 0, Math.PI * 2); x.fill(); }
+      x.shadowBlur = 0;
+      raf = (P.length || pts.length) ? requestAnimationFrame(tick) : 0; };
+    window.addEventListener('mousemove', onMove, { passive: true });
+    this._trail = () => { window.removeEventListener('mousemove', onMove); window.removeEventListener('resize', size); cancelAnimationFrame(raf); cv.remove(); };
+  };
+  componentDidMount() { if (!window.__imgHide) { window.__imgHide = 1; document.addEventListener('error', (e) => { const t = e.target; if (t && t.tagName === 'IMG') { t.style.visibility = 'hidden'; } }, true); } this.trail(); this.fit(); window.addEventListener('resize', this.fit); setTimeout(this.fx, 60); }
+  componentWillUnmount() { if (this._trail) this._trail(); window.removeEventListener('resize', this.fit); if (this.io) this.io.disconnect(); }
+  fx = () => {
+    const root = document.querySelector('[data-cardly-root]'); if (!root || !root.animate || this.fxDone) return; this.fxDone = true;
+    if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const E = 'cubic-bezier(.22,1,.36,1)';
+    // mesh gradient orbs
+    const orb = (parent, c, size, x, y, dur, path) => {
+      const o = document.createElement('div');
+      o.style.cssText = 'position:absolute;left:' + x + ';top:' + y + ';width:' + size + 'px;height:' + size + 'px;margin:-' + size / 2 + 'px 0 0 -' + size / 2 + 'px;border-radius:50%;background:radial-gradient(circle,' + c + ',rgba(0,0,0,0) 65%);filter:blur(40px);mix-blend-mode:screen;pointer-events:none;z-index:0';
+      parent.prepend(o);
+      o.animate(path, { duration: dur, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
+      o.animate([{ scale: '.82', opacity: .75 }, { scale: '1.22', opacity: 1 }], { duration: Math.round(dur * .5), iterations: Infinity, direction: 'alternate', easing: 'ease-in-out', delay: -Math.round(Math.random() * dur) });
+    };
+    const drift = (a, b, s) => [{ transform: 'translate(0,0) scale(1)' }, { transform: 'translate(' + a + 'px,' + b + 'px) scale(' + s + ')' }, { transform: 'translate(' + (-b) + 'px,' + a / 2 + 'px) scale(.92)' }];
+    const hero = root.querySelector('[data-screen-label="Hero"]');
+    if (hero) {
+      orb(hero, 'rgba(91,107,255,0.18)', 700, '78%', '72%', 14000, drift(-120, -80, 1.15));
+      orb(hero, 'rgba(107,60,255,0.13)', 600, '12%', '20%', 16000, drift(90, 110, 1.1));
+    }
+    const close = root.querySelector('[data-screen-label="Closing"]');
+    if (close) {
+      if (close.firstElementChild) close.firstElementChild.style.position = 'relative';
+      Array.from(close.children).forEach(c => { c.style.position = 'relative'; c.style.zIndex = '1'; });
+      orb(close, 'rgba(107,60,255,.30)', 460, '40%', '45%', 15000, drift(160, 40, 1.15));
+      orb(close, 'rgba(91,107,255,.24)', 400, '62%', '50%', 17000, drift(-140, -50, 1.2));
+    }
+    Array.from(root.querySelectorAll('div')).filter(d => (d.style.backgroundImage || d.style.background || '').includes('radial-gradient') && !d.style.filter).forEach((el, k) => {
+      if (el.style.filter) return;
+      el.animate(drift(k ? 70 : -90, k ? -60 : 50, 1.12), { duration: 13000 + k * 3000, iterations: Infinity, direction: 'alternate', easing: 'ease-in-out' });
+    });
+    // count-up
+    const counters = new Set(Array.from(root.querySelectorAll('div')).filter(d => d.style.fontSize === '72px' && /^\d+$/.test(d.textContent.trim())));
+    const count = (el) => {
+      const n = parseInt(el.dataset.n || el.textContent, 10); el.dataset.n = n; if (!n) return;
+      const t0 = performance.now(), dur = 1200;
+      const step = (t) => { const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3); el.textContent = String(Math.round(n * e)); if (p < 1) requestAnimationFrame(step); };
+      el.textContent = '0'; requestAnimationFrame(step);
+    };
+    // scroll reveal / fade-up
+    const vh = window.innerHeight;
+    const targets = [];
+    root.querySelectorAll('[data-screen-label]').forEach(sec => {
+      const box = Array.from(sec.children).find(c => c.style.maxWidth === '1600px') || sec;
+      Array.from(box.children).forEach(c => {
+        if (sec.id === 'strategy' && c.style.gridTemplateColumns) {
+          const parts = [];
+          Array.from(c.children).forEach(p => { if (Array.from(p.children).some(x => (x.style.flex || '').startsWith('0 0 280px'))) parts.push(...p.children); else parts.push(p); });
+          parts.forEach((p, k) => { p.dataset.stagger = String(k); targets.push(p); });
+        } else targets.push(c);
+      });
+      Array.from(box.querySelectorAll('div')).filter(d => (d.style.gridTemplateColumns || '').includes('repeat') || (d.style.flexDirection === 'column' && d.style.borderTopColor === 'rgb(38, 35, 56)')).forEach(g => Array.from(g.children).forEach((c, k) => { c.dataset.stagger = String(k % 6); targets.push(c); }));
+    });
+    const play = (el) => {
+      const d = (+(el.dataset.stagger || 0)) * 90;
+      el.animate([{ opacity: 0, transform: 'translateY(40px)', filter: 'blur(6px)' }, { opacity: 1, transform: 'translateY(0)', filter: 'blur(0)' }], { duration: 900, delay: d, easing: E, fill: 'backwards' });
+      el.style.opacity = '';
+      el.querySelectorAll('div').forEach(c => { if (counters.has(c)) setTimeout(() => count(c), d + 200); });
+      if (counters.has(el)) setTimeout(() => count(el), d + 200);
+    };
+    this.io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { this.io.unobserve(e.target); play(e.target); } }), { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    targets.forEach(el => {
+      if (el.getBoundingClientRect().top < vh * 0.9) { play(el); return; }
+      el.style.opacity = '0';
+      this.io.observe(el);
+    });
+    // hover lift
+    const lift = (el, glow) => {
+      el.style.transition = (el.style.transition ? el.style.transition + ',' : '') + 'transform .45s ' + E + ',box-shadow .45s ' + E + ',border-color .3s';
+      const base = el.style.boxShadow, bc = el.style.borderColor, bt = el.style.transform;
+      el.addEventListener('mouseenter', () => { el.style.transform = 'translateY(-4px)' + (bt ? ' ' + bt : ''); el.style.boxShadow = (base ? base + ',' : '') + '0 24px 60px rgba(107,60,255,' + glow + ')'; if (bc) el.style.borderColor = '#4A3A99'; });
+      el.addEventListener('mouseleave', () => { el.style.transform = bt; el.style.boxShadow = base; if (bc) el.style.borderColor = bc; });
+    };
+    Array.from(root.querySelectorAll('div')).filter(d => (d.style.borderRadius === '28px' || d.style.borderRadius === '24px') && d.style.backgroundColor === 'rgb(18, 16, 29)').forEach(el => lift(el, .22));
+    Array.from(root.querySelectorAll('#strategy img, #strategy div')).filter(d => d.style.height === '607px').filter((d, _, arr) => !arr.some(o => o !== d && o.contains(d))).forEach(el => lift(el, .35));
+    Array.from(root.querySelectorAll('#visual div')).filter(d => d.style.height === '140px').forEach(el => lift(el.parentElement, 0));
+    root.querySelectorAll('#flow button').forEach(el => lift(el, 0));
+    if (hero) hero.querySelectorAll('img').forEach(el => lift(el, .35));
+    Array.from(root.querySelectorAll('#strategy img')).filter(d => d.style.height === '477px').forEach(el => lift(el, .35));
+  };
+  phoneRef = React.createRef(); screenRef = React.createRef(); textRef = React.createRef();
+  ripple = (x, y) => {
+    const p = this.phoneRef.current; if (!p || !p.animate) return;
+    const d = document.createElement('div');
+    d.style.cssText = 'position:absolute;left:' + (x - 60) + 'px;top:' + (y - 60) + 'px;width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,rgba(185,166,255,.55),rgba(139,108,255,0) 70%);pointer-events:none;z-index:5';
+    p.appendChild(d);
+    d.animate([{ transform: 'scale(.2)', opacity: 1 }, { transform: 'scale(2.4)', opacity: 0 }], { duration: 520, easing: 'cubic-bezier(.2,.7,.3,1)', fill: 'forwards' });
+    setTimeout(() => d.remove(), 560);
+  };
+  transition(from, to) {
+    const p = this.phoneRef.current, s = this.screenRef.current; if (!p || !s || !s.animate) return;
+    const E = 'cubic-bezier(.22,1,.36,1)', D = 560;
+    const g = document.createElement('img');
+    g.src = this.screens[from].src;
+    g.style.cssText = 'position:absolute;left:0;top:0;width:393px;height:852px;object-fit:cover;object-position:top;pointer-events:none';
+    const fwd = to > from, far = Math.abs(to - from) > 1, capture = (from === 4 && to === 5) || (from === 5 && to === 6), sheet = from === 6 && to === 7;
+    let inK, outK, ghostTop = false;
+    if (capture) {
+      inK = [{ transform: 'scale(1.08)', opacity: 0, filter: 'blur(8px)' }, { transform: 'scale(1)', opacity: 1, filter: 'blur(0)' }];
+      outK = [{ opacity: 1 }, { opacity: 0 }];
+      const f = document.createElement('div');
+      f.style.cssText = 'position:absolute;inset:0;background:#fff;pointer-events:none;z-index:6';
+      p.appendChild(f);
+      f.animate([{ opacity: .9 }, { opacity: 0 }], { duration: 420, easing: 'ease-out', fill: 'forwards' });
+      setTimeout(() => f.remove(), 460);
+    } else if (sheet) {
+      inK = [{ transform: 'translateY(100%)', borderRadius: '40px 40px 0 0' }, { transform: 'translateY(0)', borderRadius: '0' }];
+      outK = [{ transform: 'scale(1)', filter: 'brightness(1)' }, { transform: 'scale(.92)', filter: 'brightness(.35)' }];
+    } else if (far) {
+      inK = [{ transform: 'scale(.9)', opacity: 0 }, { transform: 'scale(1)', opacity: 1 }];
+      outK = [{ transform: 'scale(1)', opacity: 1, filter: 'blur(0)' }, { transform: 'scale(1.06)', opacity: 0, filter: 'blur(6px)' }];
+      ghostTop = true;
+    } else if (fwd) {
+      inK = [{ transform: 'translateX(100%)', boxShadow: '-30px 0 60px rgba(0,0,0,.6)' }, { transform: 'translateX(0)', boxShadow: '0 0 0 rgba(0,0,0,0)' }];
+      outK = [{ transform: 'translateX(0)', filter: 'brightness(1)' }, { transform: 'translateX(-30%)', filter: 'brightness(.4)' }];
+    } else {
+      inK = [{ transform: 'translateX(-30%)', filter: 'brightness(.4)' }, { transform: 'translateX(0)', filter: 'brightness(1)' }];
+      outK = [{ transform: 'translateX(0)' }, { transform: 'translateX(100%)' }];
+      ghostTop = true;
+    }
+    g.style.zIndex = ghostTop ? '2' : '0';
+    p.appendChild(g);
+    s.animate(inK, { duration: D, easing: E });
+    g.animate(outK, { duration: D, easing: E, fill: 'forwards' });
+    setTimeout(() => g.remove(), D + 40);
+    const t = this.textRef.current;
+    if (t) Array.from(t.children).forEach((el, k) => el.animate([{ opacity: 0, transform: 'translateY(18px)', filter: 'blur(6px)' }, { opacity: 1, transform: 'translateY(0)', filter: 'blur(0)' }], { duration: 600, delay: 60 + k * 90, easing: E, fill: 'backwards' }));
+  }
+  componentDidUpdate(pp, ps) {
+    if (ps && ps.i !== this.state.i && this.scrollRef.current) this.scrollRef.current.scrollTop = 0;
+  }
+  renderVals() {
+    const i = this.state.i;
+    const copy = [
+      ['Lead with the core promise', 'Preview the scan-to-value experience upfront. Keep progress visible throughout onboarding, while Skip provides a direct path into the app.'],
+      ['Prioritize what users value', 'Show market value, growth, and recent sales instead of generic collection features, focusing on what users care about most.'],
+      ['Make AI more useful', 'Show AI as decision support, not just grading. Use questions like “Hold or sell?” to make the value of AI immediately concrete.'],
+      ['Move users into action', 'End onboarding with a clear CTA, turning the final step into the core action.'],
+      ['Guide scanning with feedback', 'Use live detection feedback to confirm the card is recognized and tell users when the card is ready to capture.'],
+      ['Show capture progress explicitly', 'Show front and back thumbnails so users can see what is complete and what still needs to be scanned.'],
+      ['Prove value first', 'Return a real first result with match confidence, estimated value, and trend, so users can see the app works before hitting the paywall.'],
+      ['Monetize at the moment of intent', 'Surface the paywall after users have seen value, with ad-relevant features, three plan options, and a free trial.'],
+      ['Turn proof into depth', 'Add market trends, recent sales, source attribution, condition breakdowns, AI guidance, and comparison tools.']
+    ];
+    const c = copy[i] || ['', ''];
+    const cur = { ...this.screens[i], num: String(i + 1).padStart(2, '0'), title: c[0], desc: c[1] };
+    const showHotspots = this.props.showHotspots ?? false;
+    const thumb = (s, k) => ({ ...s, n: k + 1, go: () => this.jump(k), border: k === i ? '2px solid #8B6CFF' : '2px solid #262338' });
+    const all = this.screens.map(thumb);
+    return {
+      cur,
+      rootRef: this.rootRef, phoneRef: this.phoneRef, screenRef: this.screenRef, textRef: this.textRef,
+      isLong: !!cur.long,
+      isMarket: i === 1,
+      stripEl: this.stripEl || (this.stripEl = (() => {
+        const src = (window.__resources && window.__resources['img-market-strip']) || 'assets/market-strip.png';
+        return React.createElement('div', { style: { position: 'absolute', left: 0, top: '448px', width: '393px', height: '66px', overflow: 'hidden', pointerEvents: 'none' } },
+          React.createElement('div', { style: { position: 'absolute', left: '-219px', top: 0, width: '1164px', height: '66px', backgroundImage: 'url(' + src + ')', backgroundRepeat: 'repeat-x', backgroundSize: '291px 66px', animation: 'stripFlow 9s linear infinite' } }));
+      })()),
+      showScrollHint: !!cur.long && !this.state.scrolled,
+      onScroll: (e) => { if (!this.state.scrolled && e.currentTarget.scrollTop > 40) this.setState({ scrolled: true }); },
+      scrollHintEl: this.hintEl || (this.hintEl = React.createElement('div', { style: { position: 'absolute', left: '50%', bottom: '40px', transform: 'translateX(-50%)', display: 'flex', alignItems: 'center', gap: '10px', padding: '12px 22px', borderRadius: '999px', background: 'rgba(29,22,64,.92)', border: '1px solid #4A3A99', color: '#FFFFFF', fontSize: '17px', fontWeight: 500, whiteSpace: 'nowrap', boxShadow: '0 10px 30px rgba(0,0,0,.5)', pointerEvents: 'none' } }, 'Scroll to see more', React.createElement('span', { style: { fontSize: '20px' } }, '↓'))),
+      isShort: !cur.long,
+      hsOutline: showHotspots ? '1.5px dashed rgba(185,166,255,.75)' : 'none',
+      hotspots: cur.hs.map(([x, y, w, h, to, label]) => ({ left: x + 'px', top: y + 'px', width: w + 'px', height: h + 'px', label, go: () => { this.ripple(x + w / 2, y + h / 2); this.go(to); } })),
+      flowA: all.slice(0, 3),
+      flowB: all.slice(3),
+      steps: this.screens.map((s, k) => ({ n: String(k + 1).padStart(2, '0'), label: s.label, go: () => this.go(k), bg: k === i ? '#1D1640' : 'transparent', color: k === i ? '#FFFFFF' : '#A39FBD' })),
+      prev: () => this.go(Math.max(0, i - 1)),
+      next: () => this.go(Math.min(this.screens.length - 1, i + 1)),
+      restart: () => this.go(0),
+      toSummary: () => this.go(6),
+      showNotes: this.props.showAnnotations ?? true
+    };
+  }
+}
+</script>
+</body>
+</html>
