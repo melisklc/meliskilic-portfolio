@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <style>
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 html,body{margin:0;background:#030303;color:#F5F2F1;font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -18,35 +19,142 @@ html{scroll-behavior:smooth}
 a{color:#E5483A;text-decoration:none}
 a:hover{color:#FFFFFF}
 @keyframes pfShim{0%{background-position:150% 0}100%{background-position:-50% 0}}
+/*mob*/
+html[data-mob],html[data-mob] body{overflow-x:hidden}
+html[data-mob] body [style*="140px"][style*="padding"]{padding-left:24px!important;padding-right:24px!important}
+html[data-mob] body [style*="padding:106px"],html[data-mob] body [style*="padding: 106px"],html[data-mob] body [style*="padding:120px"],html[data-mob] body [style*="padding: 120px"],html[data-mob] body [style*="padding:140px"],html[data-mob] body [style*="padding: 140px"]{padding-top:64px!important;padding-bottom:64px!important}
+html[data-mob] body [style*="grid-template-columns"]:not([style*="32px minmax"]):not([style*="28px minmax"]){grid-template-columns:minmax(0,1fr)!important;gap:24px!important}
+html[data-mob] body [style*="repeat(4"],html[data-mob] body [style*="repeat(5"],html[data-mob] body [style*="repeat(6"],html[data-mob] body [style*="repeat(2"],html[data-mob] body [style*="repeat(3"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+html[data-mob] body [style*="minmax(576px"]{min-width:0!important}
+html[data-mob] body [data-screen-label="Hero"],html[data-mob] body [data-screen-label="Cover"]{min-height:0!important;padding-top:120px!important}
+html[data-mob] body [style*="font-size: 96px"],html[data-mob] body [style*="font-size:96px"]{font-size:37px!important}
+html[data-mob] body [style*="font-size: 84px"],html[data-mob] body [style*="font-size:84px"]{font-size:37px!important}
+html[data-mob] body [style*="font-size: 72px"],html[data-mob] body [style*="font-size:72px"]{font-size:37px!important}
+html[data-mob] body [style*="font-size: 64px"],html[data-mob] body [style*="font-size:64px"]{font-size:37px!important}
+html[data-mob] body [style*="font-size: 62px"],html[data-mob] body [style*="font-size:62px"]{font-size:37px!important}
+html[data-mob] body [style*="font-size: 60px"],html[data-mob] body [style*="font-size:60px"]{font-size:37px!important}
+html[data-mob] body [style*="font-size: 56px"],html[data-mob] body [style*="font-size:56px"]{font-size:37px!important}
+html[data-mob] body [style*="font-size: 52px"],html[data-mob] body [style*="font-size:52px"]{font-size:31px!important}
+html[data-mob] body [style*="font-size: 50px"],html[data-mob] body [style*="font-size:50px"]{font-size:37px!important}
+html[data-mob] body [style*="font-size: 48px"],html[data-mob] body [style*="font-size:48px"]{font-size:31px!important}
+html[data-mob] body [style*="font-size: 44px"],html[data-mob] body [style*="font-size:44px"]{font-size:31px!important}
+html[data-mob] body [style*="font-size: 42px"],html[data-mob] body [style*="font-size:42px"]{font-size:28px!important}
+html[data-mob] body [style*="font-size: 40px"],html[data-mob] body [style*="font-size:40px"]{font-size:28px!important}
+html[data-mob] body [style*="font-size: 38px"],html[data-mob] body [style*="font-size:38px"]{font-size:26px!important}
+html[data-mob] body [style*="font-size: 36px"],html[data-mob] body [style*="font-size:36px"]{font-size:26px!important}
+html[data-mob] body [style*="font-size: 34px"],html[data-mob] body [style*="font-size:34px"]{font-size:24px!important}
+html[data-mob] body [style*="font-size: 33px"],html[data-mob] body [style*="font-size:33px"]{font-size:24px!important}
+html[data-mob] body [style*="font-size: 32px"],html[data-mob] body [style*="font-size:32px"]{font-size:24px!important}
+html[data-mob] body [style*="font-size: 30px"],html[data-mob] body [style*="font-size:30px"]{font-size:22px!important}
+html[data-mob] body [style*="font-size: 28px"],html[data-mob] body [style*="font-size:28px"]{font-size:22px!important}
+html[data-mob] body [style*="font-size: 26px"],html[data-mob] body [style*="font-size:26px"]{font-size:20px!important}
+html[data-mob] body [style*="font-size: 24px"],html[data-mob] body [style*="font-size:24px"]{font-size:19px!important}
+html[data-mob] body [style*="font-size: 22px"],html[data-mob] body [style*="font-size:22px"]{font-size:17px!important}
+html[data-mob] body [style*="font-size: 21px"],html[data-mob] body [style*="font-size:21px"]{font-size:17px!important}
+html[data-mob] body [style*="font-size: 20px"],html[data-mob] body [style*="font-size:20px"]{font-size:17px!important}
+html[data-mob] body [style*="font-size: 19px"],html[data-mob] body [style*="font-size:19px"]{font-size:17px!important}
+html[data-mob] body [style*="font-size: 18px"],html[data-mob] body [style*="font-size:18px"]{font-size:17px!important}
+html[data-mob] body p{font-size:17px!important;line-height:1.55!important}
+html[data-mob] body [style*="flex: 0 0 280px"],html[data-mob] body [style*="flex:0 0 280px"],html[data-mob] body [style*="flex: 0 0 220px"],html[data-mob] body [style*="flex:0 0 220px"]{flex:1 1 0!important;width:auto!important;min-width:0!important}
+html[data-mob] body img:not([style*="absolute"])[style*="width:280px"],html[data-mob] body img:not([style*="absolute"])[style*="width: 280px"],html[data-mob] body img:not([style*="absolute"])[style*="width:220px"],html[data-mob] body img:not([style*="absolute"])[style*="width: 220px"]{width:100%!important;height:auto!important}
+html[data-mob] body img,html[data-mob] body video{max-width:100%}
+html[data-mob] header{left:auto!important;right:16px!important;transform:none!important;top:12px!important;height:48px!important;gap:0!important;padding:6px!important}
+html[data-mob] header>a:first-child,html[data-mob] header>div:first-child{display:none!important}
+html[data-mob] header nav{font-size:15px!important;gap:0!important}
+html[data-mob] header nav a{padding:8px 9px!important}
+html[data-mob] header nav a:last-child{margin-left:4px!important;padding:9px 14px!important}
+html[data-mob] a[aria-label^="Back"]{left:16px!important;top:12px!important;width:48px!important;height:48px!important}
+html[data-mob] body [style*="width: 280px"][style*="height: 607px"],html[data-mob] body [style*="width:280px"][style*="height:607px"],html[data-mob] body [style*="width: 220px"][style*="height: 477px"],html[data-mob] body [style*="width:220px"][style*="height:477px"]{width:100%!important;height:auto!important;aspect-ratio:280/607}
+html[data-mob] body [style*="height: 607px"] img,html[data-mob] body [style*="height:607px"] img,html[data-mob] body [style*="height: 477px"] img,html[data-mob] body [style*="height:477px"] img{width:100%!important;height:100%!important}
+html[data-mob] body [data-screen-label="Hero"] div:has(> img[style*="absolute"]),html[data-mob] body [data-screen-label="Cover"] div:has(> img[style*="absolute"]){zoom:.68}
+html[data-mob] body p{width:auto!important;max-width:100%!important}
+html[data-mob] body [style*="width: 170px"],html[data-mob] body [style*="width:170px"]{width:92px!important}
+html[data-mob] body [style*="width: 170px"] *,html[data-mob] body [style*="width:170px"] *,html[data-mob] body [style*="width: 170px"],html[data-mob] body [style*="width:170px"]{font-size:11px!important;line-height:1.3!important}
+html[data-mob] body [data-screen-label="Closing"] > div[style*="radial-gradient"],html[data-mob] body [data-screen-label="Thank you"] > div[style*="radial-gradient"]{opacity:.6!important}
+html[data-mob] body [data-screen-label="Hero"][style][style]{padding-bottom:64px!important}
+html[data-mob] body div[data-m="htx"][data-m="htx"][data-m="htx"][data-m="htx"][style]{gap:28px!important}
+html[data-mob] body div[data-m="hgrp"][data-m="hgrp"][data-m="hgrp"][data-m="hgrp"][style]{gap:16px!important}
+html[data-mob] body h1[data-m="h1"][style]{font-size:84px!important;line-height:.85!important;letter-spacing:-.05em!important}
+html[data-mob] body div[data-m="htx"] > div[style*="flex-wrap"]{display:none!important}
+html[data-mob] body div[data-lift="1"][data-lift="1"][data-lift="1"][data-lift="1"]:not([data-m="rmap"]){padding:22px!important;border-radius:22px!important;gap:12px!important}
+html[data-mob] body div[data-m="audit"][data-m="audit"][data-m="audit"][data-m="audit"][style]{overflow-x:auto!important;-webkit-overflow-scrolling:touch;border-radius:20px!important;scrollbar-width:none}
+html[data-mob] body div[data-m="audit"][data-m="audit"][data-m="audit"][data-m="audit"]::-webkit-scrollbar{display:none}
+html[data-mob] body div[data-m="arow"][data-m="arow"][data-m="arow"][data-m="arow"][style]{grid-template-columns:130px repeat(6,minmax(0,1fr)) 100px!important;gap:10px!important;min-width:820px!important;padding-left:16px!important;padding-right:16px!important}
+html[data-mob] body div[data-m="quotes"][data-m="quotes"][data-m="quotes"][data-m="quotes"][style]{display:flex!important;gap:12px!important;overflow-x:auto!important;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -24px!important;padding:0 24px!important;scroll-padding:0 24px;scrollbar-width:none}
+html[data-mob] body div[data-m="quotes"][data-m="quotes"][data-m="quotes"][data-m="quotes"]::-webkit-scrollbar{display:none}
+html[data-mob] body div[data-m="quotes"][data-m="quotes"][data-m="quotes"][data-m="quotes"] > div[data-lift][data-lift][data-lift][style][style]{flex:0 0 calc((100% - 24px) / 2.5)!important;min-width:0!important;padding:20px 16px!important;gap:12px!important;scroll-snap-align:start}
+html[data-mob] body div[data-m="quotes"] > div p[style]{font-size:15px!important;line-height:1.4!important}
+html[data-mob] body div[data-m="quotes"] > div > div[style]{font-size:12px!important;padding-top:10px!important}
+html[data-mob] body div[data-m="pdg"][data-m="pdg"][data-m="pdg"][data-m="pdg"][style]{gap:40px!important}
+html[data-mob] body p[data-m="pst"][data-m="pst"][style]{font-size:20px!important;line-height:1.4!important}
+html[data-mob] body div[data-m="prow"][data-m="prow"][data-m="prow"][data-m="prow"][style]{grid-template-columns:minmax(0,1fr) 62px 40px 40px 34px!important;gap:8px!important;padding-top:14px!important;padding-bottom:14px!important;font-size:9px!important;letter-spacing:.04em!important}
+html[data-mob] body div[data-m="prow"] > div > div:first-child[style]{font-size:13px!important}
+html[data-mob] body div[data-m="prow"] > div > div:last-child[style]{font-size:11px!important;line-height:1.35!important}
+html[data-mob] body div[data-m="prow"] > div > span[style]{font-size:9px!important;padding:4px 6px!important;white-space:nowrap}
+html[data-mob] body div[data-m="prow"] > div[style*="Geist Mono"]{font-size:11px!important}
+html[data-mob] body div[data-m="rmap"][data-m="rmap"][data-m="rmap"][data-m="rmap"][style]{padding:0!important;border:0!important;border-radius:12px!important;background:none!important}
+html[data-mob] body div[style*="repeat("][style*="repeat("]:has(> div[data-lift="1"]):not([data-m="quotes"]){grid-template-columns:minmax(0,1fr)!important;gap:12px!important}
+html[data-mob] body div[data-lift="1"][data-lift="1"][data-lift="1"][data-lift="1"][data-lift="1"]:not([data-m="rmap"]):not([data-m="quotes"] > div):not([data-m="pers"]){gap:8px!important}
+html[data-mob] body div[data-lift="1"] div[style*="2.8em"]{min-height:0!important}
+html[data-mob] body span[data-m="hbul"]{display:none!important}
+html[data-mob] body span[data-m="hios"]{display:none!important}
+html[data-mob] body div[data-m="jtbd"][data-m="jtbd"][data-m="jtbd"][data-m="jtbd"][style]{flex-direction:row!important;gap:12px!important;overflow-x:auto!important;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -24px!important;padding:0 24px!important;scroll-padding:0 24px;border-top:0!important;scrollbar-width:none}
+html[data-mob] body div[data-m="jtbd"][data-m="jtbd"][data-m="jtbd"][data-m="jtbd"]::-webkit-scrollbar{display:none}
+html[data-mob] body div[data-m="jtbd"] > div[style][style]{flex:0 0 calc((100% - 24px) / 2.5)!important;min-width:0!important;display:flex!important;flex-direction:column!important;gap:10px!important;padding:16px!important;border:1px solid #1C1B1B!important;border-radius:22px!important;background:#0A0A0A;scroll-snap-align:start;align-items:flex-start!important}
+html[data-mob] body div[data-m="jtbd"] > div > span:last-child[style]{font-size:15px!important;line-height:1.4!important}
+html[data-mob] body div[data-m="pers"][data-m="pers"][data-m="pers"][data-m="pers"][style]{gap:14px!important}
+html[data-mob] body div[data-m="pav"][data-m="pav"][data-m="pav"][data-m="pav"][style]{width:64px!important;height:64px!important;flex:0 0 64px;font-size:26px!important;font-weight:600!important;letter-spacing:-.02em;font-family:inherit!important}
+html[data-mob] body div[data-m="pers"] > p[style]{font-size:15px!important;line-height:1.45!important}
+html[data-mob] body div[data-m="pers"][data-m="pers"][data-m="pers"] > div[style*="grid"][style*="grid"][style*="grid"]{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
+html[data-mob] body div[data-m="pers"] > div[style*="grid"] > div > div:not(:first-child){font-size:13px!important;line-height:1.35!important}
+html[data-mob] body div[data-m="pers"][data-m="pers"] > div:last-child[style]{padding:12px 14px!important;font-size:14px!important;border-radius:14px!important}
+html[data-mob] body div[data-m="rmap"][data-m="rmap"][data-m="rmap"][data-m="rmap"][style][style]{overflow-x:auto!important;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+html[data-mob] body div[data-m="rmap"] > img[style]{width:200%!important;max-width:none!important}
+html[data-mob] body div[data-m="trow"][data-m="trow"][data-m="trow"][data-m="trow"][style]{grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(0,1.2fr) minmax(0,1.1fr)!important;gap:8px!important;padding-top:14px!important;padding-bottom:14px!important;font-size:9px!important;letter-spacing:.04em!important}
+html[data-mob] body div[data-m="trow"] > div[style]{font-size:11px!important;line-height:1.4!important}
+html[data-mob] body div[data-m="trow"] > div:first-child[style]{font-size:12px!important}
+html[data-mob] body div[data-m="steps"][data-m="steps"][data-m="steps"][data-m="steps"][style]{gap:48px 20px!important}
+html[data-mob] body div[data-lift="1"][data-lift="1"][data-lift="1"][data-lift="1"][data-lift="1"][data-lift="1"]:not([data-m="rmap"]):not([data-m="quotes"] > div){padding:26px 22px!important}
+html[data-mob] body div[data-m="quotes"] > div[data-lift][data-lift][data-lift][data-lift][style][style],html[data-mob] body div[data-m="jtbd"] > div[style][style][style]{transform:none!important;filter:none!important;transition:none!important;opacity:1!important;padding:20px 16px!important}
+html[data-mob] body div[data-m="quotes"][data-m="quotes"][data-m="quotes"][data-m="quotes"][data-m="quotes"][style],html[data-mob] body div[data-m="jtbd"][data-m="jtbd"][data-m="jtbd"][data-m="jtbd"][data-m="jtbd"][style]{scroll-snap-type:x proximity!important;overscroll-behavior-x:contain;touch-action:pan-x pan-y}
+html[data-mob] body span[data-m="tdes"]{display:none!important}
+html[data-mob] body div[data-m="trow"]:last-child[style]{border-bottom:0!important}
+html[data-mob] body div[data-m="prow"]:last-child[style]{border-bottom:0!important}
+html[data-mob] body section[data-screen-label="Hero"][style][style][style]{padding-bottom:0!important}
+html[data-mob] body [data-screen-label="Hero"] > div[data-reveal][style*="height"]:has(> img){height:580px!important}
+html[data-mob] body section[data-screen-label="Hero"][style][style][style][style]{padding-bottom:64px!important}
+html[data-mob] body [data-screen-label="Challenge"] > div[style][style][style]{padding-top:64px!important}
+html[data-mob] body section > div[style*="max-width"][style*="gap: 44px"],html[data-mob] body section > div[style*="max-width"][style*="gap:44px"],html[data-mob] body section > div[style*="max-width"][style*="gap: 48px"],html[data-mob] body section > div[style*="max-width"][style*="gap:48px"],html[data-mob] body section > div[style*="max-width"][style*="gap: 56px"],html[data-mob] body section > div[style*="max-width"][style*="gap:56px"],html[data-mob] body section > div[style*="max-width"][style*="gap: 60px"],html[data-mob] body section > div[style*="max-width"][style*="gap:60px"]{gap:32px!important}
+/*mobend*/
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500&amp;display=swap" rel="stylesheet">
 </helmet>
 <div style="background:#030303"><div data-pitio-root="1" style="position:relative;width:1280px;background:#030303;overflow:hidden;color:#F5F2F1">
-<a data-site-back="1" href="Portfolio v5.dc.html#work" aria-label="Back to all work" style="position:fixed;left:32px;top:22px;z-index:60;box-sizing:border-box;height:60px;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;justify-content:center;width:60px;padding:0;border-radius:999px;border:1px solid rgba(229,72,58,.22);background:rgba(20,12,12,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif;font-size:16px;font-weight:500;color:#F5F2F1;transition:background .25s,transform .4s cubic-bezier(.22,1,.36,1)" style-hover="background:rgba(229,72,58,.12);transform:translateX(-3px);color:#FFFFFF"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5F2F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg></a>
-<header data-site-nav="1" style="position:fixed;left:50%;top:22px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:32px;padding:8px;border-radius:999px;border:1px solid rgba(229,72,58,.22);background:rgba(20,12,12,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif">
+<a data-site-back="1" href="Portfolio v5.dc.html#work" aria-label="Back to all work" style="position:fixed;left:32px;top:22px;z-index:60;box-sizing:border-box;height:52px;flex-shrink:0;white-space:nowrap;display:flex;align-items:center;justify-content:center;width:52px;padding:0;border-radius:999px;border:1px solid rgba(229,72,58,.22);background:rgba(20,12,12,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif;font-size:14.5px;font-weight:500;color:#F5F2F1;transition:background .25s,transform .4s cubic-bezier(.22,1,.36,1)" style-hover="background:rgba(229,72,58,.12);transform:translateX(-3px);color:#FFFFFF"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F5F2F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></svg></a>
+<header data-site-nav="1" style="position:fixed;left:50%;top:22px;transform:translateX(-50%);z-index:60;display:flex;height:52px;box-sizing:border-box;align-items:center;gap:40px;padding:8px;border-radius:999px;border:1px solid rgba(229,72,58,.22);background:rgba(20,12,12,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45);font-family:'Geist',sans-serif">
   <div style="display:flex;align-items:center;gap:12px">
     <a href="Portfolio v5.dc.html" style="display:flex;align-items:center;gap:12px;padding-right:8px;color:#F5F2F1">
-      <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid #4A2A28;flex:0 0 40px"><img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
-      <span style="font-size:17px;font-weight:600;letter-spacing:-.01em">Melis K.</span>
+      <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:34px;height:34px;border-radius:50%;overflow:hidden;border:1px solid #4A2A28;flex:0 0 34px"><img src="assets/portfolio/melis-avatar-c.png?v=4" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
+      <span style="font-size:15px;font-weight:600;letter-spacing:-.01em">Melis K.</span>
     </a>
   </div>
-  <nav style="display:flex;align-items:center;gap:4px;font-size:16px;font-weight:500">
-    <a href="Portfolio v5.dc.html#work" style="padding:10px 14px;border-radius:999px;color:#F5F2F1;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">Work</a>
-    <a href="Portfolio v5.dc.html#about" style="padding:10px 14px;border-radius:999px;color:#A8A2A0;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">About</a>
-    <a href="Portfolio v5.dc.html#faq" style="padding:10px 14px;border-radius:999px;color:#A8A2A0;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">FAQ</a>
-    <a href="Portfolio v5.dc.html#contact" style="margin-left:8px;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,#E5483A,#B8302A);color:#FFFFFF;font-weight:600;box-shadow:0 6px 18px rgba(229,72,58,.4),inset 0 1px 0 rgba(255,255,255,.25);transition:filter .3s" style-hover="filter:brightness(1.12);color:#FFFFFF">Contact</a>
+  <nav style="display:flex;align-items:center;gap:2px;font-size:14.5px;font-weight:500">
+    <a href="Portfolio v5.dc.html#work" style="padding:8px 12px;border-radius:999px;color:#F5F2F1;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">Work</a>
+    <a href="Portfolio v5.dc.html#about" style="padding:8px 12px;border-radius:999px;color:#A8A2A0;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">About</a>
+    <a href="Portfolio v5.dc.html#faq" style="padding:8px 12px;border-radius:999px;color:#A8A2A0;transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">FAQ</a>
+    <a href="Portfolio v5.dc.html#contact" style="margin-left:8px;padding:10px 18px;border-radius:999px;background:linear-gradient(135deg,#E5483A,#B8302A);color:#FFFFFF;font-weight:600;box-shadow:0 6px 18px rgba(229,72,58,.4),inset 0 1px 0 rgba(255,255,255,.25);transition:filter .3s" style-hover="filter:brightness(1.12);color:#FFFFFF">Contact</a>
   </nav>
 </header>
 
 
 <section data-screen-label="Hero" data-orbs="hero" style="position:relative;min-height:100vh;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center;padding:48px 140px">
-  <div data-reveal="1" style="position:relative;z-index:1;display:flex;flex-direction:column;gap:32px">
+  <div data-reveal="1" data-m="htx" style="position:relative;z-index:1;display:flex;flex-direction:column;gap:32px">
     <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">SHAPING A PRODUCT FROM ZERO TO MVP</div>
-    <div style="display:flex;flex-direction:column;gap:20px">
-      <h1 style="margin:0;font-size:128px;line-height:.85;font-weight:700;letter-spacing:-.06em;color:#F5F2F1">pitio<span style="display:inline-block;width:.16em;height:.16em;margin-left:.04em;border-radius:.03em;background:#E5483A"></span></h1>
-      <div style="font-family:'Geist Mono',monospace;font-size:16px;letter-spacing:.22em;color:#A8A2A0">AI PERSONAL TRAINER <span style="color:#6E6664">•</span> iOS MVP</div>
+    <div data-m="hgrp" style="display:flex;flex-direction:column;gap:20px">
+      <h1 data-m="h1" style="margin:0;font-size:128px;line-height:.85;font-weight:700;letter-spacing:-.06em;color:#F5F2F1">pitio<span style="display:inline-block;width:.16em;height:.16em;margin-left:.04em;border-radius:.03em;background:#E5483A"></span></h1>
+      <div style="font-family:'Geist Mono',monospace;font-size:16px;letter-spacing:.22em;color:#A8A2A0">AI PERSONAL TRAINER <span data-m="hbul" style="color:#6E6664">•</span> <span data-m="hios">iOS MVP</span></div>
     </div>
-    <p style="margin:0;font-size:20px;line-height:1.5;color:#CFC8C6;max-width:520px;text-wrap:pretty;width:440px">Building an AI personal trainer from 0→1, focused on real-time guidance, adaptation, and habit formation.</p>
+    <p style="margin:0;font-size:18px;line-height:1.5;color:#CFC8C6;max-width:520px;text-wrap:pretty;width:440px">Building an AI personal trainer from 0→1, focused on real-time guidance, adaptation, and habit formation.</p>
     <div style="display:flex;flex-wrap:wrap;gap:10px">
       <span data-lift="1" style="padding:10px 18px;border-radius:999px;border:1px solid #2A2828;background:#0A0A0A;font-size:16px;color:#CFC8C6">Product Management</span>
       <span data-lift="1" style="padding:10px 18px;border-radius:999px;border:1px solid #2A2828;background:#0A0A0A;font-size:16px;color:#CFC8C6">Product Design</span>
@@ -54,46 +162,46 @@ a:hover{color:#FFFFFF}
     </div>
   </div>
   <div data-reveal="1" style="position:relative;z-index:1;height:600px">
-    <img data-lift="img" src="assets/pitio/choose-trainer-bare.webp" alt="Choose your trainer" style="position:absolute;left:30px;top:90px;width:220px;border-radius:40px;border:1px solid #3A2524;transform:rotate(-7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
-    <img data-lift="img" src="assets/pitio/home-bare.webp" alt="Home" style="position:absolute;right:20px;top:90px;width:220px;border-radius:40px;border:1px solid #3A2524;transform:rotate(7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
-    <img data-lift="img" src="assets/pitio/live-session-bare.webp" alt="Live session" style="position:absolute;left:50%;top:20px;margin-left:-125px;width:250px;border-radius:44px;border:1px solid #4A2A28;box-shadow:0 40px 120px rgba(229,72,58,.3),0 30px 60px rgba(0,0,0,.6)">
+    <img data-lift="img" src="assets/pitio/choose-trainer-3x.webp?v=4" alt="Choose your trainer" style="position:absolute;left:30px;top:90px;width:220px;border-radius:40px;border:1px solid #3A2524;transform:rotate(-7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+    <img data-lift="img" src="assets/pitio/home-3x.webp?v=5" alt="Home" style="position:absolute;right:20px;top:90px;width:220px;border-radius:40px;border:1px solid #3A2524;transform:rotate(7deg);opacity:.85;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+    <img data-lift="img" src="assets/pitio/live-session-3x.webp?v=4" alt="Live session" style="position:absolute;left:50%;top:20px;margin-left:-125px;width:250px;border-radius:44px;border:1px solid #4A2A28;box-shadow:0 40px 120px rgba(229,72,58,.3),0 30px 60px rgba(0,0,0,.6)">
   </div>
 </section>
 
 <section data-screen-label="Challenge" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:48px">
     <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
       <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">01 · Shaping the product</div>
-      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Challenge, scope, constraints</h2>
+      <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Challenge, scope, constraints</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
       <div data-reveal="1" data-stagger="0" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:20px">
         <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">The challenge</div>
-        <p style="margin:0;font-size:20px;line-height:1.5;color:#E8E2E0;text-wrap:pretty">Build an AI personal trainer that delivers real-time, human-like coaching through video, while adapting to user behavior over time.</p>
+        <p style="margin:0;font-size:18px;line-height:1.5;color:#E8E2E0;text-wrap:pretty">Build an AI personal trainer that delivers real-time, human-like coaching through video, while adapting to user behavior over time.</p>
       </div>
       <div data-reveal="1" data-stagger="1" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:20px">
         <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">My role</div>
-        <p style="margin:0;font-size:20px;line-height:1.5;color:#E8E2E0;text-wrap:pretty">Owned end-to-end product from research and problem definition to UX design, system thinking, and MVP scope decisions.</p>
+        <p style="margin:0;font-size:18px;line-height:1.5;color:#E8E2E0;text-wrap:pretty">Owned end-to-end product from research and problem definition to UX design, system thinking, and MVP scope decisions.</p>
       </div>
       <div data-reveal="1" data-stagger="2" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:20px">
         <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">Core constraints</div>
-        <p style="margin:0;font-size:20px;line-height:1.5;color:#E8E2E0;text-wrap:pretty">Camera-based. No wearable. Must feel like a real trainer, not a robot reading a script.</p>
+        <p style="margin:0;font-size:18px;line-height:1.5;color:#E8E2E0;text-wrap:pretty">Camera-based. No wearable. Must feel like a real trainer, not a robot reading a script.</p>
       </div>
     </div>
   </div>
 </section>
 
 <section data-screen-label="Process" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:48px">
     <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
       <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">02 · Process</div>
-      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">How the product took shape. Step by step.</h2>
+      <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">How the product took shape. Step by step.</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
       <sc-for list="{{ process }}" as="p" hint-placeholder-count="4">
         <div data-reveal="1" data-stagger="{{ p.k }}" data-lift="1" style="padding:36px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:16px">
           <div style="display:flex;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase"><span style="color:#E5483A">{{ p.phase }}</span><span style="color:#6E6664">{{ p.n }}</span></div>
-          <div style="font-size:24px;font-weight:600;letter-spacing:-.02em">{{ p.title }}</div>
+          <div style="font-size:20px;font-weight:600;letter-spacing:-.02em">{{ p.title }}</div>
           <p style="margin:0;font-size:16px;line-height:1.55;color:#A8A2A0">{{ p.text }}</p>
         </div>
       </sc-for>
@@ -102,29 +210,29 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section data-screen-label="Research" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:48px">
     <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
       <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">03 · Research</div>
-      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Fitness advice is everywhere. <br>Real results aren’t.</h2>
+      <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Fitness advice is everywhere. <br>Real results aren’t.</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px">
       <div data-reveal="1" data-stagger="0" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:16px">
         <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">Method · User interviews</div>
-        <div style="font-size:56px;line-height:.9;font-weight:600;letter-spacing:-.05em"><span data-count="4">4</span> <span style="font-size:24px;color:#A8A2A0;letter-spacing:-.01em">participants</span></div>
+        <div style="font-size:46px;line-height:.9;font-weight:600;letter-spacing:-.05em"><span data-count="4">4</span> <span style="font-size:20px;color:#A8A2A0;letter-spacing:-.01em">participants</span></div>
         <p style="margin:0;font-size:17px;line-height:1.55;color:#CFC8C6">25–35 years old, mixed fitness levels, quit at least one fitness routine in the last 12 months.</p>
       </div>
       <div data-reveal="1" data-stagger="1" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:16px">
         <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">Method · Competitive audit</div>
-        <div style="font-size:56px;line-height:.9;font-weight:600;letter-spacing:-.05em"><span data-count="16">16</span> <span style="font-size:24px;color:#A8A2A0;letter-spacing:-.01em">fitness apps</span></div>
+        <div style="font-size:46px;line-height:.9;font-weight:600;letter-spacing:-.05em"><span data-count="16">16</span> <span style="font-size:20px;color:#A8A2A0;letter-spacing:-.01em">fitness apps</span></div>
         <p style="margin:0;font-size:17px;line-height:1.55;color:#CFC8C6">Evaluated across live coaching, form feedback, personalisation, and retention mechanics.</p>
       </div>
     </div>
     <div style="display:flex;flex-direction:column;gap:20px">
       <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F">Key quotes</div>
-      <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
+      <div data-m="quotes" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
         <sc-for list="{{ quotes }}" as="q" hint-placeholder-count="4">
           <div data-reveal="1" data-stagger="{{ q.k }}" data-lift="1" style="padding:32px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:20px">
-            <p style="margin:0;font-size:20px;line-height:1.4;font-weight:500;text-wrap:pretty">“{{ q.text }}”</p>
+            <p style="margin:0;font-size:18px;line-height:1.4;font-weight:500;text-wrap:pretty">“{{ q.text }}”</p>
             <div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #1C1B1B; font-size: 15px; line-height: 1.5; color: #E5483A">{{ q.insight }}</div>
           </div>
         </sc-for>
@@ -132,9 +240,9 @@ a:hover{color:#FFFFFF}
     </div>
     <div style="display:flex;flex-direction:column;gap:20px">
       <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F">Jobs to be done</div>
-      <div style="display:flex;flex-direction:column;border-top:1px solid #1C1B1B">
+      <div data-m="jtbd" style="display:flex;flex-direction:column;border-top:1px solid #1C1B1B">
         <sc-for list="{{ jtbd }}" as="j" hint-placeholder-count="4">
-          <div data-reveal="1" data-stagger="{{ j.k }}" style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:24px;padding:24px 0;border-bottom:1px solid #1C1B1B;align-items:baseline"><span style="font-family:'Geist Mono',monospace;font-size:15px;color:#E5483A">{{ j.n }}</span><span style="font-size:22px;line-height:1.45;color:#E8E2E0">{{ j.text }}</span></div>
+          <div data-reveal="1" data-stagger="{{ j.k }}" style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:24px;padding:24px 0;border-bottom:1px solid #1C1B1B;align-items:baseline"><span style="font-family:'Geist Mono',monospace;font-size:15px;color:#E5483A">{{ j.n }}</span><span style="font-size:19px;line-height:1.45;color:#E8E2E0">{{ j.text }}</span></div>
         </sc-for>
       </div>
     </div>
@@ -142,17 +250,17 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section data-screen-label="Competitive audit" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:44px">
     <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
       <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">04 · Competitive audit</div>
-      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Solving parts, not the whole</h2>
+      <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Solving parts, not the whole</h2>
     </div>
-    <div data-reveal="1" style="border:1px solid #1C1B1B;border-radius:28px;background:#070707;overflow:hidden">
-      <div style="display:grid;grid-template-columns:200px repeat(6,minmax(0,1fr)) 130px;gap:12px;padding:20px 28px;border-bottom:1px solid #1C1B1B;font-family:'Geist Mono',monospace;font-size:12px;line-height:1.35;letter-spacing:.06em;text-transform:uppercase;color:#8A817F">
+    <div data-reveal="1" data-m="audit" style="border:1px solid #1C1B1B;border-radius:28px;background:#070707;overflow:hidden">
+      <div data-m="arow" style="display:grid;grid-template-columns:200px repeat(6,minmax(0,1fr)) 130px;gap:12px;padding:20px 28px;border-bottom:1px solid #1C1B1B;font-family:'Geist Mono',monospace;font-size:12px;line-height:1.35;letter-spacing:.06em;text-transform:uppercase;color:#8A817F">
         <div>Competitor</div><div>Real-time video coaching</div><div>Form correction (AI)</div><div>Live interaction</div><div>Adaptive workouts</div><div>Coach memory</div><div>Real-time feedback</div><div>Personalization</div>
       </div>
       <sc-for list="{{ comp }}" as="c" hint-placeholder-count="12">
-        <div style="display:grid;grid-template-columns:200px repeat(6,minmax(0,1fr)) 130px;gap:12px;align-items:center;padding:14px 28px;border-bottom:1px solid #141414;background:{{ c.bg }}">
+        <div data-m="arow" style="display:grid;grid-template-columns:200px repeat(6,minmax(0,1fr)) 130px;gap:12px;align-items:center;padding:14px 28px;border-bottom:1px solid #141414;background:{{ c.bg }}">
           <div style="font-size:16px;font-weight:{{ c.fw }};line-height:1.3">{{ c.name }}</div>
           <sc-for list="{{ c.cells }}" as="x" hint-placeholder-count="6">
             <div style="display:flex;align-items:center;gap:8px;font-size:14px;color:#CFC8C6"><span style="width:22px;height:22px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;background:{{ x.bg }};color:{{ x.fg }}">{{ x.sym }}</span><span>{{ x.note }}</span></div>
@@ -165,20 +273,20 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section data-screen-label="Why this matters" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
-    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:48px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:60px;align-items:end">
       <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
         <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">05 · Why we built</div>
-        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Why this matters.</h2>
+        <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Why this matters.</h2>
       </div>
-      <p data-reveal="1" style="margin:0;font-size:24px;line-height:1.5;color:#CFC8C6;text-wrap:pretty">Here’s why people keep failing, and what Pitio fixes.</p>
+      <p data-reveal="1" style="margin:0;font-size:20px;line-height:1.5;color:#CFC8C6;text-wrap:pretty">Here’s why people keep failing, and what Pitio fixes.</p>
     </div>
     <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px">
       <sc-for list="{{ why }}" as="w" hint-placeholder-count="4">
         <div data-reveal="1" data-stagger="{{ w.k }}" data-lift="1" style="padding:36px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:16px">
-          <div style="font-size:64px;line-height:.9;font-weight:600;letter-spacing:-.05em;color:#E5483A">{{ w.pre }}<span data-count="{{ w.n }}">{{ w.n }}</span>{{ w.suf }}</div>
+          <div style="font-size:50px;line-height:.9;font-weight:600;letter-spacing:-.05em;color:#E5483A">{{ w.pre }}<span data-count="{{ w.n }}">{{ w.n }}</span>{{ w.suf }}</div>
           <div style="font-size:15px;line-height:1.4;color:#A8A2A0;min-height:2.8em">{{ w.stat }}</div>
-          <div style="padding-top:16px;border-top:1px solid #1C1B1B;font-size:20px;font-weight:600;letter-spacing:-.01em">{{ w.title }}</div>
+          <div style="padding-top:16px;border-top:1px solid #1C1B1B;font-size:18px;font-weight:600;letter-spacing:-.01em">{{ w.title }}</div>
           <p style="margin:0;font-size:16px;line-height:1.55;color:#A8A2A0">{{ w.text }}</p>
         </div>
       </sc-for>
@@ -187,17 +295,17 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section data-screen-label="Personas" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:64px">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:48px">
     <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
       <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">06 · Personas</div>
-      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Three personas. One common need.</h2>
+      <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">Three personas. One common need.</h2>
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
       <sc-for list="{{ personas }}" as="p" hint-placeholder-count="3">
-        <div data-reveal="1" data-stagger="{{ p.k }}" data-lift="1" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:24px">
+        <div data-reveal="1" data-stagger="{{ p.k }}" data-lift="1" data-m="pers" style="padding:40px;border:1px solid #1C1B1B;border-radius:28px;background:#0A0A0A;display:flex;flex-direction:column;gap:24px">
           <div style="display:flex;align-items:center;gap:16px">
-            <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#E5483A,#8E1F18);display:flex;align-items:center;justify-content:center;font-family:'Geist Mono',monospace;font-size:18px;font-weight:500;color:#FFFFFF">{{ p.ini }}</div>
-            <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:24px;font-weight:600;letter-spacing:-.02em">{{ p.name }}</div><div style="font-size:15px;color:#A8A2A0">{{ p.role }}</div></div>
+            <div data-m="pav" style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#E5483A,#8E1F18);display:flex;align-items:center;justify-content:center;font-family:'Geist Mono',monospace;font-size:16px;font-weight:500;color:#FFFFFF">{{ p.ini }}</div>
+            <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:20px;font-weight:600;letter-spacing:-.02em">{{ p.name }}</div><div style="font-size:15px;color:#A8A2A0">{{ p.role }}</div></div>
           </div>
           <p style="margin:0;font-size:19px;line-height:1.45;font-weight:500;text-wrap:pretty">“{{ p.quote }}”</p>
           <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px">
@@ -212,15 +320,15 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section data-screen-label="Problem definition" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:80px">
-    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:60px">
+    <div data-m="pdg" style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:60px">
       <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
         <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">07 · Problem definition</div>
-        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">What are we actually solving?</h2>
+        <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">What are we actually solving?</h2>
       </div>
       <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
         <div style="font-family:'Geist Mono',monospace;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F">Problem statement</div>
-        <p style="margin:0;font-size:32px;line-height:1.3;font-weight:500;letter-spacing:-.02em;text-wrap:pretty">People who want to get fit lack a consistent, intelligent presence that watches them move, remembers their journey, and adapts to who they are.</p>
+        <p data-m="pst" style="margin:0;font-size:32px;line-height:1.3;font-weight:500;letter-spacing:-.02em;text-wrap:pretty">People who want to get fit lack a consistent, intelligent presence that watches them move, remembers their journey, and adapts to who they are.</p>
       </div>
     </div>
     <div style="display:flex;flex-direction:column;gap:20px">
@@ -239,7 +347,7 @@ a:hover{color:#FFFFFF}
       <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F">How might we?</div>
       <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px">
         <sc-for list="{{ hmw }}" as="h" hint-placeholder-count="3">
-          <div data-reveal="1" data-stagger="{{ h.k }}" data-lift="1" style="padding:36px;border-radius:28px;background:linear-gradient(160deg,#1A1111,#0A0A0A 70%);border:1px solid #272323;font-size:22px;line-height:1.4;font-weight:500;text-wrap:pretty">{{ h.text }}</div>
+          <div data-reveal="1" data-stagger="{{ h.k }}" data-lift="1" style="padding:36px;border-radius:28px;background:linear-gradient(160deg,#1A1111,#0A0A0A 70%);border:1px solid #272323;font-size:19px;line-height:1.4;font-weight:500;text-wrap:pretty">{{ h.text }}</div>
         </sc-for>
       </div>
     </div>
@@ -247,15 +355,15 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section data-screen-label="Prioritization" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:44px">
     <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
       <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">08 · Prioritization</div>
-      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">What we built first.</h2>
+      <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">What we built first.</h2>
     </div>
     <div style="display:flex;flex-direction:column;border-top:1px solid #1C1B1B">
-      <div style="display:grid;grid-template-columns:minmax(0,1.8fr) 150px 100px 100px 100px;gap:24px;padding:18px 0;border-bottom:1px solid #1C1B1B;font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F"><div>Feature</div><div>Priority</div><div>Impact</div><div>Effort</div><div>Phase</div></div>
+      <div data-m="prow" style="display:grid;grid-template-columns:minmax(0,1.8fr) 150px 100px 100px 100px;gap:24px;padding:18px 0;border-bottom:1px solid #1C1B1B;font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F"><div>Feature</div><div>Priority</div><div>Impact</div><div>Effort</div><div>Phase</div></div>
       <sc-for list="{{ features }}" as="f" hint-placeholder-count="8">
-        <div data-reveal="1" data-stagger="{{ f.k }}" style="display:grid;grid-template-columns:minmax(0,1.8fr) 150px 100px 100px 100px;gap:24px;align-items:center;padding:20px 0;border-bottom:1px solid #141414">
+        <div data-reveal="1" data-stagger="{{ f.k }}" data-m="prow" style="display:grid;grid-template-columns:minmax(0,1.8fr) 150px 100px 100px 100px;gap:24px;align-items:center;padding:20px 0;border-bottom:1px solid #141414">
           <div style="display:flex;flex-direction:column;gap:4px"><div style="font-size:19px;font-weight:600">{{ f.name }}</div><div style="font-size:15px;color:#A8A2A0">{{ f.desc }}</div></div>
           <div><span style="padding:6px 12px;border-radius:999px;font-size:13px;font-family:'Geist Mono',monospace;background:{{ f.pbg }};color:{{ f.pfg }}">{{ f.pri }}</span></div>
           <div style="font-family:'Geist Mono',monospace;font-size:15px;color:#CFC8C6">{{ f.imp }}</div>
@@ -268,27 +376,27 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section data-screen-label="Roadmap" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:44px">
     <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
       <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">09 · Roadmap</div>
-      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">6 months. Ship it.</h2>
+      <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">6 months. Ship it.</h2>
     </div>
-    <div data-reveal="1" data-lift="1" style="border:1px solid #1C1B1B;border-radius:28px;background:#060606;overflow:hidden;padding:24px"><img src="assets/pitio/roadmap.webp" alt="Six-month roadmap" style="display:block;width:100%"></div>
+    <div data-reveal="1" data-lift="1" data-m="rmap" style="border:1px solid #1C1B1B;border-radius:28px;background:#060606;overflow:hidden;padding:24px"><img src="assets/pitio/roadmap.webp" alt="Six-month roadmap" style="display:block;width:100%"></div>
   </div>
 </section>
 
 <section data-screen-label="How it works" data-orbs="how" style="border-top:1px solid #141414;position:relative;">
-  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:72px">
+  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:56px">
     <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
       <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">10 · How it works</div>
-      <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">The core experience</h2>
+      <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">The core experience</h2>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px">
+    <div data-m="steps" style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px">
       <sc-for list="{{ steps }}" as="s" hint-placeholder-count="3">
         <div data-reveal="1" data-stagger="{{ s.k }}" style="display:flex;flex-direction:column;gap:28px;align-items:center">
           <img data-lift="img" src="{{ s.img }}" alt="{{ s.title }}" style="border-radius:40px;border:1px solid #3A2524;box-shadow:0 30px 70px rgba(0,0,0,.5);width:260px;display:block">
           <div style="display:flex;flex-direction:column;gap:12px;align-self:stretch">
-            <div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'Geist Mono',monospace;font-size:16px;color:#E5483A">{{ s.n }}</span><span style="font-size:24px;font-weight:600;letter-spacing:-.02em">{{ s.title }}</span></div>
+            <div style="display:flex;gap:12px;align-items:baseline"><span style="font-family:'Geist Mono',monospace;font-size:16px;color:#E5483A">{{ s.n }}</span><span style="font-size:20px;font-weight:600;letter-spacing:-.02em">{{ s.title }}</span></div>
             <p style="margin:0;font-size:16px;line-height:1.55;color:#A8A2A0;text-wrap:pretty">{{ s.text }}</p>
           </div>
         </div>
@@ -298,18 +406,18 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section data-screen-label="Testing" style="position:relative;z-index:1;border-top:1px solid #141414">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
-    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+  <div style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:44px">
+    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:60px;align-items:end">
       <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
         <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#E5483A">11 · Testing</div>
-        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">We tested. We learned.</h2>
+        <h2 style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">We tested. We learned.</h2>
       </div>
-      <p data-reveal="1" style="margin:0;font-size:22px;line-height:1.5;color:#CFC8C6;text-wrap:pretty">Key interactions from the first prototype testing.</p>
+      <p data-reveal="1" style="margin:0;font-size:19px;line-height:1.5;color:#CFC8C6;text-wrap:pretty">Key interactions from the first prototype testing.</p>
     </div>
     <div style="display:flex;flex-direction:column;border-top:1px solid #1C1B1B">
-      <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(0,1.4fr) minmax(0,1.1fr);gap:32px;padding:18px 0;border-bottom:1px solid #1C1B1B;font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F"><div>Task</div><div>Measured</div><div>Key findings</div><div>Design implications</div></div>
+      <div data-m="trow" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(0,1.4fr) minmax(0,1.1fr);gap:32px;padding:18px 0;border-bottom:1px solid #1C1B1B;font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#8A817F"><div>Task</div><div>Measured</div><div>Key findings</div><div><span data-m="tdes">Design </span>implications</div></div>
       <sc-for list="{{ tests }}" as="t" hint-placeholder-count="4">
-        <div data-reveal="1" data-stagger="{{ t.k }}" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(0,1.4fr) minmax(0,1.1fr);gap:32px;padding:28px 0;border-bottom:1px solid #1C1B1B">
+        <div data-reveal="1" data-stagger="{{ t.k }}" data-m="trow" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr) minmax(0,1.4fr) minmax(0,1.1fr);gap:32px;padding:28px 0;border-bottom:1px solid #1C1B1B">
           <div style="font-size: 16px; font-weight: 600; line-height: 1.35">{{ t.task }}</div>
           <div style="font-size: 16px; line-height: 1.55; color: #A8A2A0">{{ t.measured }}</div>
           <div style="font-size:16px;line-height:1.55;color:#CFC8C6">{{ t.finding }}</div>
@@ -321,8 +429,8 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section data-screen-label="Closing" data-orbs="close" style="border-top:1px solid #141414;position:relative;">
-  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:160px 140px 120px;display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center">
-    <h2 data-reveal="1" style="margin:0;font-size:80px;line-height:1;font-weight:600;letter-spacing:-.035em">Thank you.</h2>
+  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:120px 140px 120px;display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center">
+    <h2 data-reveal="1" style="margin:0;font-size:60px;line-height:1;font-weight:600;letter-spacing:-.035em">Thank you.</h2>
     
   </div>
 </section>
@@ -341,11 +449,11 @@ class Component extends DCLogic {
   fit = () => {
     const el = document.querySelector('[data-pitio-root]'); if (!el) return;
     const w = document.documentElement.clientWidth, S = 1.34;
-    const z = (w / S) < 1280 ? w / 1280 : S;
+    const mob = w < 760; document.documentElement.toggleAttribute('data-mob', mob); const z = mob ? 1 : (w / S) < 1280 ? w / 1280 : S;
     el.style.width = (w / z) + 'px';
     el.style.zoom = String(z);
     const h = el.querySelector('[data-screen-label="Hero"]');
-    if (h) h.style.minHeight = (window.innerHeight / z) + 'px';
+    if (h) h.style.minHeight = mob ? '0px' : (window.innerHeight / z) + 'px';
   };
   trail = () => {
     if ((this.props.cursorTrail || 'meteor') === 'off') return;
@@ -486,9 +594,9 @@ class Component extends DCLogic {
         ['Milestone cards', 'Shareable achievement cards', 'Could have', 'Med', 'Med', 'V2.1']
       ].map(([name, desc, pri, imp, eff, phase]) => ({ name, desc, pri, imp, eff, phase, pbg: PRI[pri][0], pfg: PRI[pri][1] }))),
       steps: k([
-        { n: '01', img: 'assets/pitio/choose-trainer-bare.webp', title: 'Pick your coach', text: 'Pick from AI coaches with different personalities, styles, and specialities across all workouts. Your coach matches the way you think and move.' },
-        { n: '02', img: 'assets/pitio/live-session-bare.webp', title: 'Train in real-time', text: 'The AI coach leads every session live. It watches you, speaks to you, and corrects you in real time like someone actually training with you.' },
-        { n: '03', img: 'assets/pitio/home-bare.webp', title: 'Build real progress', text: 'After every session, your coach surfaces a personalised insight. Your upcoming plan adapts based on what the coach observed.' }
+        { n: '01', img: 'assets/pitio/choose-trainer-3x.webp?v=4', title: 'Pick your coach', text: 'Pick from AI coaches with different personalities, styles, and specialities across all workouts. Your coach matches the way you think and move.' },
+        { n: '02', img: 'assets/pitio/live-session-3x.webp?v=4', title: 'Train in real-time', text: 'The AI coach leads every session live. It watches you, speaks to you, and corrects you in real time like someone actually training with you.' },
+        { n: '03', img: 'assets/pitio/home-3x.webp?v=5', title: 'Build real progress', text: 'After every session, your coach surfaces a personalised insight. Your upcoming plan adapts based on what the coach observed.' }
       ]),
       tests: k([
         { task: 'Choose a trainer based\non personality', measured: 'Decision time, hesitation', finding: 'Trainer selection drove emotional engagement, particularly through voice, but this feature was sometimes overlooked.', impl: 'Increase speaker visibility.' },

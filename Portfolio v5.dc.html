@@ -8,19 +8,23 @@
 <body>
 <x-dc>
 <helmet>
-<link rel="preload" as="image" href="assets/scan.webp">
-<link rel="preload" as="image" href="assets/summary.webp">
-<link rel="preload" as="image" href="assets/paywall.webp">
-<link rel="preload" as="image" href="assets/pitio/choose-trainer-bare.webp">
-<link rel="preload" as="image" href="assets/pitio/live-session-bare.webp">
-<link rel="preload" as="image" href="assets/pitio/home-bare.webp">
+<link rel="preload" as="image" href="assets/scan.png?v=3x">
+<link rel="preload" as="image" href="assets/summary.png?v=3x">
+<link rel="preload" as="image" href="assets/paywall.png?v=3x">
+<link rel="preload" as="image" href="assets/mola2/hero-welcome.png">
+<link rel="preload" as="image" href="assets/mola2/hero-premium.png">
+<link rel="preload" as="image" href="assets/mola2/hero-ready-victoria.png">
+<link rel="preload" as="image" href="assets/pitio/choose-trainer-3x.webp?v=4">
+<link rel="preload" as="image" href="assets/pitio/live-session-3x.webp?v=4">
+<link rel="preload" as="image" href="assets/pitio/home-3x.webp?v=5">
 <link rel="preload" as="image" href="assets/aurora/mock-hero-laptop.webp">
-<link rel="preload" as="image" href="assets/meel/agenda-bare.webp">
-<link rel="preload" as="image" href="assets/meel/chat-ainy-bare.webp">
-<link rel="preload" as="image" href="assets/meel/social-bare.webp">
+<link rel="preload" as="image" href="assets/meel/agenda-3x.webp">
+<link rel="preload" as="image" href="assets/meel/chat-ainy-3x.webp">
+<link rel="preload" as="image" href="assets/meel/social-3x.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;family=Bodoni+Moda:opsz,wght@6..96,500&amp;display=swap" rel="stylesheet">
 <style>
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 html,body{margin:0;background:#0A0913;color:#F1EEFF;font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -29,37 +33,84 @@ a{color:#F1EEFF;text-decoration:none}
 a:hover{color:#FFFFFF}
 @keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(185,166,255,.55)}70%{box-shadow:0 0 0 10px rgba(185,166,255,0)}100%{box-shadow:0 0 0 0 rgba(185,166,255,0)}}
 @keyframes pfShim{0%{background-position:150% 0}100%{background-position:-50% 0}}
+[data-mob] [data-m~="hide"]{display:none!important}
+[data-mob] [data-m~="pad"]{padding:72px 24px!important;gap:32px!important}
+[data-mob] [data-m~="hpad"]{padding:8px 24px 64px!important;gap:28px!important}
+[data-mob] [data-m~="hero"]{min-height:0!important;padding-top:128px!important}
+[data-mob] [data-m~="hlogo"]{padding-right:0!important}
+[data-mob] [data-m~="stack"]{grid-template-columns:minmax(0,1fr)!important;gap:20px!important}
+[data-mob] [data-m~="h1"]{font-size:37px!important;line-height:1.06!important}
+[data-mob] [data-m~="h2"],[data-mob] [data-m~="h2"] span{font-size:31px!important;line-height:1.08!important}
+[data-mob] [data-m~="h2"] span{display:inline!important;width:auto!important;height:auto!important}
+[data-mob] [data-m~="h2"]{height:auto!important;text-wrap:balance}
+[data-mob] [data-m~="lead"]{font-size:17px!important;width:auto!important;text-align:left!important}
+[data-mob] [data-m~="wrap"]{flex-wrap:wrap!important;gap:12px!important}
+[data-mob] [data-m~="hdr"]{gap:6px!important;top:12px!important;padding:6px!important;height:48px!important}
+[data-mob] [data-m~="hlogo"]{padding-right:2px!important}
+[data-mob] [data-m~="hnav"]{font-size:15px!important;gap:0!important}
+[data-mob] [data-m~="hlink"]{padding:8px 9px!important}
+[data-mob] [data-m~="hcta"]{margin-left:6px!important;padding:9px 14px!important}
+[data-mob] [data-m~="wrow"]{grid-template-columns:32px minmax(0,1fr) 36px!important;gap:14px!important;padding:26px 0!important}
+[data-mob] [data-m~="wname"]{font-size:21px!important}
+[data-mob] [data-m~="warr"]{width:36px!important;height:36px!important}
+[data-mob] [data-m~="wexp"]{grid-template-columns:minmax(0,1fr)!important;gap:16px!important;padding-bottom:28px!important}
+[data-mob] [data-m~="wimg"]{height:250px!important;border-radius:20px!important}
+[data-mob] [data-m~="wimg"] img:not([style*="cover"]){zoom:.68}
+[data-mob] [data-m~="hobs"]{flex-direction:row!important;height:360px!important;gap:6px!important;overflow-x:auto!important;scrollbar-width:none;margin:0 -24px!important;padding:0 24px!important}
+[data-mob] [data-m~="hobs"]::-webkit-scrollbar{display:none}
+[data-mob] [data-m~="hob"]{flex:0 0 44px!important;height:100%!important;border-radius:18px!important;transition:flex-basis .6s cubic-bezier(.22,1,.36,1),border-color .3s!important}
+[data-mob] [data-m~="hob"][style*="3.2"]{flex:0 0 188px!important}
+[data-mob] [data-m~="hobt"]{font-size:18px!important}
+[data-mob] [data-m~="hobs"]{scroll-behavior:smooth}
+[data-mob] [data-m~="hobs"]{-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent)}
+[data-mob] [data-m~="hobp"]{font-size:13px!important;line-height:1.45!important}
+[data-mob] [data-m~="hobtxt"]{left:14px!important;right:14px!important;bottom:16px!important;gap:6px!important;min-width:160px}
+[data-mob] [data-m~="faqcard"]{position:relative!important;top:auto!important;padding:28px!important}
+[data-mob] [data-m~="faqh"],[data-mob] [data-m~="faqh"] span{font-size:31px!important}
+[data-mob] [data-m~="fqb"]{padding:18px!important;font-size:17px!important}
+[data-mob] [data-m~="h3"]{font-size:24px!important}
+[data-mob] [data-m~="rot"]{font-size:31px!important;line-height:1.08!important;height:2.16em!important}
+[data-mob] [data-m~="rot"] span{white-space:normal!important;text-wrap:balance}
+[data-mob] [data-m~="ctabtns"]{flex-direction:column!important;align-items:stretch!important;align-self:stretch!important}
+[data-mob] [data-m~="foot"]{padding:24px 24px 110px!important;flex-direction:column!important;align-items:center!important}
+[data-mob] p{font-size:17px!important;line-height:1.55!important}
+[data-mob] [data-m~="fqa"]{padding:16px 18px 20px!important}
+[data-mob] [data-m~="abcol"]{display:contents!important}
+[data-mob] [data-m~="ab1"]{order:1}[data-mob] [data-m~="ab2"]{order:2}[data-mob] [data-m~="ab3"]{order:3;width:100%!important;margin:8px 0!important}[data-mob] [data-m~="ab4"]{order:4;margin-top:16px}[data-mob] [data-m~="ab5"]{order:5;margin-top:16px}[data-mob] [data-m~="ab6"]{order:6}
+[data-mob] a[style*="18px 32px"],[data-mob] a[style*="16px 28px"]{font-size:16px!important;padding:14px 24px!important}
+[data-mob] [data-m~="wrap"]{flex-direction:column!important;align-items:flex-start!important}
+[data-mob] [data-m~="hpad"]>[data-m~="wrap"]{margin-top:0!important}
 </style>
 </helmet>
 <div style="background:#0A0913"><div data-pf4-root="1" style="position:relative;width:1280px;background:#0A0913;overflow:hidden;color:#F1EEFF">
 
-<div style="position:absolute;top:0;bottom:0;left:96px;width:1px;background:#1A1828;pointer-events:none;z-index:0"></div>
-<div style="position:absolute;top:0;bottom:0;right:96px;width:1px;background:#1A1828;pointer-events:none;z-index:0"></div>
-<div style="position:absolute;left:0;right:0;top:112px;height:1px;background:#1A1828;pointer-events:none;z-index:0"></div>
-<header style="position:fixed;left:50%;top:22px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:40px;padding:8px 8px 8px 8px;border-radius:999px;border:1px solid rgba(185,166,255,.18);background:rgba(16,14,28,.7);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45)">
-  <a href="#top" style="display:flex;align-items:center;gap:12px;padding-right:8px">
-    <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:40px;height:40px;border-radius:50%;overflow:hidden;border:1px solid #3A3460;flex:0 0 40px"><img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
-    <span style="font-size:17px;font-weight:600;letter-spacing:-.01em">Melis K.</span>
+<div data-m="hide" style="position:absolute;top:0;bottom:0;left:96px;width:1px;background:#1A1828;pointer-events:none;z-index:0"></div>
+<div data-m="hide" style="position:absolute;top:0;bottom:0;right:96px;width:1px;background:#1A1828;pointer-events:none;z-index:0"></div>
+<div data-m="hide" style="position:absolute;left:0;right:0;top:112px;height:1px;background:#1A1828;pointer-events:none;z-index:0"></div>
+<header data-m="hdr" style="position:fixed;left:50%;top:22px;transform:translateX(-50%);z-index:60;display:flex;height:52px;box-sizing:border-box;align-items:center;gap:40px;padding:8px 8px 8px 8px;border-radius:999px;border:1px solid rgba(185,166,255,.18);background:rgba(16,14,28,.7);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 16px 48px rgba(0,0,0,.45)">
+  <a data-m="hlogo" href="#top" style="display:flex;align-items:center;gap:12px;padding-right:8px">
+    <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:34px;height:34px;border-radius:50%;overflow:hidden;border:1px solid #3A3460;flex:0 0 34px"><img src="{{ avImg }}" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
+    <span data-m="hide" style="font-size:15px;font-weight:600;letter-spacing:-.01em">Melis K.</span>
   </a>
-  <nav style="display:flex;align-items:center;gap:4px;font-size:16px;font-weight:500">
+  <nav data-m="hnav" style="display:flex;align-items:center;gap:2px;font-size:14.5px;font-weight:500">
     <sc-for list="{{ nav }}" as="n" hint-placeholder-count="3">
-      <a href="{{ n.href }}" onClick="{{ n.go }}" style="padding:10px 14px;border-radius:999px;color:{{ n.color }};transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">{{ n.label }}</a>
+      <a data-m="hlink" href="{{ n.href }}" onClick="{{ n.go }}" style="padding:8px 12px;border-radius:999px;color:{{ n.color }};transition:color .25s,background .25s" style-hover="color:#FFFFFF;background:rgba(255,255,255,.05)">{{ n.label }}</a>
     </sc-for>
-    <a href="#contact" style="margin-left:8px;padding:12px 22px;border-radius:999px;background:linear-gradient(135deg,#6B3CFF,#5B6BFF);color:#FFFFFF;font-weight:600;box-shadow:0 6px 18px rgba(107,60,255,.4),inset 0 1px 0 rgba(255,255,255,.25);transition:filter .3s" style-hover="filter:brightness(1.12);color:#FFFFFF">Contact</a>
+    <a data-m="hcta" href="#contact" style="margin-left:8px;padding:10px 18px;border-radius:999px;background:linear-gradient(135deg,#6B3CFF,#5B6BFF);color:#FFFFFF;font-weight:600;box-shadow:0 6px 18px rgba(107,60,255,.4),inset 0 1px 0 rgba(255,255,255,.25);transition:filter .3s" style-hover="filter:brightness(1.12);color:#FFFFFF">Contact</a>
   </nav>
 </header>
 
-<section id="top" data-screen-label="Hero" data-orbs="hero" style="position:relative;min-height:100vh;padding-top:112px;display:flex;flex-direction:column;justify-content:center">
-  <div style="position:relative;z-index:1;max-width:1600px;width:100%;margin:0 auto;padding:40px 140px 100px;display:flex;flex-direction:column;gap:40px">
+<section id="top" data-m="hero" data-screen-label="Hero" data-orbs="hero" style="position:relative;min-height:100vh;padding-top:112px;display:flex;flex-direction:column;justify-content:center">
+  <div data-m="hpad" style="position:relative;z-index:1;max-width:1600px;width:100%;margin:0 auto;padding:40px 140px 100px;display:flex;flex-direction:column;gap:40px">
     <div data-reveal="1" style="display:flex;align-items:center;gap:16px;font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">
       <span>Melis Kılıç · Product Manager &amp; Designer</span>
     </div>
-    <h1 data-reveal="1" style="margin: 0; font-size: 72px; line-height: 1; font-weight: 600; letter-spacing: -.045em; max-width: 1040px; text-wrap: balance">I build digital products <span style="color:#A096E0">that are strategic, functional, and</span> <span style="background:linear-gradient(90deg,#B9A6FF,#7F8CFF);-webkit-background-clip:text; background-clip: text; color: transparent">delightful.</span></h1>
-    <p data-reveal="1" style="margin:0;font-size:24px;line-height:1.5;color:#C9C4E0;max-width:760px;text-wrap:pretty">I own the end-to-end product lifecycle, integrating user needs, product strategy, design, and technical feasibility.</p>
-    <div data-reveal="1" style="display:flex;align-items:center;gap:24px;margin-top:16px">
-      <a data-lift="1" href="mailto:mk.meliskilic@gmail.com?subject=Excited%20to%20Hear%20About%20Your%20Project!" style="flex: 0 0 auto; padding: 18px 32px; white-space:nowrap;border-radius:999px; background: linear-gradient(90deg,#6B3CFF,#5B6BFF); color: #FFFFFF; font-size: 18px; font-weight: 600">Start your project →</a>
-      <a data-lift="1" href="#work" style="flex: 0 0 auto; padding: 18px 32px; white-space:nowrap;border-radius:999px; border: 1px solid #3A3460; background: rgba(18,16,29,.6); color: #F1EEFF; font-size: 18px; font-weight: 500">See my work</a>
-      <div style="flex:1;height:1px;background:#262338"></div>
+    <h1 data-m="h1" data-reveal="1" style="margin: 0; font-size: 62px; line-height: 1; font-weight: 600; letter-spacing: -.045em; max-width: 1040px; text-wrap: balance">I build digital products <span style="color:#A98BFF">that are strategic, functional, and</span> <span style="background:linear-gradient(90deg,#B9A6FF,#7F8CFF);-webkit-background-clip:text; background-clip: text; color: transparent">delightful.</span></h1>
+    <p data-m="lead" data-reveal="1" style="margin:0;font-size:20px;line-height:1.5;color:#C9C4E0;max-width:760px;text-wrap:pretty">I own the end-to-end product lifecycle, integrating user needs, product strategy, design, and technical feasibility.</p>
+    <div data-m="wrap" data-reveal="1" style="display:flex;align-items:center;gap:24px;margin-top:16px">
+      <a data-lift="1" href="mailto:mk.meliskilic@gmail.com?subject=New%20project%20inquiry" style="flex: 0 0 auto; padding: 18px 32px; white-space:nowrap;border-radius:999px; background: linear-gradient(90deg,#6B3CFF,#5B6BFF); color: #FFFFFF; font-size: 16px; font-weight: 600">Start your project →</a>
+      <a data-lift="1" href="#work" style="flex: 0 0 auto; padding: 18px 32px; white-space:nowrap;border-radius:999px; border: 1px solid #3A3460; background: rgba(18,16,29,.6); color: #F1EEFF; font-size: 16px; font-weight: 500">See my work</a>
+      <div data-m="hide" style="flex:1;height:1px;background:#262338"></div>
       <div style="flex: 0 0 auto; display: flex; align-items: center; gap: 10px; font-size: 16px; color: #A39FBD"><span style="width:8px;height:8px;border-radius:50%;background:#B9A6FF;animation:pulseDot 2s infinite"></span>Available to work</div>
     </div>
   </div>
@@ -67,32 +118,32 @@ a:hover{color:#FFFFFF}
 
 <section id="work" data-orbs="work" data-orbs-behind="1" data-screen-label="Work" style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
   
-<div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
-    <div style="display: grid; grid-template-columns: 420px minmax(0,1fr); gap: 156px; align-items: end; justify-content: space-evenly">
+<div data-m="pad" style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:44px">
+    <div data-m="stack" style="display: grid; grid-template-columns: 420px minmax(0,1fr); gap: 156px; align-items: end; justify-content: space-evenly">
       <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
         <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">01 · Selected work</div>
-        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em">My projects</h2>
+        <h2 data-m="h2" style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em">My projects</h2>
       </div>
-      <p data-reveal="1" style="margin: 0; font-size: 22px; line-height: 1.5; color: #C9C4E0; max-width: 620px; text-wrap: pretty; text-align: left; width: 474px">From 0→1 products work across product strategy, research, UX, and visual design.</p>
+      <p data-m="lead" data-reveal="1" style="margin: 0; font-size: 19px; line-height: 1.5; color: #C9C4E0; max-width: 620px; text-wrap: pretty; text-align: left; width: 474px">From early ideas to real experiences, working across product strategy, research, UX, and visual design.</p>
     </div>
     <div onMouseLeave="{{ leave }}" style="display:flex;flex-direction:column;border-top:1px solid #262338">
       <sc-for list="{{ work }}" as="w" hint-placeholder-count="4">
         <a href="{{ w.href }}" data-reveal="1" onMouseEnter="{{ w.enter }}" style="display:flex;flex-direction:column;border-bottom:1px solid #262338;color:#F1EEFF;transition:opacity .4s;opacity:{{ w.dim }}">
-          <div style="display:grid;grid-template-columns:64px minmax(0,1fr) 340px 48px;gap:24px;align-items:center;padding:32px 0">
+          <div data-m="wrow" style="display:grid;grid-template-columns:64px minmax(0,1fr) auto 48px;gap:24px;align-items:center;padding:27px 0">
             <span style="font-family:'Geist Mono',monospace;font-size:15px;color:#B9A6FF">{{ w.n }}</span>
-            <span style="font-size: 36px; line-height: 1; font-weight: 600; letter-spacing: -.04em">{{ w.name }}</span>
-            <span style="font-size:17px;color:#A39FBD">{{ w.cat }}</span>
-            <span style="width:48px;height:48px;border-radius:50%;border:1px solid {{ w.arrowBorder }};background:{{ w.arrowBg }};display:flex;align-items:center;justify-content:center;font-size:18px;color:{{ w.arrowColor }};transition:background .3s,border-color .3s,color .3s,transform .5s cubic-bezier(.22,1,.36,1);transform:{{ w.arrowT }}">↗</span>
+            <span data-m="wname" style="font-size: 33px; line-height: 1; font-weight: 600; letter-spacing: -.04em">{{ w.name }}</span>
+            <span data-m="hide" style="font-size:17px;color:#A39FBD;text-align:right">{{ w.cat }}</span>
+            <span data-m="warr" style="width:48px;height:48px;border-radius:50%;border:1px solid {{ w.arrowBorder }};background:{{ w.arrowBg }};display:flex;align-items:center;justify-content:center;font-size:16px;color:{{ w.arrowColor }};transition:background .3s,border-color .3s,color .3s,transform .5s cubic-bezier(.22,1,.36,1);transform:{{ w.arrowT }}">↗</span>
           </div>
           <div style="overflow:hidden;transition:height .7s cubic-bezier(.22,1,.36,1);height:{{ w.h }}">
-            <div style="display:grid;grid-template-columns:64px minmax(0,1fr) 340px;gap:24px;padding-bottom:40px">
-              <span></span>
-              <div style="position:relative;height:380px;overflow:hidden;border-radius:28px;border:1px solid #262338;background:{{ w.bg }}">
+            <div data-m="wexp" style="display:grid;grid-template-columns:64px minmax(0,1fr) 340px;gap:24px;padding-bottom:40px">
+              <span data-m="hide"></span>
+              <div data-m="wimg" style="position:relative;height:380px;overflow:hidden;border-radius:28px;border:1px solid #262338;background:{{ w.bg }}">
                 <div data-skel="1" style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.06) 50%,rgba(255,255,255,0) 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;transition:opacity .6s ease;pointer-events:none"></div><sc-for list="{{ w.imgs }}" as="im" hint-placeholder-count="0"><img data-src="{{ im.src }}" alt="" style="opacity:0;transition:opacity .6s ease,transform .9s cubic-bezier(.22,1,.36,1);position:absolute;left:50%;top:{{ im.top }};width:{{ im.w }};margin-left:{{ im.ml }};height:{{ im.hgt }};object-fit:{{ im.fit }};border:{{ im.b }};border-radius:{{ im.r }}"></sc-for>
               </div>
               <div style="display:flex;flex-direction:column;justify-content:space-between;gap:24px">
                 <div style="display:flex;flex-direction:column;gap:16px">
-                  <p style="margin:0;font-size:18px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">{{ w.desc }}</p>
+                  <p style="margin:0;font-size:16px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">{{ w.desc }}</p>
                   <div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ w.tags }}" as="t" hint-placeholder-count="3"><span style="padding:8px 14px;border-radius:999px;border:1px solid #3A3460;font-size:14px;color:#C9C4E0;white-space:nowrap">{{ t }}</span></sc-for></div>
                 </div>
                 <span style="font-size:17px;font-weight:500;color:#B9A6FF">View case study →</span>
@@ -105,21 +156,19 @@ a:hover{color:#FFFFFF}
   </div></section>
 
 <section id="about" data-screen-label="About" style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:start">
-    <div style="display:flex;flex-direction:column;gap:56px">
-      <div data-reveal="1" data-lift="1" style="position:relative;border-radius:32px;overflow:hidden;border:1px solid #262338;aspect-ratio:4/5;background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite">
-        
-        <div style="position: absolute; inset: 0; background: linear-gradient(180deg,rgba(10,9,19,0) 60%,rgba(10,9,19,.55)); pointer-events: none; left: -1px; top: 179px"></div>
-      <img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display: block; width: 100%; height: 100%; object-fit: fill"></div>
-      <div style="display:flex;flex-direction:column;gap:20px">
-        <div data-reveal="1" style="font-size:24px;font-weight:600;letter-spacing:-.02em">My work history</div>
+  <div data-m="pad stack" style="max-width:1600px;margin:0 auto;padding:106px 140px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start">
+    <div data-m="abcol" style="display:flex;flex-direction:column;gap:44px">
+      <div data-m="ab3" data-reveal="1" style="display:{{ abBig }};position:relative;aspect-ratio:4/5;width:78%;justify-self:center;align-self:center;margin:0 auto">
+        <img src="{{ abImg }}" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%;border-radius:32px"></div>
+      <div data-m="ab4" style="display:flex;flex-direction:column;gap:20px">
+        <div data-reveal="1" style="font-size:20px;font-weight:600;letter-spacing:-.02em">My work history</div>
         <div style="display:flex;flex-direction:column">
           <sc-for list="{{ history }}" as="j" hint-placeholder-count="4">
             <div style="display:grid;overflow:hidden;transition:grid-template-rows .6s cubic-bezier(.22,1,.36,1),opacity .45s,transform .6s cubic-bezier(.22,1,.36,1),margin .6s cubic-bezier(.22,1,.36,1);grid-template-rows:{{ j.rows }};opacity:{{ j.op }};transform:{{ j.tf }};margin-bottom:{{ j.mb }}">
               <div style="min-height:0">
                 <div data-lift="1" style="padding:24px 28px;border:1px solid #262338;border-radius:22px;background:#12101D;display:flex;flex-direction:column;gap:10px">
-                  <div style="font-size:20px;font-weight:600;letter-spacing:-.01em">{{ j.co }}</div>
-                  <div style="display:flex;justify-content:space-between;gap:16px;font-size:15px;color:#A39FBD"><span>{{ j.role }}</span><span style="font-family:'Geist Mono',monospace;color:#B9A6FF">{{ j.years }}</span></div>
+                  <div style="font-size:18px;font-weight:600;letter-spacing:-.01em">{{ j.co }}</div>
+                  <div style="display:flex;justify-content:space-between;gap:16px;font-size:15px;color:#A39FBD"><span>{{ j.role }}</span><span style="flex:none;white-space:nowrap;font-family:'Geist Mono',monospace;color:#B9A6FF">{{ j.years }}</span></div>
                 </div>
               </div>
             </div>
@@ -127,72 +176,72 @@ a:hover{color:#FFFFFF}
         </div>
         <button onClick="{{ toggleJobs }}" style="align-self:center;display:flex;align-items:center;gap:10px;padding:12px 22px;border-radius:999px;border:1px solid #3A3460;background:#12101D;color:#F1EEFF;font-family:'Geist',sans-serif;font-size:15px;font-weight:500;cursor:pointer;transition:border-color .3s,background .3s" style-hover="border-color:#6B5BD6;background:#1A1729">{{ jobsLabel }}<span style="display:flex;width:20px;height:20px;border-radius:50%;background:#F1EEFF;color:#0A0913;align-items:center;justify-content:center;font-size:12px;transition:transform .5s cubic-bezier(.22,1,.36,1);transform:{{ jobsArrow }}">↓</span></button>
       </div>
-    </div><div style="display: flex; flex-direction: column; gap: 48px; padding-top: 8px; align-self: stretch">
-      <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
-        <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">02 · About me</div><h2 style="margin: 0; font-size: 42px; line-height: 1.05; font-weight: 600; letter-spacing: -.04em; text-wrap: balance; width: 100%; height: 100%">A product thinker <span style="color: #A096E0; font-size: 42px; width: 100%; display: inline-block; height: 100%">shaped by creativity, strategy &amp; human behavior.</span></h2>
+    </div><div data-m="abcol" style="display: flex; flex-direction: column; gap: 48px; padding-top: 8px; align-self: stretch">
+      <div data-m="ab1" data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
+        <div style="display:flex;align-items:center;gap:16px"><span style="display:{{ abSm }};flex:none;width:72px;height:72px;border-radius:50%;overflow:hidden;border:1px solid #3A3460;box-shadow:0 0 0 5px rgba(107,60,255,.12)"><img src="{{ abImg }}" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 28%;transform:scale(1.35);transform-origin:50% 30%"></span><div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">02 · About me</div></div><h2 data-m="h2" style="margin: 0; font-size: 37px; line-height: 1.05; font-weight: 600; letter-spacing: -.04em; text-wrap: balance; width: 100%; height: 100%">A product thinker shaped by <span style="color: #A98BFF; font-size: 37px; width: 100%; display: inline-block; height: 100%">creativity, strategy &amp; human behavior.</span></h2>
         
       </div>
-      <div data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
-        <p style="margin:0;font-size:24px;line-height:1.5;font-weight:500;letter-spacing:-.01em;color:#E4E0F5;text-wrap:pretty">I’ve always been curious about people, how they think, what they’re drawn to, and why they make the choices they do. I’m equally drawn to creating things that feel thoughtful, beautiful, and clear.</p>
-        <p style="margin:0;font-size:20px;line-height:1.6;color:#8C87A8;text-wrap:pretty">That’s what shaped the way I work today: somewhere between design, product, and strategy, creating digital products that people enjoy using and that make sense for the business.</p>
+      <div data-m="ab2" data-reveal="1" style="display:flex;flex-direction:column;gap:24px">
+        <p style="margin:0;font-size:20px;line-height:1.5;font-weight:500;letter-spacing:-.01em;color:#E4E0F5;text-wrap:pretty">I’ve always been curious about people, how they think, what they’re drawn to, and why they make the choices they do. I’m equally drawn to creating things that feel thoughtful, beautiful, and clear.</p>
+        <p style="margin:0;font-size:18px;line-height:1.6;color:#8C87A8;text-wrap:pretty">That’s what shaped the way I work today: somewhere between design, product, and strategy, creating digital products that people enjoy using and that make sense for the business.</p>
       </div>
-      <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
-        <div style="font-size:24px;font-weight:600;letter-spacing:-.02em">What I bring</div>
+      <div data-m="ab5" data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
+        <div style="font-size:20px;font-weight:600;letter-spacing:-.02em">What I bring</div>
         <div style="display:flex;flex-wrap:wrap;gap:10px">
           <sc-for list="{{ bring }}" as="b" hint-placeholder-count="10"><span data-lift="1" style="padding:12px 18px;border-radius:16px;border:1px solid #262338;background:#12101D;font-size:16px;color:#C9C4E0">{{ b }}</span></sc-for>
         </div>
       </div>
-      <div data-reveal="1" style="display:flex;gap:12px"><a data-lift="1" href="Resume.dc.html" style="padding:14px 26px;white-space:nowrap;border-radius:999px;border:1px solid #3A3460;background:#12101D;font-size:16px;font-weight:500">Resume →</a></div>
+      <div data-m="ab6" data-reveal="1" style="display:flex;gap:12px"><a data-lift="1" href="Resume.dc.html" style="padding:14px 26px;white-space:nowrap;border-radius:999px;border:1px solid #3A3460;background:#12101D;font-size:16px;font-weight:500">Resume →</a></div>
     </div>
     
   </div>
 </section>
 
 <section id="beyond" data-orbs="beyond" data-orbs-behind="1" data-screen-label="Beyond work" style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
-  <div style="max-width:1600px;margin:0 auto;padding:140px 140px;display:flex;flex-direction:column;gap:56px">
-    <div style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:80px;align-items:end">
+  <div data-m="pad" style="max-width:1600px;margin:0 auto;padding:106px 140px;display:flex;flex-direction:column;gap:44px">
+    <div data-m="stack" style="display:grid;grid-template-columns:420px minmax(0,1fr);gap:60px;align-items:end">
       <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px">
         <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">04 · Beyond work</div>
-        <h2 style="margin:0;font-size:52px;line-height:1.08;font-weight:600;letter-spacing:-.03em;text-wrap:balance">Fascinated by the world and its beings</h2>
-      </div><p data-reveal="1" style="margin: 0; font-size: 22px; line-height: 1.5; color: #C9C4E0; max-width: 620px; text-wrap: pretty; text-align: right">A few things that inspire me every day.</p>
+        <h2 data-m="h2" style="margin:0;font-size:44px;line-height:1.08;font-weight:600;letter-spacing:-.03em;text-wrap:balance">Fascinated by the world and its beings</h2>
+      </div><p data-m="lead" data-reveal="1" style="margin: 0; font-size: 19px; line-height: 1.5; color: #C9C4E0; max-width: 620px; text-wrap: pretty; text-align: right">A few things that inspire me every day.</p>
       
     </div>
-    <div data-reveal="1" onMouseLeave="{{ hobLeave }}" style="display:flex;gap:16px;height:520px">
+    <div data-m="hobwrap" style="position:relative"><div data-m="hobs" data-reveal="1" onMouseLeave="{{ hobLeave }}" style="display:flex;gap:16px;height:520px">
       <sc-for list="{{ hobbies }}" as="h" hint-placeholder-count="5">
-        <div onMouseEnter="{{ h.enter }}" style="position:relative;flex:{{ h.flex }};min-width:0;border-radius:28px;overflow:hidden;border:1px solid {{ h.border }};background:#12101D;cursor:default;transition:flex .7s cubic-bezier(.22,1,.36,1),border-color .3s">
+        <div data-m="hob" onMouseEnter="{{ h.enter }}" onClick="{{ h.enter }}" style="position:relative;flex:{{ h.flex }};min-width:0;border-radius:28px;overflow:hidden;border:1px solid {{ h.border }};background:#12101D;cursor:default;transition:flex .7s cubic-bezier(.22,1,.36,1),border-color .3s">
           <div data-skel="1" style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(255,255,255,0) 30%,rgba(255,255,255,.06) 50%,rgba(255,255,255,0) 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;transition:opacity .6s ease;pointer-events:none"></div><sc-if value="{{ h.hasImg }}" hint-placeholder-val="{{ true }}"><img data-src="{{ h.img }}" alt="{{ h.title }}" style="opacity:0;transition:opacity .6s ease,transform .9s cubic-bezier(.22,1,.36,1);position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.22,1,.36,1),filter .5s;transform:{{ h.scale }};filter:{{ h.filter }}"></sc-if><sc-if value="{{ h.noImg }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;inset:0;background:radial-gradient(120% 80% at 30% 20%,rgba(122,104,200,.45),rgba(43,31,92,.5) 50%,#12101D 85%);transition:transform .9s cubic-bezier(.22,1,.36,1);transform:{{ h.scale }}"></div></sc-if>
           <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,9,19,0) 45%,rgba(10,9,19,.85) 100%)"></div>
-          <div style="position:absolute;left:28px;right:28px;bottom:28px;display:flex;flex-direction:column;gap:10px;transition:opacity .45s,transform .6s cubic-bezier(.22,1,.36,1);opacity:{{ h.textOp }};transform:{{ h.textT }}">
+          <div data-m="hobtxt" style="position:absolute;left:28px;right:28px;bottom:28px;display:flex;flex-direction:column;gap:10px;transition:opacity .45s,transform .6s cubic-bezier(.22,1,.36,1);opacity:{{ h.textOp }};transform:{{ h.textT }}">
             <span style="font-family:'Geist Mono',monospace;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">{{ h.n }}</span>
-            <span style="max-width:300px;font-size:26px;line-height:1.15;font-weight:600;letter-spacing:-.02em;color:#FFFFFF;text-wrap:balance">{{ h.title }}</span>
-            <p style="margin:0;max-width:300px;font-size:16px;line-height:1.5;color:#E4E0F5;transition:opacity .4s,transform .5s cubic-bezier(.22,1,.36,1);opacity:{{ h.textOp }};transform:{{ h.textT }}">{{ h.desc }}</p>
+            <span data-m="hobt" style="max-width:300px;font-size:26px;line-height:1.15;font-weight:600;letter-spacing:-.02em;color:#FFFFFF;text-wrap:balance">{{ h.title }}</span>
+            <p data-m="hobp" style="margin:0;max-width:300px;font-size:16px;line-height:1.5;color:#E4E0F5;transition:opacity .4s,transform .5s cubic-bezier(.22,1,.36,1);opacity:{{ h.textOp }};transform:{{ h.textT }}">{{ h.desc }}</p>
           </div>
         </div>
       </sc-for>
-    </div>
+    </div><span data-m="hobfade" style="display:none;position:absolute;top:0;bottom:0;right:-24px;width:72px;pointer-events:none;background:linear-gradient(90deg,rgba(10,9,19,0),#0A0913 85%)"></span></div>
   </div>
 </section>
 
 <section id="faq" data-screen-label="FAQ" data-orbs="close" style="border-top:1px solid #1E1B2E;position:relative">
-  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:140px 140px 180px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:56px;align-items:start">
-    <div style="display:flex;flex-direction:column;gap:56px">
+  <div data-m="pad stack" style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:106px 140px 180px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:44px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:44px">
       <div data-reveal="1" style="display:flex;flex-direction:column;gap:20px">
         <div style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">05 · FAQ</div>
-        <h2 style="margin: 0; font-size: 80px; line-height: .98; font-weight: 600; letter-spacing: -.05em">Your <br>questions<br><span style="color: #A096E0; font-size: 76px">answered.</span></h2>
+        <h2 data-m="faqh" style="margin: 0; font-size: 60px; line-height: .98; font-weight: 600; letter-spacing: -.05em">Your <br>questions<br><span style="color: #A98BFF; font-size: 57px">answered.</span></h2>
       </div>
       <div style="display:flex;flex-direction:column;gap:16px">
         <sc-for list="{{ faq }}" as="q" hint-placeholder-count="4">
           <div data-reveal="1" data-stagger="{{ q.k }}" style="border:1px solid {{ q.border }};border-radius:24px;background:#12101D;overflow:hidden;transition:border-color .3s,box-shadow .4s;box-shadow:{{ q.shadow }}">
-            <button onClick="{{ q.toggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 28px;border:0;background:transparent;color:#F1EEFF;font-family:'Geist',sans-serif;font-size:20px;font-weight:600;letter-spacing:-.01em;text-align:left;cursor:pointer">{{ q.q }}<span style="position:relative;flex:0 0 18px;width:18px;height:18px"><span style="position:absolute;left:0;right:0;top:8px;height:2px;border-radius:2px;background:#B9A6FF"></span><span style="position:absolute;top:0;bottom:0;left:8px;width:2px;border-radius:2px;background:#B9A6FF;transition:transform .45s cubic-bezier(.22,1,.36,1);transform:{{ q.plus }}"></span></span></button>
-            <div style="display:grid;transition:grid-template-rows .55s cubic-bezier(.22,1,.36,1);grid-template-rows:{{ q.rows }}"><div style="min-height:0;overflow:hidden"><p style="margin:0;padding:22px 28px 28px;border-top:1px solid #262338;font-size:17px;line-height:1.6;color:#A39FBD;text-wrap:pretty;transition:opacity .4s;opacity:{{ q.op }}">{{ q.a }}</p></div></div>
+            <button data-m="fqb" onClick="{{ q.toggle }}" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 28px;border:0;background:transparent;color:#F1EEFF;font-family:'Geist',sans-serif;font-size:18px;font-weight:600;letter-spacing:-.01em;text-align:left;cursor:pointer">{{ q.q }}<span style="position:relative;flex:0 0 18px;width:18px;height:18px"><span style="position:absolute;left:0;right:0;top:8px;height:2px;border-radius:2px;background:#B9A6FF"></span><span style="position:absolute;top:0;bottom:0;left:8px;width:2px;border-radius:2px;background:#B9A6FF;transition:transform .45s cubic-bezier(.22,1,.36,1);transform:{{ q.plus }}"></span></span></button>
+            <div style="display:grid;transition:grid-template-rows .55s cubic-bezier(.22,1,.36,1);grid-template-rows:{{ q.rows }}"><div style="min-height:0;overflow:hidden"><p data-m="fqa" style="margin:0;padding:22px 28px 28px;border-top:1px solid #262338;font-size:17px;line-height:1.6;color:#A39FBD;text-wrap:pretty;transition:opacity .4s;opacity:{{ q.op }}">{{ q.a }}</p></div></div>
           </div>
         </sc-for>
       </div>
     </div>
-    <div data-reveal="1" data-lift="1" style="position:sticky;top:120px;padding:44px;border:1px solid #2E2A45;border-radius:32px;background:linear-gradient(160deg,rgba(107,60,255,.14),rgba(18,16,29,.9) 55%);display:flex;flex-direction:column;gap:28px">
-      <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:88px;height:88px;border-radius:50%;overflow:hidden;border:1px solid #3A3460;box-shadow:0 0 0 6px rgba(107,60,255,.12)"><img src="moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
-      <h3 style="margin: 0; font-size: 38px; line-height: 1.08; font-weight: 600; letter-spacing: -.03em"><span style="color:#A096E0">Still not sure?</span><br>Let’s have a quick call.</h3>
-      <p style="margin:0;font-size:18px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">Tell me about your product and what’s not working. I’ll tell you honestly how I can help.</p>
+    <div data-m="faqcard" data-reveal="1" data-lift="1" style="position:sticky;top:120px;padding:44px;border:1px solid #2E2A45;border-radius:32px;background:linear-gradient(160deg,rgba(107,60,255,.14),rgba(18,16,29,.9) 55%);display:flex;flex-direction:column;gap:28px">
+      <span style="background:linear-gradient(100deg,#15131F 30%,#26223A 50%,#15131F 70%);background-size:200% 100%;animation:pfShim 1.6s ease-in-out infinite;width:88px;height:88px;border-radius:50%;overflow:hidden;border:1px solid #3A3460;box-shadow:0 0 0 6px rgba(107,60,255,.12)"><img src="{{ avImg }}" alt="Melis Kılıç" style="display:block;width:100%;height:100%;object-fit:cover;object-position:50% 22%"></span>
+      <h3 data-m="h3" style="margin: 0; font-size: 34px; line-height: 1.08; font-weight: 600; letter-spacing: -.03em"><span style="color:#A98BFF">Still not sure?</span><br>Let’s have a quick call.</h3>
+      <p style="margin:0;font-size:16px;line-height:1.55;color:#C9C4E0;text-wrap:pretty">Tell me about your product and what’s not working. I’ll tell you honestly how I can help.</p>
       <div style="display:flex;align-items:center;gap:16px">
         <a data-lift="1" href="mailto:mk.meliskilic@gmail.com?subject=Let%E2%80%99s%20talk" style="padding:16px 28px;white-space:nowrap;border-radius:999px;background:linear-gradient(90deg,#6B3CFF,#5B6BFF);color:#FFFFFF;font-size:17px;font-weight:600">Let’s talk</a>
         <a href="https://www.linkedin.com/in/melis-k%C4%B1l%C4%B1%C3%A7-139136188/" target="_blank" style="font-size:16px;color:#A39FBD" style-hover="color:#FFFFFF">LinkedIn ↗</a>
@@ -202,19 +251,17 @@ a:hover{color:#FFFFFF}
 </section>
 
 <section id="contact" data-screen-label="Contact" style="border-top:1px solid #1E1B2E;position:relative">
-  <div style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:160px 140px;display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center">
+  <div data-m="pad" style="position:relative;z-index:1;max-width:1600px;margin:0 auto;padding:120px 140px;display:flex;flex-direction:column;align-items:center;gap:28px;text-align:center">
     <div data-reveal="1" style="font-family:'Geist Mono',monospace;font-size:15px;letter-spacing:.08em;text-transform:uppercase;color:#B9A6FF">06 · Contact</div>
-    <h2 data-reveal="1" style="position:relative;align-self:stretch;margin: 0; height:1.15em; font-size: 64px; line-height: 1.15; font-weight: 600; letter-spacing: -.04em">
-      <sc-for list="{{ rot }}" as="r" hint-placeholder-count="1"><span style="position:absolute;left:0;right:0;top:0;text-align:center;white-space:nowrap;transition:transform .9s cubic-bezier(.22,1,.36,1),opacity .6s cubic-bezier(.22,1,.36,1),filter .7s cubic-bezier(.22,1,.36,1);transform:{{ r.t }};opacity:{{ r.op }};filter:{{ r.f }}">Let’s {{ r.a }} <span style="color:#A096E0">{{ r.b }}</span></span></sc-for>
+    <h2 data-m="rot" data-reveal="1" style="position:relative;align-self:stretch;margin: 0; height:1.15em; font-size: 50px; line-height: 1.15; font-weight: 600; letter-spacing: -.04em">
+      <sc-for list="{{ rot }}" as="r" hint-placeholder-count="1"><span style="position:absolute;left:0;right:0;top:0;text-align:center;white-space:nowrap;transition:transform .9s cubic-bezier(.22,1,.36,1),opacity .6s cubic-bezier(.22,1,.36,1),filter .7s cubic-bezier(.22,1,.36,1);transform:{{ r.t }};opacity:{{ r.op }};filter:{{ r.f }}">Let’s {{ r.a }} <span style="color:#A98BFF">{{ r.b }}</span></span></sc-for>
     </h2>
-    <p data-reveal="1" style="margin:0;font-size:22px;line-height:1.5;color:#C9C4E0;max-width:560px">Have a project in mind? I’d love to hear about it.</p>
-    <div data-reveal="1" style="display:flex;gap:14px;margin-top:12px">
-      <a data-lift="1" href="mailto:mk.meliskilic@gmail.com" style="padding:18px 32px;white-space:nowrap;border-radius:999px;background:linear-gradient(90deg,#6B3CFF,#5B6BFF);color:#FFFFFF;font-size:18px;font-weight:600">Let's work together</a>
-      <a data-lift="1" href="https://www.linkedin.com/in/melis-k%C4%B1l%C4%B1%C3%A7-139136188/" target="_blank" style="padding:18px 32px;white-space:nowrap;border-radius:999px;border:1px solid #3A3460;background:rgba(18,16,29,.6);font-size:18px;font-weight:500">LinkedIn ↗</a>
+    <div data-reveal="1" style="display:flex;flex-direction:column;align-items:center;gap:18px;margin-top:-8px">
+      <a data-lift="1" href="mailto:mk.meliskilic@gmail.com?subject=Let%E2%80%99s%20work%20together" style="padding:16px 28px;white-space:nowrap;border-radius:999px;background:linear-gradient(90deg,#6B3CFF,#5B6BFF);color:#FFFFFF;font-size:17px;font-weight:600">Let’s work together</a>
     </div>
   </div>
   <footer style="position:relative;z-index:1;border-top:1px solid #1E1B2E">
-    <div style="max-width:1600px;margin:0 auto;padding:32px 140px;display:flex;justify-content:space-between;gap:24px;font-size:15px;color:#6E6A85">
+    <div data-m="foot" style="max-width:1600px;margin:0 auto;padding:32px 140px;display:flex;justify-content:space-between;gap:24px;font-size:15px;color:#6E6A85">
       <span>© Melis Kılıç</span>
       <div style="display:flex;gap:28px"><a href="#work" style="color:#6E6A85" style-hover="color:#FFFFFF">Work</a><a href="#about" style="color:#6E6A85" style-hover="color:#FFFFFF">About</a><a href="#faq" style="color:#6E6A85" style-hover="color:#FFFFFF">FAQ</a><a href="#contact" style="color:#6E6A85" style-hover="color:#FFFFFF">Contact</a></div>
     </div>
@@ -222,36 +269,42 @@ a:hover{color:#FFFFFF}
 </section>
 
 
-<div onMouseEnter="{{ fabEnter }}" onMouseLeave="{{ fabLeave }}" style="position:fixed;left:50%;bottom:28px;z-index:50;display:flex;align-items:center;gap:10px;padding:10px;border-radius:999px;border:1px solid rgba(185,166,255,.22);background:rgba(16,14,28,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 40px rgba(107,60,255,.18);transition:transform .7s cubic-bezier(.22,1,.36,1),opacity .5s;transform:{{ fabT }};opacity:{{ fabOp }};pointer-events:{{ fabPe }}">
+<div onMouseEnter="{{ fabEnter }}" onMouseLeave="{{ fabLeave }}" style="position:fixed;left:50%;bottom:28px;z-index:50;display:flex;align-items:center;gap:8px;padding:8px;border-radius:999px;border:1px solid rgba(185,166,255,.22);background:rgba(16,14,28,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 40px rgba(107,60,255,.18);transition:transform .7s cubic-bezier(.22,1,.36,1),opacity .5s;transform:{{ fabT }};opacity:{{ fabOp }};pointer-events:{{ fabPe }}">
   <div style="display:flex;flex-direction:column;gap:2px;overflow:hidden;white-space:nowrap;transition:max-width .55s cubic-bezier(.22,1,.36,1),opacity .35s,padding .55s cubic-bezier(.22,1,.36,1);max-width:{{ fabTextW }};opacity:{{ fabTextOp }};padding:0 {{ fabTextPad }}">
-    <span style="font-size:16px;font-weight:600;color:#F1EEFF">Speak to me</span>
-    <span style="font-size:13px;color:#A39FBD">Email or book a call</span>
+    <span style="font-size:14.5px;font-weight:600;color:#F1EEFF">Speak to me</span>
+    <span style="font-size:12px;color:#A39FBD">Email or book a call</span>
   </div>
-  <a href="mailto:mk.meliskilic@gmail.com" style="display:flex;align-items:center;height:52px;min-width:52px;border-radius:999px;background:linear-gradient(135deg,#6B3CFF,#5B6BFF);color:#FFFFFF;box-shadow:0 8px 24px rgba(107,60,255,.45),inset 0 1px 0 rgba(255,255,255,.25);overflow:hidden;white-space:nowrap;transition:padding .55s cubic-bezier(.22,1,.36,1),filter .3s;padding:0 {{ fabBtnPad }}" style-hover="filter:brightness(1.12);color:#FFFFFF">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 22px"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="m4 7 8 6 8-6"></path></svg>
-    <span style="overflow:hidden;font-size:16px;font-weight:600;transition:max-width .55s cubic-bezier(.22,1,.36,1),opacity .35s,margin .55s cubic-bezier(.22,1,.36,1);max-width:{{ fabLblW }};opacity:{{ fabLblOp }};margin-left:{{ fabLblM }}">Contact</span>
+  <a href="mailto:mk.meliskilic@gmail.com" style="display:flex;align-items:center;height:46px;min-width:46px;border-radius:999px;background:linear-gradient(135deg,#6B3CFF,#5B6BFF);color:#FFFFFF;box-shadow:0 8px 24px rgba(107,60,255,.45),inset 0 1px 0 rgba(255,255,255,.25);overflow:hidden;white-space:nowrap;transition:padding .55s cubic-bezier(.22,1,.36,1),filter .3s;padding:0 {{ fabBtnPad }}" style-hover="filter:brightness(1.12);color:#FFFFFF">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 19px"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="m4 7 8 6 8-6"></path></svg>
+    <span style="overflow:hidden;font-size:14.5px;font-weight:600;transition:max-width .55s cubic-bezier(.22,1,.36,1),opacity .35s,margin .55s cubic-bezier(.22,1,.36,1);max-width:{{ fabLblW }};opacity:{{ fabLblOp }};margin-left:{{ fabLblM }}">Contact</span>
   </a>
-  <a href="mailto:mk.meliskilic@gmail.com?subject=Let%E2%80%99s%20book%20a%20call" style="display:flex;align-items:center;height:52px;min-width:52px;border-radius:999px;border:1px solid #3A3460;background:#1A1729;color:#F1EEFF;overflow:hidden;white-space:nowrap;transition:padding .55s cubic-bezier(.22,1,.36,1),border-color .3s,background .3s;padding:0 {{ fabBtnPad }}" style-hover="border-color:#6B5BD6;background:#221E36">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F1EEFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 22px"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M8 3v4M16 3v4M3.5 10h17"></path><path d="m9 15 2 2 4-4"></path></svg>
-    <span style="overflow:hidden;font-size:16px;font-weight:600;transition:max-width .55s cubic-bezier(.22,1,.36,1),opacity .35s,margin .55s cubic-bezier(.22,1,.36,1);max-width:{{ fabLblW2 }};opacity:{{ fabLblOp }};margin-left:{{ fabLblM }}">Book a call</span>
+  <a href="https://calendly.com/mk-meliskilic/30min" target="_blank" rel="noopener" style="display:flex;align-items:center;height:46px;min-width:46px;border-radius:999px;border:1px solid #3A3460;background:#1A1729;color:#F1EEFF;overflow:hidden;white-space:nowrap;transition:padding .55s cubic-bezier(.22,1,.36,1),border-color .3s,background .3s;padding:0 {{ fabBtnPad }}" style-hover="border-color:#6B5BD6;background:#221E36">
+    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#F1EEFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:0 0 19px"><rect x="3.5" y="5" width="17" height="15" rx="2.5"></rect><path d="M8 3v4M16 3v4M3.5 10h17"></path><path d="m9 15 2 2 4-4"></path></svg>
+    <span style="overflow:hidden;font-size:14.5px;font-weight:600;transition:max-width .55s cubic-bezier(.22,1,.36,1),opacity .35s,margin .55s cubic-bezier(.22,1,.36,1);max-width:{{ fabLblW2 }};opacity:{{ fabLblOp }};margin-left:{{ fabLblM }}">Book a call</span>
   </a>
 </div>
 
 </div></div>
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;cursorTrail&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;meteor&quot;,&quot;stardust&quot;,&quot;comet&quot;,&quot;off&quot;],&quot;default&quot;:&quot;meteor&quot;,&quot;tsType&quot;:&quot;'stardust'|'meteor'|'comet'|'off'&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;cursorTrail&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;meteor&quot;,&quot;stardust&quot;,&quot;comet&quot;,&quot;off&quot;],&quot;default&quot;:&quot;meteor&quot;,&quot;tsType&quot;:&quot;'stardust'|'meteor'|'comet'|'off'&quot;},&quot;aboutPhoto&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;rectangle&quot;,&quot;circle&quot;],&quot;default&quot;:&quot;rectangle&quot;,&quot;tsType&quot;:&quot;'rectangle'|'circle'&quot;},&quot;photoVersion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;A&quot;,&quot;B&quot;,&quot;C&quot;],&quot;default&quot;:&quot;C&quot;,&quot;tsType&quot;:&quot;'A'|'B'|'C'&quot;}}">
 class Component extends DCLogic {
-  state = { rot: 0, rotAnim: true, rotWs: [], open: -1, nav: 0, hob: 0, allJobs: false, fab: false, fabShow: false, faq: 0 };
+  state = { rot: 0, rotAnim: true, rotWs: [], open: -1, nav: -1, hob: 0, allJobs: false, fab: false, fabShow: false, faq: 0 };
   fit = () => {
     const el = document.querySelector('[data-pf4-root]'); if (!el) return;
-    const w = document.documentElement.clientWidth, S = 1.34;
-    const z = (w / S) < 1280 ? w / 1280 : S;
+    const w = document.documentElement.clientWidth, S = 1.34, mob = w < 760;
+    const z = mob ? 1 : (w / S) < 1280 ? w / 1280 : S;
     el.style.width = (w / z) + 'px';
     el.style.zoom = String(z);
+    if (mob) el.setAttribute('data-mob', '1'); else el.removeAttribute('data-mob');
+    if (mob !== !!this.state.mob) this.setState({ mob });
     const h = el.querySelector('[data-screen-label="Hero"]');
     if (h) h.style.minHeight = (window.innerHeight / z) + 'px';
   };
-  onScroll = () => { const s = window.scrollY > 240; if (s !== this.state.fabShow) this.setState({ fabShow: s }); };
+  onScroll = () => { const s = window.scrollY > 240; if (s !== this.state.fabShow) this.setState({ fabShow: s });
+    const line = window.innerHeight * 0.4; let a = -1;
+    ['work', 'about', 'faq'].forEach((id, i) => { const el = document.getElementById(id); if (el) { const r = el.getBoundingClientRect(); if (r.top <= line && r.bottom > 0) a = i; } });
+    const fq = document.getElementById('faq'); if (fq && fq.getBoundingClientRect().bottom < line) a = -1;
+    if (a !== this.state.nav) this.setState({ nav: a }); };
   measureRot = () => { const ws = [...document.querySelectorAll('[data-rot-item]')].map(e => e.offsetWidth); if (ws.length) this.setState({ rotWs: ws }); };
   loadImgs = () => { document.querySelectorAll('img[data-src]').forEach(el => { const v = el.getAttribute('data-src'); const show = () => { el.style.opacity = '1'; const sk = el.parentElement && el.parentElement.querySelector('[data-skel]'); if (sk) { sk.style.opacity = '0'; setTimeout(() => { sk.style.animation = 'none'; }, 600); } }; if (!el.dataset.fx) { el.dataset.fx = '1'; el.addEventListener('load', show); } if (v && v.indexOf('{{') < 0 && el.getAttribute('src') !== v) el.setAttribute('src', v); if (el.complete && el.naturalWidth) show(); }); };
   componentDidUpdate() { this.loadImgs(); }
@@ -329,20 +382,23 @@ class Component extends DCLogic {
     const open = this.state.open;
     const im = (src, top, w, ml, r, cover) => ({ src, top, w, ml, r: r || '0', hgt: cover ? '100%' : 'auto', fit: cover ? 'cover' : 'fill', b: r ? '1px solid #3A3460' : 'none' });
     const work = [
-      { name: 'Cardly', cat: 'AI card scanner · design challenge', accent: '#8FA0FF', accentText: '#8FA0FF', glow: 'rgba(91,107,255,.32)', base: '#07060E', href: 'Cardly Case Study.dc.html', tags: ['Onboarding', 'Paywall', 'First Scan'], desc: 'Closing the ad-to-app gap across onboarding, paywall, and the core scan experience.', imgs: [im('assets/scan.webp', '50px', '140px', '-240px', '20px'), im('assets/summary.webp', '30px', '150px', '-75px', '22px'), im('assets/paywall.webp', '50px', '140px', '95px', '20px')] },
-      { name: 'Pitio', cat: 'AI personal trainer app', accent: '#E5483A', accentText: '#FF8A7E', glow: 'rgba(229,72,58,.35)', base: '#0B0606', href: 'Pitio Case Study.dc.html', tags: ['0→1', 'AI / CV', 'iOS'], desc: 'An AI personal trainer that watches you move, remembers your journey, and adapts every session.', imgs: [im('assets/pitio/choose-trainer-bare.webp', '50px', '140px', '-240px', '20px'), im('assets/pitio/live-session-bare.webp', '30px', '150px', '-75px', '22px'), im('assets/pitio/home-bare.webp', '50px', '140px', '95px', '20px')] },
-      { name: 'Aurora', cat: 'CRM platform · landing page', accent: '#DD97FF', accentText: '#DD97FF', glow: 'rgba(98,73,255,.4)', base: '#04030C', href: 'Aurora CRM Showcase.dc.html', tags: ['Landing page', 'Brand identity'], desc: 'A landing page that makes a complex AI customer-experience platform easy to understand and act on.', imgs: [im('assets/aurora/mock-hero-laptop.webp', '0px', '100%', '-50%', '', true)] },
-      { name: 'Meel', cat: 'AI wellness app', accent: '#B9A6FF', accentText: '#B9A6FF', glow: 'rgba(107,60,255,.32)', base: '#08070F', href: 'Meel Case Study.dc.html', tags: ['PM & PD', 'iOS · Android · Web'], desc: 'A wellness platform that brings planning, guidance, and social support into one adaptive experience.', imgs: [im('assets/meel/agenda-bare.webp', '50px', '140px', '-240px', '20px'), im('assets/meel/chat-ainy-bare.webp', '30px', '150px', '-75px', '22px'), im('assets/meel/social-bare.webp', '50px', '140px', '95px', '20px')] }
+      { name: 'Cardly', cat: 'AI Card Scanner · Design Challenge', accent: '#8FA0FF', accentText: '#8FA0FF', glow: 'rgba(91,107,255,.32)', base: '#07060E', href: 'Cardly Case Study.dc.html', tags: ['Onboarding', 'Paywall', 'First Scan'], desc: 'Closing the ad-to-app gap across onboarding, paywall, and the core scan experience.', imgs: [im('assets/scan.png?v=3x', '50px', '140px', '-240px', '20px'), im('assets/summary.png?v=3x', '30px', '150px', '-75px', '22px'), im('assets/paywall.png?v=3x', '50px', '140px', '95px', '20px')] },
+      { name: 'Mola', cat: 'AI Personal Trainer · UI/UX', accent: '#8B6BFF', accentText: '#A994FF', glow: 'rgba(95,64,254,.36)', base: '#07060F', href: 'Mola Showcase.dc.html', tags: ['Product Design', 'UI/UX', 'Prototyping'], desc: 'The next evolution of Pitio, bringing the AI trainer concept to life through UI design and an interactive prototype.', imgs: [im('assets/mola2/hero-welcome.png', '50px', '140px', '-240px', '20px'), im('assets/mola2/hero-premium.png', '30px', '150px', '-75px', '22px'), im('assets/mola2/hero-ready-victoria.png', '50px', '140px', '95px', '20px')] },
+      { name: 'Pitio', cat: 'AI Personal Trainer · Exploration', accent: '#E5483A', accentText: '#FF8A7E', glow: 'rgba(229,72,58,.35)', base: '#0B0606', href: 'Pitio Case Study.dc.html', tags: ['0→1', 'Product Strategy', 'Research'], desc: 'The original 0→1 concept behind Mola, focused on product strategy, research, and early UX exploration.', imgs: [im('assets/pitio/choose-trainer-3x.webp?v=4', '50px', '140px', '-240px', '20px'), im('assets/pitio/live-session-3x.webp?v=4', '30px', '150px', '-75px', '22px'), im('assets/pitio/home-3x.webp?v=5', '50px', '140px', '95px', '20px')] },
+      { name: 'Aurora', cat: 'CRM Platform · Landing Page', accent: '#DD97FF', accentText: '#DD97FF', glow: 'rgba(98,73,255,.4)', base: '#04030C', href: 'Aurora CRM Showcase.dc.html', tags: ['Landing page', 'Brand identity'], desc: 'A landing page that makes a complex AI customer-experience platform easy to understand and act on.', imgs: [im('assets/aurora/mock-hero-laptop.webp', '0px', '100%', '-50%', '', true)] },
+      { name: 'Meel', cat: 'AI Wellness App · Product Design', accent: '#B9A6FF', accentText: '#B9A6FF', glow: 'rgba(107,60,255,.32)', base: '#08070F', href: 'Meel Case Study.dc.html', tags: ['PM & PD', 'iOS · Android · Web'], desc: 'A wellness platform that brings planning, guidance, and social support into one adaptive experience.', imgs: [im('assets/meel/agenda-3x.webp', '50px', '140px', '-240px', '20px'), im('assets/meel/chat-ainy-3x.webp', '30px', '150px', '-75px', '22px'), im('assets/meel/social-3x.webp', '50px', '140px', '95px', '20px')] }
     ].map((w, i) => {
       const on = open === i;
-      return { ...w, n: String(i + 1).padStart(2, '0'), h: on ? '420px' : '0px', dim: open === -1 || on ? 1 : 0.4, bg: 'radial-gradient(circle at 50% 60%,' + w.glow + ',rgba(0,0,0,0) 62%),' + w.base, arrowBg: on ? '#F1EEFF' : 'transparent', arrowBorder: on ? '#F1EEFF' : '#3A3460', arrowT: on ? 'rotate(45deg)' : 'none', arrowColor: on ? '#0A0913' : '#F1EEFF', enter: () => this.setState({ open: i }) };
+      return { ...w, n: String(i + 1).padStart(2, '0'), h: on ? (this.state.mob ? 'auto' : '420px') : '0px', dim: open === -1 || on ? 1 : 0.4, bg: 'radial-gradient(circle at 50% 60%,' + w.glow + ',rgba(0,0,0,0) 62%),' + w.base, arrowBg: on ? '#F1EEFF' : 'transparent', arrowBorder: on ? '#F1EEFF' : '#3A3460', arrowT: on ? 'rotate(45deg)' : 'none', arrowColor: on ? '#0A0913' : '#F1EEFF', enter: () => this.setState({ open: i }) };
     });
     const k = (arr) => arr.map((x, i) => ({ ...x, k: i }));
+    const abC = (this.props.aboutPhoto ?? 'rectangle') === 'circle', pv = this.props.photoVersion ?? 'C', abV = pv !== 'A', abT = pv === 'C';
     return {
+      abBig: abC ? 'none' : 'block', abImg: abT ? 'assets/portfolio/melis-about-c.png?v=4' : abV ? 'assets/portfolio/melis-about-b.png' : 'moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp', avImg: abT ? 'assets/portfolio/melis-avatar-c.png?v=4' : abV ? 'assets/portfolio/melis-avatar-b.png?v=2' : 'moody-purple-toned-portrait-of-a-young-w-muu9di37-oo0m.webp', abSm: abC ? 'block' : 'none',
       nav: [['Work', '#work'], ['About', '#about'], ['FAQ', '#faq']].map(([label, href], i) => ({ label, href, go: () => this.setState({ nav: i }), color: this.state.nav === i ? '#FFFFFF' : '#A39FBD' })),
       work,
       leave: () => this.setState({ open: -1 }),
-      hobLeave: () => this.setState({ hob: 0 }),
+      hobLeave: () => { if (!this.state.mob) this.setState({ hob: 0 }); },
       hobbies: [
         ['painting', 'Painting', 'Sharpens my artistic eye and awareness, noticing details around me.'],
         ['coffee', 'Coffee', 'Boosts my focus and creativity, fueling shared memories.'],
@@ -355,11 +411,11 @@ class Component extends DCLogic {
         ['beings', 'Loving living beings', 'Nurtures my empathy and kindness, creating genuine care and bonds.']
       ].map(([k, title, desc], i) => {
         const on = this.state.hob === i;
-        return { hasImg: !!k, noImg: !k, img: k ? 'assets/portfolio/hobby-' + k + '-tint3.jpg' : '', title, desc, n: String(i + 1).padStart(2, '0'), flex: on ? '3.2 1 0' : '1 1 0', border: on ? '#4A3A99' : '#262338', scale: on ? 'scale(1.04)' : 'scale(1)', filter: on ? 'none' : 'brightness(.78)', textOp: on ? 1 : 0, textT: on ? 'translateY(0)' : 'translateY(8px)', enter: () => this.setState({ hob: i }) };
+        return { hasImg: !!k, noImg: !k, img: k ? 'assets/portfolio/hobby-' + k + '-tint3.jpg' : '', title, desc, n: String(i + 1).padStart(2, '0'), flex: on ? '3.2 1 0' : '1 1 0', border: on ? '#4A3A99' : '#262338', scale: on ? 'scale(1.04)' : 'scale(1)', filter: on ? 'none' : 'brightness(.78)', textOp: on ? 1 : 0, textT: on ? 'translateY(0)' : 'translateY(8px)', enter: (e) => { if (this.state.mob && e && e.type !== 'click') return; if (this.state.mob && this.state.hob === i) return; this.setState({ hob: i }); if (this.state.mob && e && e.currentTarget) { const c = e.currentTarget, p = c.parentElement; setTimeout(() => { const r = c.offsetLeft - p.offsetLeft + 188 + 24 - p.scrollLeft - p.clientWidth; if (r > 0) p.scrollTo({ left: p.scrollLeft + r, behavior: 'smooth' }); }, 650); } } };
       }),
       ...(() => {
         const st = this.state, f = st.fab;
-        const hist = [['Pitio', 'Product Manager & Designer', '2026 — Now'], ['Meel', 'Product Manager & Designer', '2022 — 2026'], ['Reef Technology', 'AR Operations Lead', '2020 — 2022'], ['EY', 'Financial Operations Associate', '2018 — 2020']];
+        const hist = [['Pitio', 'Product Designer', '2026 — Now'], ['Meel', 'Co-founder & Designer', '2022 — 2026'], ['Reef Technology', 'AR Operations Lead', '2020 — 2022'], ['EY', 'Financial Operations Associate', '2018 — 2020']];
         const faq = [
           ['What do you work on?', 'End-to-end product work: strategy, research, UX/UI, and execution through launch and growth. I can own the whole lifecycle or plug into the part where you need the most help.'],
           ['Can you work with our existing team and design system?', 'Yes. I can design within your existing design system, or help build one if it doesn’t exist yet, while working closely with engineering and stakeholders.'],
