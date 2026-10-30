@@ -1,0 +1,106 @@
+{
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/Portfolio v5.dc.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Portfolio%20v5.dc.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Cardly Case Study.dc.html",
+      "destination": "/cardly",
+      "permanent": true
+    },
+    {
+      "source": "/Cardly%20Case%20Study.dc.html",
+      "destination": "/cardly",
+      "permanent": true
+    },
+    {
+      "source": "/Mola Showcase.dc.html",
+      "destination": "/mola",
+      "permanent": true
+    },
+    {
+      "source": "/Mola%20Showcase.dc.html",
+      "destination": "/mola",
+      "permanent": true
+    },
+    {
+      "source": "/Pitio Case Study.dc.html",
+      "destination": "/pitio",
+      "permanent": true
+    },
+    {
+      "source": "/Pitio%20Case%20Study.dc.html",
+      "destination": "/pitio",
+      "permanent": true
+    },
+    {
+      "source": "/Aurora CRM Showcase.dc.html",
+      "destination": "/aurora",
+      "permanent": true
+    },
+    {
+      "source": "/Aurora%20CRM%20Showcase.dc.html",
+      "destination": "/aurora",
+      "permanent": true
+    },
+    {
+      "source": "/Meel Case Study.dc.html",
+      "destination": "/meel",
+      "permanent": true
+    },
+    {
+      "source": "/Meel%20Case%20Study.dc.html",
+      "destination": "/meel",
+      "permanent": true
+    },
+    {
+      "source": "/Resume.dc.html",
+      "destination": "/resume",
+      "permanent": true
+    },
+    {
+      "source": "/Resume.dc.html",
+      "destination": "/resume",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/Portfolio v5.dc.html"
+    },
+    {
+      "source": "/cardly",
+      "destination": "/Cardly Case Study.dc.html"
+    },
+    {
+      "source": "/mola",
+      "destination": "/Mola Showcase.dc.html"
+    },
+    {
+      "source": "/pitio",
+      "destination": "/Pitio Case Study.dc.html"
+    },
+    {
+      "source": "/aurora",
+      "destination": "/Aurora CRM Showcase.dc.html"
+    },
+    {
+      "source": "/meel",
+      "destination": "/Meel Case Study.dc.html"
+    },
+    {
+      "source": "/resume",
+      "destination": "/Resume.dc.html"
+    }
+  ]
+}
